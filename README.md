@@ -1,6 +1,6 @@
-# Xây dựng Đồ thị Tri thức và Phát triển Hệ thống Gợi ý Du lịch Singapore
+# Xây dựng Đồ thị Tri thức và Phát triển Hệ thống Gợi ý Du lịch TP.HCM
 
-Kho lưu trữ này chứa mã nguồn và tài liệu hướng dẫn cho việc phát triển một hệ thống gợi ý du lịch tại Singapore. Dự án được chia thành nhiều mô-đun, mỗi mô-đun tập trung vào một khía cạnh cụ thể, bao gồm thu thập dữ liệu (data scraping), tiền xử lý, thử nghiệm công cụ gợi ý và phát triển ứng dụng web.
+Kho lưu trữ này chứa mã nguồn và tài liệu hướng dẫn cho việc phát triển một hệ thống gợi ý du lịch tại TP.HCM. Dự án được chia thành nhiều mô-đun, mỗi mô-đun tập trung vào một khía cạnh cụ thể, bao gồm thu thập dữ liệu (data scraping), tiền xử lý, thử nghiệm công cụ gợi ý và phát triển ứng dụng web.
 
 Chi tiết hơn có thể được tìm thấy trong báo cáo dự án "[FYP Report-Xiong Ying.pdf](https://github.com/xiong-ying/KG-Rec-Sys-Tourism-SG/blob/main/FYP%20Report-Xiong%20Ying.pdf)".
 
