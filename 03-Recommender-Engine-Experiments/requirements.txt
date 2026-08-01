@@ -1,0 +1,10 @@
+neo4j
+pandas
+scikit-learn
+matplotlib
+py2neo
+graphdatascience
+configparser
+torch
+transformers
+pyvi

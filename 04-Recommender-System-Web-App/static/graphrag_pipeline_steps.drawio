@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Antigravity">
+  <diagram id="Hinh_5_3_Dialog_Map" name="Hình 5.3 - Sơ đồ luồng chuyển trang">
+    <mxGraphModel dx="819" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="VuF5SloogChczlUyUEEG-0" />
+        <mxCell id="VuF5SloogChczlUyUEEG-1" parent="VuF5SloogChczlUyUEEG-0" />
+        <mxCell id="1Ksu73txPwprBOFoISmK-0" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#eff6ff;strokeColor=#2563eb;strokeWidth=2;shadow=1;spacingLeft=15;spacingRight=15;spacingTop=6;spacingBottom=6;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-size: 13px; color: rgb(30, 58, 138);&quot;&gt;BƯỚC 1: TIẾP NHẬN CÂU HỎI TỰ NHIÊN&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px; color: rgb(51, 65, 85);&quot;&gt;• Ví dụ: &lt;i style=&quot;color: rgb(37, 99, 235);&quot;&gt;&quot;Gợi ý cho tôi các quán cà phê đẹp ở Phường Bến Thành&quot;&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px; color: rgb(100, 116, 139);&quot;&gt;• Phân định trạng thái đăng nhập và thiết lập ngữ cảnh giao tiếp thân thiện&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="626" x="101" y="290.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-1" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f0fdf4;strokeColor=#16a34a;strokeWidth=2;shadow=1;spacingLeft=15;spacingRight=15;spacingTop=6;spacingBottom=6;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-size: 13px; color: rgb(20, 83, 45);&quot;&gt;BƯỚC 2: CHUẨN HÓA TỪ VỰNG &amp;amp; TRÍCH XUẤT THỰC THỂ KHU VỰC / THỂ LOẠI&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px; color: rgb(51, 65, 85);&quot;&gt;• Chuẩn hóa Unicode NFC/NFD tránh lỗi phông chữ tiếng Việt&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px; color: rgb(21, 128, 61);&quot;&gt;• Trích xuất Phường = &quot;Phường Bến Thành&quot;, Thể loại = &quot;Cà phê&quot;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; color: rgb(21, 128, 61);&quot;&gt;• Suy luận đồ thị: Truy vấn (Ward)-[:BELONGS_TO]-&amp;gt;(District) trong Neo4j để xác định chính xác Quận = &quot;Quận 1&quot;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="626" x="101" y="415.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-2" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#fff7ed;strokeColor=#ea580c;strokeWidth=2;shadow=1;spacingLeft=15;spacingRight=15;spacingTop=6;spacingBottom=6;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-size: 13px; color: #7c2d12;&quot;&gt;BƯỚC 3: TRUY VẤN TRI THỨC NGỮ CẢNH TỪ CSDL ĐỒ THỊ NEO4J&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #334155;&quot;&gt;• Chạy câu lệnh Cypher tìm các nút POI thuộc &lt;b&gt;&amp;quot;Quận 1&amp;quot;&lt;/b&gt; và thể loại &lt;b&gt;&amp;quot;Cà phê&amp;quot;&lt;/b&gt;&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #c2410c;&quot;&gt;• Lấy dữ liệu thực tế: Điểm đánh giá sao, số lượt nhận xét, giờ mở cửa, bài viết đánh giá&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="626" x="101" y="540.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-3" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#faf5ff;strokeColor=#9333ea;strokeWidth=2;shadow=1;spacingLeft=15;spacingRight=15;spacingTop=6;spacingBottom=6;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-size: 13px; color: #581c87;&quot;&gt;BƯỚC 4: TỔNG HỢP NGỮ CẢNH &amp;amp; XÂY DỰNG PROMPT KỸ THUẬT (PROMPT ENGINEERING)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #334155;&quot;&gt;• Tạo lệnh chỉ dẫn System Prompt: &lt;i style=&quot;color: #7e22ce;&quot;&gt;&amp;quot;Bạn là Trợ lý du lịch thông minh TP.HCM...&amp;quot;&lt;/i&gt;&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #6b21a8;&quot;&gt;• Ghép tập dữ liệu thực tế lấy từ Neo4j vào ngữ cảnh hướng dẫn mô hình AI&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="626" x="101" y="665.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-4" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f0f9ff;strokeColor=#0284c7;strokeWidth=2;shadow=1;spacingLeft=15;spacingRight=15;spacingTop=6;spacingBottom=6;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;font-size: 13px; color: #0c4a6e;&quot;&gt;BƯỚC 5: SUY LUẬN MÔ HÌNH LLM &amp;amp; PHẢN HỒI LUỒNG DỮ LIỆU (SSE STREAMING)&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #334155;&quot;&gt;• Mô hình Qwen2.5-1.5B sinh câu trả lời giải thích tự nhiên theo đúng dữ liệu thật&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-size: 11px; color: #0369a1;&quot;&gt;• Đẩy từng token chữ về màn hình hiển thị gõ phím real-time cho du khách&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="626" x="101" y="790.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-5" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="1Ksu73txPwprBOFoISmK-0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2.5;strokeColor=#2563eb;" target="1Ksu73txPwprBOFoISmK-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-6" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="1Ksu73txPwprBOFoISmK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2.5;strokeColor=#16a34a;" target="1Ksu73txPwprBOFoISmK-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-7" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="1Ksu73txPwprBOFoISmK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2.5;strokeColor=#ea580c;" target="1Ksu73txPwprBOFoISmK-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Ksu73txPwprBOFoISmK-8" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="1Ksu73txPwprBOFoISmK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2.5;strokeColor=#9333ea;" target="1Ksu73txPwprBOFoISmK-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram id="Page-1" name="Page-1">
+    <mxGraphModel dx="1542" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Bắt đầu gợi ý&lt;br/&gt;Input: (user_id, poi_id)" vertex="1">
+          <mxGeometry height="60" width="180" x="476" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_ensemble" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Kết quả Học kết hợp&lt;br/&gt;(Ensemble) đủ số lượng?" vertex="1">
+          <mxGeometry height="100" width="260" x="436" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ensemble" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Gợi ý kết quả Học kết hợp&lt;br/&gt;(Majority Voting)" vertex="1">
+          <mxGeometry height="50" width="200" x="132" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_userknn" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Gợi ý từ UserKNN&lt;br/&gt;(k = 10) đủ số lượng?" vertex="1">
+          <mxGeometry height="100" width="260" x="436" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="act_userknn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Gợi ý kết quả UserKNN" vertex="1">
+          <mxGeometry height="50" width="200" x="132" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_nodesim" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Gợi ý từ Node Similarity&lt;br/&gt;(k = 10) đủ số lượng?" vertex="1">
+          <mxGeometry height="100" width="260" x="436" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nodesim" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Gợi ý kết quả Node Similarity" vertex="1">
+          <mxGeometry height="50" width="200" x="132" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_itemknn" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Gợi ý từ ItemKNN&lt;br/&gt;(k = 1) đủ số lượng?" vertex="1">
+          <mxGeometry height="100" width="260" x="436" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="act_itemknn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Gợi ý kết quả ItemKNN" vertex="1">
+          <mxGeometry height="50" width="200" x="132" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="act_heuristic" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Gợi ý kết quả Heuristic (k = 10)&lt;br/&gt;(Chốt chặn cuối cùng)" vertex="1">
+          <mxGeometry height="60" width="200" x="466" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="dec_ensemble" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_2" edge="1" parent="1" source="dec_ensemble" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#660000;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="dec_userknn" value="Không đủ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_3" edge="1" parent="1" source="dec_userknn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#660000;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="dec_nodesim" value="Không đủ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_4" edge="1" parent="1" source="dec_nodesim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#660000;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="dec_itemknn" value="Không đủ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_5" edge="1" parent="1" source="dec_itemknn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#660000;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="act_heuristic" value="Không đủ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_6" edge="1" parent="1" source="dec_ensemble" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#274e13;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="act_ensemble" value="Đủ số lượng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_7" edge="1" parent="1" source="dec_userknn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#274e13;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="act_userknn" value="Đủ số lượng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_8" edge="1" parent="1" source="dec_nodesim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#274e13;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="act_nodesim" value="Đủ số lượng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_h_9" edge="1" parent="1" source="dec_itemknn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#274e13;strokeWidth=1.5;labelBackgroundColor=#ffffff;verticalAlign=bottom;" target="act_itemknn" value="Đủ số lượng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

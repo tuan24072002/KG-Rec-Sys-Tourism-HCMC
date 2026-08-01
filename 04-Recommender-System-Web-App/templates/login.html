@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="vi" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
+    <title>HCMC Tourism - Đăng nhập / Đăng ký</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="relative h-full flex flex-col justify-between text-white overflow-x-hidden"
+  >
+    <!-- Background Image with Overlay -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+      <img
+        src="/static/images/background-login.jpg"
+        alt="TP.HCM Background"
+        class="w-full h-full object-cover filter brightness-[1] contrast-[1.1]"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/40 backdrop-blur-[2px]"
+      ></div>
+    </div>
+
+    <!-- Header / Navbar Minimal -->
+    <header
+      class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"
+    >
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent hover:opacity-90 transition-opacity"
+      >
+        <i data-lucide="compass" class="w-7 h-7 text-blue-400"></i>
+        <span>HCMC Tourism</span>
+      </a>
+    </header>
+
+    <!-- Auth Container -->
+    <main
+      class="relative z-10 flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8"
+    >
+      <div
+        class="max-w-lg w-full space-y-6 bg-slate-900/65 backdrop-blur-2xl border border-white/15 p-8 rounded-3xl shadow-2xl shadow-slate-950/80 transition-all duration-300"
+      >
+        <!-- Tab Switching Controls -->
+        <div
+          class="flex p-1 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10"
+        >
+          <button
+            id="tab-login-btn"
+            type="button"
+            onclick="switchTab('login')"
+            class="flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-200 text-white bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md flex items-center justify-center gap-2"
+          >
+            <i data-lucide="log-in" class="w-4 h-4"></i>
+            <span>Đăng nhập</span>
+          </button>
+          <button
+            id="tab-register-btn"
+            type="button"
+            onclick="switchTab('register')"
+            class="flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-200 text-slate-300 hover:text-white flex items-center justify-center gap-2"
+          >
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Đăng ký</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Header Title -->
+        <div class="text-center">
+          <h2
+            id="form-title"
+            class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent"
+          >
+            Đăng nhập
+          </h2>
+          <p id="form-subtitle" class="mt-2 text-sm text-slate-300 font-light">
+            Chào mừng bạn quay lại
+          </p>
+        </div>
+
+        <!-- ==================== FORM ĐĂNG NHẬP ==================== -->
+        <div id="login-form" class="space-y-6">
+          {% if error and mode != 'register' %}
+          <div
+            class="flex items-center gap-2 p-4 rounded-2xl bg-red-500/20 border border-red-500/30 text-red-200 text-sm animate-fade-in"
+          >
+            <i
+              data-lucide="alert-circle"
+              class="w-5 h-5 flex-shrink-0 text-red-400"
+            ></i>
+            <span>{{ error }}</span>
+          </div>
+          {% endif %}
+
+          <form class="space-y-5" method="POST" action="{{ url_for('login') }}">
+            <input type="hidden" name="action" value="login" />
+
+            <div class="space-y-4">
+              <!-- Username field -->
+              <div>
+                <label
+                  for="username"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Tài khoản</label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="user" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder="Nhập tên đăng nhập..."
+                  />
+                </div>
+              </div>
+
+              <!-- Password field -->
+              <div>
+                <label
+                  for="password"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Mật khẩu</label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="lock" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder="••••••••"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="group relative w-full flex justify-center items-center gap-2 py-3.5 px-4 border border-transparent text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-lg shadow-blue-500/30 transition-all duration-150"
+              >
+                <i data-lucide="log-in" class="w-4 h-4"></i>
+                <span>Đăng nhập</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Toggle Link -->
+          <div class="text-center text-xs text-slate-300">
+            <span>Chưa có tài khoản? </span>
+            <button
+              type="button"
+              onclick="switchTab('register')"
+              class="text-blue-400 font-semibold hover:text-blue-300 hover:underline transition-colors"
+            >
+              Đăng ký ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== FORM ĐĂNG KÝ ==================== -->
+        <div id="register-form" class="space-y-6 hidden">
+          {% if error_register %}
+          <div
+            class="flex items-center gap-2 p-4 rounded-2xl bg-red-500/20 border border-red-500/30 text-red-200 text-sm animate-fade-in"
+          >
+            <i
+              data-lucide="alert-circle"
+              class="w-5 h-5 flex-shrink-0 text-red-400"
+            ></i>
+            <span>{{ error_register }}</span>
+          </div>
+          {% endif %} {% if success_register %}
+          <div
+            class="flex items-center gap-2 p-4 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-200 text-sm animate-fade-in"
+          >
+            <i
+              data-lucide="check-circle"
+              class="w-5 h-5 flex-shrink-0 text-emerald-400"
+            ></i>
+            <span>{{ success_register }}</span>
+          </div>
+          {% endif %}
+
+          <form class="space-y-4" method="POST" action="{{ url_for('login') }}">
+            <input type="hidden" name="action" value="register" />
+
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Username field -->
+              <div>
+                <label
+                  for="reg_username"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Tài khoản <span class="text-red-400">*</span></label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="user" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="reg_username"
+                    name="username"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                    placeholder="Nhập tên tài khoản..."
+                  />
+                </div>
+              </div>
+
+              <!-- Fullname field -->
+              <div>
+                <label
+                  for="reg_fullname"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Họ và tên <span class="text-red-400">*</span></label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="user-check" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="reg_fullname"
+                    name="fullname"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                    placeholder="Nhập họ và tên của bạn..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Region / Origin Autocomplete field -->
+            <div class="relative" id="origin-autocomplete-wrapper">
+              <label
+                for="reg_origin_input"
+                class="block text-sm font-semibold text-slate-200 mb-1.5"
+                >Khu vực sinh sống / Quan tâm
+                <span class="text-red-400">*</span></label
+              >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                >
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </span>
+                <input
+                  type="text"
+                  id="reg_origin_input"
+                  name="origin"
+                  required
+                  autocomplete="off"
+                  class="block w-full pl-11 pr-10 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                  placeholder="Gõ để tìm quận/huyện (vd: Quận 1, Thủ Đức...)"
+                />
+                <span
+                  class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 pointer-events-none"
+                >
+                  <i data-lucide="search" class="w-4 h-4"></i>
+                </span>
+              </div>
+
+              <!-- Custom Styled Autocomplete Dropdown List -->
+              <div
+                id="origin-dropdown"
+                class="absolute left-0 right-0 mt-1 max-h-48 overflow-y-auto bg-slate-900/95 border border-white/20 rounded-xl shadow-2xl backdrop-blur-xl z-50 hidden divide-y divide-white/5"
+              >
+                <!-- Suggestions rendered dynamically via JavaScript -->
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Password field -->
+              <div>
+                <label
+                  for="reg_password"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Mật khẩu <span class="text-red-400">*</span></label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="lock" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="password"
+                    id="reg_password"
+                    name="password"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                    placeholder="Nhập mật khẩu..."
+                  />
+                </div>
+              </div>
+
+              <!-- Confirm Password field -->
+              <div>
+                <label
+                  for="reg_confirm_password"
+                  class="block text-sm font-semibold text-slate-200 mb-1.5"
+                  >Xác nhận mật khẩu <span class="text-red-400">*</span></label
+                >
+                <div class="relative">
+                  <span
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 pointer-events-none"
+                  >
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                  </span>
+                  <input
+                    type="password"
+                    id="reg_confirm_password"
+                    name="confirm_password"
+                    required
+                    class="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/15 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                    placeholder="Nhập lại mật khẩu..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button
+                type="submit"
+                class="group relative w-full flex justify-center items-center gap-2 py-3.5 px-4 border border-transparent text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-lg shadow-blue-500/30 transition-all duration-150"
+              >
+                <i data-lucide="user-plus" class="w-4 h-4"></i>
+                <span>Tạo tài khoản</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Toggle Link -->
+          <div class="text-center text-xs text-slate-300">
+            <span>Đã có tài khoản? </span>
+            <button
+              type="button"
+              onclick="switchTab('login')"
+              class="text-blue-400 font-semibold hover:text-blue-300 hover:underline transition-colors"
+            >
+              Đăng nhập ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-slate-400 text-xs font-light"
+    >
+      <p>Bản quyền &copy; <span id="currentYear"></span> Trần Lê Anh Tuấn.</p>
+    </footer>
+
+    <!-- Tab Switch Script & Lucide Icons -->
+    <script>
+      lucide.createIcons();
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+      function switchTab(tab) {
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const loginBtn = document.getElementById('tab-login-btn');
+        const registerBtn = document.getElementById('tab-register-btn');
+        const titleText = document.getElementById('form-title');
+        const subtitleText = document.getElementById('form-subtitle');
+
+        const activeClass = "flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-200 text-white bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md flex items-center justify-center gap-2";
+        const inactiveClass = "flex-1 py-2.5 px-4 text-sm font-semibold rounded-xl transition-all duration-200 text-slate-300 hover:text-white flex items-center justify-center gap-2";
+
+        if (tab === 'register') {
+          loginForm.classList.add('hidden');
+          registerForm.classList.remove('hidden');
+
+          registerBtn.className = activeClass;
+          loginBtn.className = inactiveClass;
+
+          if (titleText) titleText.textContent = "Đăng ký";
+          if (subtitleText) subtitleText.textContent = "Tạo tài khoản mới để trải nghiệm HCMC Tourism";
+          document.title = "HCMC Tourism - Đăng ký";
+        } else {
+          registerForm.classList.add('hidden');
+          loginForm.classList.remove('hidden');
+
+          loginBtn.className = activeClass;
+          registerBtn.className = inactiveClass;
+
+          if (titleText) titleText.textContent = "Đăng nhập";
+          if (subtitleText) subtitleText.textContent = "Chào mừng bạn quay lại HCMC Tourism";
+          document.title = "HCMC Tourism - Đăng nhập";
+        }
+      }
+
+      // Default active tab based on server-side parameters
+      {% if mode == 'register' or error_register or success_register %}
+        switchTab('register');
+      {% else %}
+        switchTab('login');
+      {% endif %}
+
+      // Autocomplete logic for Region input
+      const originsList = {{ origins | default([]) | tojson }};
+      const originInput = document.getElementById('reg_origin_input');
+      const originDropdown = document.getElementById('origin-dropdown');
+
+      if (originInput && originDropdown && originsList.length > 0) {
+        const pinSvg = `<svg class="w-3.5 h-3.5 text-slate-400 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`;
+
+        function renderSuggestions(filterText = '') {
+          const query = filterText.toLowerCase().trim();
+          let matches = [];
+
+          if (!query) {
+            matches = originsList.slice(0, 15);
+          } else {
+            const startsWith = [];
+            const includes = [];
+            for (let i = 0; i < originsList.length; i++) {
+              const item = originsList[i];
+              const lower = item.toLowerCase();
+              if (lower.startsWith(query)) {
+                startsWith.push(item);
+              } else if (lower.includes(query)) {
+                includes.push(item);
+              }
+              if (startsWith.length + includes.length >= 25) break;
+            }
+            matches = [...startsWith, ...includes].slice(0, 15);
+          }
+
+          originDropdown.innerHTML = '';
+
+          if (matches.length === 0) {
+            const emptyItem = document.createElement('div');
+            emptyItem.className = 'px-4 py-2.5 text-xs text-slate-400 italic';
+            emptyItem.textContent = 'Không tìm thấy khu vực phù hợp';
+            originDropdown.appendChild(emptyItem);
+          } else {
+            const fragment = document.createDocumentFragment();
+            matches.forEach(item => {
+              const div = document.createElement('div');
+              div.className = 'px-4 py-2.5 text-sm text-slate-200 hover:bg-blue-600/60 hover:text-white cursor-pointer transition-colors flex items-center justify-between';
+              div.innerHTML = `<span>${item}</span>${pinSvg}`;
+              div.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                originInput.value = item;
+                originDropdown.classList.add('hidden');
+              });
+              fragment.appendChild(div);
+            });
+            originDropdown.appendChild(fragment);
+          }
+        }
+
+        originInput.addEventListener('focus', () => {
+          renderSuggestions(originInput.value);
+          originDropdown.classList.remove('hidden');
+        });
+
+        originInput.addEventListener('input', () => {
+          renderSuggestions(originInput.value);
+          originDropdown.classList.remove('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+          const wrapper = document.getElementById('origin-autocomplete-wrapper');
+          if (wrapper && !wrapper.contains(e.target)) {
+            originDropdown.classList.add('hidden');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

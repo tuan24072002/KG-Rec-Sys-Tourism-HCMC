@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram id="Page-1" name="Page-1">
+    <mxGraphModel dx="1542" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="input" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="POI Nodes &amp; Attributes&lt;br/&gt;(Dữ liệu điểm du lịch)" vertex="1">
+          <mxGeometry height="60" width="180" x="324" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="feat_num" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1;" value="Numerical Features&lt;br/&gt;(Giá cả, Sao, Reviews)" vertex="1">
+          <mxGeometry height="50" width="160" x="104" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="feat_cat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1;" value="Categorical Features&lt;br/&gt;(Danh mục, Quận huyện)" vertex="1">
+          <mxGeometry height="50" width="160" x="334" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="feat_text" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1;" value="Textual Features&lt;br/&gt;(Mô tả văn bản)" vertex="1">
+          <mxGeometry height="50" width="160" x="564" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_num" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;" value="Min-Max Normalization&lt;br/&gt;(Chuẩn hóa 0-1)" vertex="1">
+          <mxGeometry height="50" width="160" x="104" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_cat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;" value="One-Hot Encoding&lt;br/&gt;(Mã hóa nhị phân)" vertex="1">
+          <mxGeometry height="50" width="160" x="334" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_text" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0;" value="PyVi Word Segmentation&lt;br/&gt;+ PhoBERT embedding" vertex="1">
+          <mxGeometry height="50" width="160" x="564" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sim_num" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;fontStyle=1;" value="Euclidean Similarity&lt;br/&gt;(Độ tương đồng Euclidean)" vertex="1">
+          <mxGeometry height="50" width="160" x="104" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="sim_cat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;fontStyle=1;" value="Jaccard Similarity&lt;br/&gt;(Độ tương đồng Jaccard)" vertex="1">
+          <mxGeometry height="50" width="160" x="334" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="sim_text" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;fontStyle=1;" value="Cosine Similarity&lt;br/&gt;(Độ tương đồng Cosine)" vertex="1">
+          <mxGeometry height="50" width="160" x="564" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="overall" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Overall Weighted Similarity&lt;br/&gt;(Tính tương đồng hỗn hợp có trọng số)" vertex="1">
+          <mxGeometry height="60" width="240" x="294" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="Neo4j Relationship&lt;br&gt;[:CBF_SIMILAR]" vertex="1">
+          <mxGeometry height="80" width="120" x="354" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="feat_num" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="feat_cat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="feat_text" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="feat_num" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="proc_num" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="feat_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="proc_cat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" edge="1" parent="1" source="feat_text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="proc_text" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" edge="1" parent="1" source="proc_num" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="sim_num" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" edge="1" parent="1" source="proc_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="sim_cat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" edge="1" parent="1" source="proc_text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="sim_text" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_10" edge="1" parent="1" source="sim_num" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="overall" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="184" y="660" />
+              <mxPoint x="370" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_11" edge="1" parent="1" source="sim_cat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="overall" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_12" edge="1" parent="1" source="sim_text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="overall" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="644" y="660" />
+              <mxPoint x="460" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_13" edge="1" parent="1" source="overall" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4c4c4c;strokeWidth=1.5;" target="db" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

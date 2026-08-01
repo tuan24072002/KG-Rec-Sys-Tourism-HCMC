@@ -1,0 +1,8 @@
+selenium
+beautifulsoup4
+requests
+pandas
+fake-useragent
+undetected-chromedriver
+setuptools
+deep-translator

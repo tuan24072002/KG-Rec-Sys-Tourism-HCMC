@@ -1,0 +1,23 @@
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore archived files
+_Archive/
+
+# Ignore HTML files
+html/
+
+# Ignore url fail files
+poi_urls_failed.txt
+
+# Ignore geckodriver log file
+geckodriver.log
+
+# Ignore neo4j.ini file
+neo4j.ini
+
+# Ignore TODO file
+TODO.md
+
+# Ignore virtual environment
+venv/

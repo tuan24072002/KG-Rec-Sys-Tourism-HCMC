@@ -1,0 +1,4235 @@
+{
+  "provinces": [
+    {
+      "id": "28",
+      "province_code": "79",
+      "name": "Thành phố Hồ Chí Minh",
+      "short_name": "Thành phố Hồ Chí Minh",
+      "code": "HCM",
+      "place_type": "Thành phố Trung Ương",
+      "country": "VN"
+    }
+  ],
+  "wards": [
+    {
+      "id": "2544",
+      "ward_code": "25747",
+      "name": "Phường Thủ Dầu Một",
+      "province_code": "79"
+    },
+    {
+      "id": "2545",
+      "ward_code": "25750",
+      "name": "Phường Phú Lợi",
+      "province_code": "79"
+    },
+    {
+      "id": "2546",
+      "ward_code": "25760",
+      "name": "Phường Bình Dương",
+      "province_code": "79"
+    },
+    {
+      "id": "2547",
+      "ward_code": "25768",
+      "name": "Phường Phú An",
+      "province_code": "79"
+    },
+    {
+      "id": "2548",
+      "ward_code": "25771",
+      "name": "Phường Chánh Hiệp",
+      "province_code": "79"
+    },
+    {
+      "id": "2549",
+      "ward_code": "25777",
+      "name": "Xã Dầu Tiếng",
+      "province_code": "79"
+    },
+    {
+      "id": "2550",
+      "ward_code": "25780",
+      "name": "Xã Minh Thạnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2551",
+      "ward_code": "25792",
+      "name": "Xã Long Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2552",
+      "ward_code": "25807",
+      "name": "Xã Thanh An",
+      "province_code": "79"
+    },
+    {
+      "id": "2553",
+      "ward_code": "25813",
+      "name": "Phường Bến Cát",
+      "province_code": "79"
+    },
+    {
+      "id": "2554",
+      "ward_code": "25819",
+      "name": "Xã Trừ Văn Thố",
+      "province_code": "79"
+    },
+    {
+      "id": "2555",
+      "ward_code": "25822",
+      "name": "Xã Bàu Bàng",
+      "province_code": "79"
+    },
+    {
+      "id": "2556",
+      "ward_code": "25837",
+      "name": "Phường Chánh Phú Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2557",
+      "ward_code": "25840",
+      "name": "Phường Long Nguyên",
+      "province_code": "79"
+    },
+    {
+      "id": "2558",
+      "ward_code": "25843",
+      "name": "Phường Tây Nam",
+      "province_code": "79"
+    },
+    {
+      "id": "2559",
+      "ward_code": "25846",
+      "name": "Phường Thới Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2560",
+      "ward_code": "25849",
+      "name": "Phường Hòa Lợi",
+      "province_code": "79"
+    },
+    {
+      "id": "2561",
+      "ward_code": "25858",
+      "name": "Xã Phú Giáo",
+      "province_code": "79"
+    },
+    {
+      "id": "2562",
+      "ward_code": "25864",
+      "name": "Xã Phước Thành",
+      "province_code": "79"
+    },
+    {
+      "id": "2563",
+      "ward_code": "25867",
+      "name": "Xã An Long",
+      "province_code": "79"
+    },
+    {
+      "id": "2564",
+      "ward_code": "25882",
+      "name": "Xã Phước Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2565",
+      "ward_code": "25888",
+      "name": "Phường Tân Uyên",
+      "province_code": "79"
+    },
+    {
+      "id": "2566",
+      "ward_code": "25891",
+      "name": "Phường Tân Khánh",
+      "province_code": "79"
+    },
+    {
+      "id": "2567",
+      "ward_code": "25906",
+      "name": "Xã Bắc Tân Uyên",
+      "province_code": "79"
+    },
+    {
+      "id": "2568",
+      "ward_code": "25909",
+      "name": "Xã Thường Tân",
+      "province_code": "79"
+    },
+    {
+      "id": "2569",
+      "ward_code": "25912",
+      "name": "Phường Vĩnh Tân",
+      "province_code": "79"
+    },
+    {
+      "id": "2570",
+      "ward_code": "25915",
+      "name": "Phường Bình Cơ",
+      "province_code": "79"
+    },
+    {
+      "id": "2571",
+      "ward_code": "25920",
+      "name": "Phường Tân Hiệp",
+      "province_code": "79"
+    },
+    {
+      "id": "2572",
+      "ward_code": "25942",
+      "name": "Phường Dĩ An",
+      "province_code": "79"
+    },
+    {
+      "id": "2573",
+      "ward_code": "25945",
+      "name": "Phường Tân Đông Hiệp",
+      "province_code": "79"
+    },
+    {
+      "id": "2574",
+      "ward_code": "25951",
+      "name": "Phường Đông Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2575",
+      "ward_code": "25966",
+      "name": "Phường Lái Thiêu",
+      "province_code": "79"
+    },
+    {
+      "id": "2576",
+      "ward_code": "25969",
+      "name": "Phường Thuận Giao",
+      "province_code": "79"
+    },
+    {
+      "id": "2577",
+      "ward_code": "25975",
+      "name": "Phường An Phú",
+      "province_code": "79"
+    },
+    {
+      "id": "2578",
+      "ward_code": "25978",
+      "name": "Phường Thuận An",
+      "province_code": "79"
+    },
+    {
+      "id": "2579",
+      "ward_code": "25987",
+      "name": "Phường Bình Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2635",
+      "ward_code": "26506",
+      "name": "Phường Vũng Tàu",
+      "province_code": "79"
+    },
+    {
+      "id": "2636",
+      "ward_code": "26526",
+      "name": "Phường Tam Thắng",
+      "province_code": "79"
+    },
+    {
+      "id": "2637",
+      "ward_code": "26536",
+      "name": "Phường Rạch Dừa",
+      "province_code": "79"
+    },
+    {
+      "id": "2638",
+      "ward_code": "26542",
+      "name": "Phường Phước Thắng",
+      "province_code": "79"
+    },
+    {
+      "id": "2639",
+      "ward_code": "26545",
+      "name": "Xã Long Sơn",
+      "province_code": "79"
+    },
+    {
+      "id": "2640",
+      "ward_code": "26560",
+      "name": "Phường Bà Rịa",
+      "province_code": "79"
+    },
+    {
+      "id": "2641",
+      "ward_code": "26566",
+      "name": "Phường Long Hương",
+      "province_code": "79"
+    },
+    {
+      "id": "2642",
+      "ward_code": "26572",
+      "name": "Phường Tam Long",
+      "province_code": "79"
+    },
+    {
+      "id": "2643",
+      "ward_code": "26575",
+      "name": "Xã Ngãi Giao",
+      "province_code": "79"
+    },
+    {
+      "id": "2644",
+      "ward_code": "26584",
+      "name": "Xã Xuân Sơn",
+      "province_code": "79"
+    },
+    {
+      "id": "2645",
+      "ward_code": "26590",
+      "name": "Xã Bình Giã",
+      "province_code": "79"
+    },
+    {
+      "id": "2646",
+      "ward_code": "26596",
+      "name": "Xã Châu Đức",
+      "province_code": "79"
+    },
+    {
+      "id": "2647",
+      "ward_code": "26608",
+      "name": "Xã Kim Long",
+      "province_code": "79"
+    },
+    {
+      "id": "2648",
+      "ward_code": "26617",
+      "name": "Xã Nghĩa Thành",
+      "province_code": "79"
+    },
+    {
+      "id": "2649",
+      "ward_code": "26620",
+      "name": "Xã Hồ Tràm",
+      "province_code": "79"
+    },
+    {
+      "id": "2650",
+      "ward_code": "26632",
+      "name": "Xã Xuyên Mộc",
+      "province_code": "79"
+    },
+    {
+      "id": "2651",
+      "ward_code": "26638",
+      "name": "Xã Bàu Lâm",
+      "province_code": "79"
+    },
+    {
+      "id": "2652",
+      "ward_code": "26641",
+      "name": "Xã Hòa Hội",
+      "province_code": "79"
+    },
+    {
+      "id": "2653",
+      "ward_code": "26647",
+      "name": "Xã Hòa Hiệp",
+      "province_code": "79"
+    },
+    {
+      "id": "2654",
+      "ward_code": "26656",
+      "name": "Xã Bình Châu",
+      "province_code": "79"
+    },
+    {
+      "id": "2655",
+      "ward_code": "26659",
+      "name": "Xã Long Điền",
+      "province_code": "79"
+    },
+    {
+      "id": "2656",
+      "ward_code": "26662",
+      "name": "Xã Long Hải",
+      "province_code": "79"
+    },
+    {
+      "id": "2657",
+      "ward_code": "26680",
+      "name": "Xã Đất Đỏ",
+      "province_code": "79"
+    },
+    {
+      "id": "2658",
+      "ward_code": "26686",
+      "name": "Xã Phước Hải",
+      "province_code": "79"
+    },
+    {
+      "id": "2659",
+      "ward_code": "26704",
+      "name": "Phường Phú Mỹ",
+      "province_code": "79"
+    },
+    {
+      "id": "2660",
+      "ward_code": "26710",
+      "name": "Phường Tân Hải",
+      "province_code": "79"
+    },
+    {
+      "id": "2661",
+      "ward_code": "26713",
+      "name": "Phường Tân Phước",
+      "province_code": "79"
+    },
+    {
+      "id": "2662",
+      "ward_code": "26725",
+      "name": "Phường Tân Thành",
+      "province_code": "79"
+    },
+    {
+      "id": "2663",
+      "ward_code": "26728",
+      "name": "Xã Châu Pha",
+      "province_code": "79"
+    },
+    {
+      "id": "2664",
+      "ward_code": "26732",
+      "name": "Đặc khu Côn Đảo",
+      "province_code": "79"
+    },
+    {
+      "id": "2665",
+      "ward_code": "26737",
+      "name": "Phường Tân Định",
+      "province_code": "79"
+    },
+    {
+      "id": "2666",
+      "ward_code": "26740",
+      "name": "Phường Sài Gòn",
+      "province_code": "79"
+    },
+    {
+      "id": "2667",
+      "ward_code": "26743",
+      "name": "Phường Bến Thành",
+      "province_code": "79"
+    },
+    {
+      "id": "2668",
+      "ward_code": "26758",
+      "name": "Phường Cầu Ông Lãnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2669",
+      "ward_code": "26767",
+      "name": "Phường An Phú Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2670",
+      "ward_code": "26773",
+      "name": "Phường Thới An",
+      "province_code": "79"
+    },
+    {
+      "id": "2671",
+      "ward_code": "26782",
+      "name": "Phường Tân Thới Hiệp",
+      "province_code": "79"
+    },
+    {
+      "id": "2672",
+      "ward_code": "26785",
+      "name": "Phường Trung Mỹ Tây",
+      "province_code": "79"
+    },
+    {
+      "id": "2673",
+      "ward_code": "26791",
+      "name": "Phường Đông Hưng Thuận",
+      "province_code": "79"
+    },
+    {
+      "id": "2674",
+      "ward_code": "26800",
+      "name": "Phường Linh Xuân",
+      "province_code": "79"
+    },
+    {
+      "id": "2675",
+      "ward_code": "26803",
+      "name": "Phường Tam Bình",
+      "province_code": "79"
+    },
+    {
+      "id": "2676",
+      "ward_code": "26809",
+      "name": "Phường Hiệp Bình",
+      "province_code": "79"
+    },
+    {
+      "id": "2677",
+      "ward_code": "26824",
+      "name": "Phường Thủ Đức",
+      "province_code": "79"
+    },
+    {
+      "id": "2678",
+      "ward_code": "26833",
+      "name": "Phường Long Bình",
+      "province_code": "79"
+    },
+    {
+      "id": "2679",
+      "ward_code": "26842",
+      "name": "Phường Tăng Nhơn Phú",
+      "province_code": "79"
+    },
+    {
+      "id": "2680",
+      "ward_code": "26848",
+      "name": "Phường Phước Long",
+      "province_code": "79"
+    },
+    {
+      "id": "2681",
+      "ward_code": "26857",
+      "name": "Phường Long Phước",
+      "province_code": "79"
+    },
+    {
+      "id": "2682",
+      "ward_code": "26860",
+      "name": "Phường Long Trường",
+      "province_code": "79"
+    },
+    {
+      "id": "2683",
+      "ward_code": "26876",
+      "name": "Phường An Nhơn",
+      "province_code": "79"
+    },
+    {
+      "id": "2684",
+      "ward_code": "26878",
+      "name": "Phường An Hội Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2685",
+      "ward_code": "26882",
+      "name": "Phường An Hội Tây",
+      "province_code": "79"
+    },
+    {
+      "id": "2686",
+      "ward_code": "26884",
+      "name": "Phường Gò Vấp",
+      "province_code": "79"
+    },
+    {
+      "id": "2687",
+      "ward_code": "26890",
+      "name": "Phường Hạnh Thông",
+      "province_code": "79"
+    },
+    {
+      "id": "2688",
+      "ward_code": "26898",
+      "name": "Phường Thông Tây Hội",
+      "province_code": "79"
+    },
+    {
+      "id": "2689",
+      "ward_code": "26905",
+      "name": "Phường Bình Lợi Trung",
+      "province_code": "79"
+    },
+    {
+      "id": "2690",
+      "ward_code": "26911",
+      "name": "Phường Bình Quới",
+      "province_code": "79"
+    },
+    {
+      "id": "2691",
+      "ward_code": "26929",
+      "name": "Phường Bình Thạnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2692",
+      "ward_code": "26944",
+      "name": "Phường Gia Định",
+      "province_code": "79"
+    },
+    {
+      "id": "2693",
+      "ward_code": "26956",
+      "name": "Phường Thạnh Mỹ Tây",
+      "province_code": "79"
+    },
+    {
+      "id": "2694",
+      "ward_code": "26968",
+      "name": "Phường Tân Sơn Nhất",
+      "province_code": "79"
+    },
+    {
+      "id": "2695",
+      "ward_code": "26977",
+      "name": "Phường Tân Sơn Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2696",
+      "ward_code": "26983",
+      "name": "Phường Bảy Hiền",
+      "province_code": "79"
+    },
+    {
+      "id": "2697",
+      "ward_code": "26995",
+      "name": "Phường Tân Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2698",
+      "ward_code": "27004",
+      "name": "Phường Tân Bình",
+      "province_code": "79"
+    },
+    {
+      "id": "2699",
+      "ward_code": "27007",
+      "name": "Phường Tân Sơn",
+      "province_code": "79"
+    },
+    {
+      "id": "2700",
+      "ward_code": "27013",
+      "name": "Phường Tây Thạnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2701",
+      "ward_code": "27019",
+      "name": "Phường Tân Sơn Nhì",
+      "province_code": "79"
+    },
+    {
+      "id": "2702",
+      "ward_code": "27022",
+      "name": "Phường Phú Thọ Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2703",
+      "ward_code": "27028",
+      "name": "Phường Phú Thạnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2704",
+      "ward_code": "27031",
+      "name": "Phường Tân Phú",
+      "province_code": "79"
+    },
+    {
+      "id": "2705",
+      "ward_code": "27043",
+      "name": "Phường Đức Nhuận",
+      "province_code": "79"
+    },
+    {
+      "id": "2706",
+      "ward_code": "27058",
+      "name": "Phường Cầu Kiệu",
+      "province_code": "79"
+    },
+    {
+      "id": "2707",
+      "ward_code": "27073",
+      "name": "Phường Phú Nhuận",
+      "province_code": "79"
+    },
+    {
+      "id": "2708",
+      "ward_code": "27094",
+      "name": "Phường An Khánh",
+      "province_code": "79"
+    },
+    {
+      "id": "2709",
+      "ward_code": "27097",
+      "name": "Phường Bình Trưng",
+      "province_code": "79"
+    },
+    {
+      "id": "2710",
+      "ward_code": "27112",
+      "name": "Phường Cát Lái",
+      "province_code": "79"
+    },
+    {
+      "id": "2711",
+      "ward_code": "27139",
+      "name": "Phường Xuân Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2712",
+      "ward_code": "27142",
+      "name": "Phường Nhiêu Lộc",
+      "province_code": "79"
+    },
+    {
+      "id": "2713",
+      "ward_code": "27154",
+      "name": "Phường Bàn Cờ",
+      "province_code": "79"
+    },
+    {
+      "id": "2714",
+      "ward_code": "27163",
+      "name": "Phường Hòa Hưng",
+      "province_code": "79"
+    },
+    {
+      "id": "2715",
+      "ward_code": "27169",
+      "name": "Phường Diên Hồng",
+      "province_code": "79"
+    },
+    {
+      "id": "2716",
+      "ward_code": "27190",
+      "name": "Phường Vườn Lài",
+      "province_code": "79"
+    },
+    {
+      "id": "2717",
+      "ward_code": "27211",
+      "name": "Phường Hòa Bình",
+      "province_code": "79"
+    },
+    {
+      "id": "2718",
+      "ward_code": "27226",
+      "name": "Phường Phú Thọ",
+      "province_code": "79"
+    },
+    {
+      "id": "2719",
+      "ward_code": "27232",
+      "name": "Phường Bình Thới",
+      "province_code": "79"
+    },
+    {
+      "id": "2720",
+      "ward_code": "27238",
+      "name": "Phường Minh Phụng",
+      "province_code": "79"
+    },
+    {
+      "id": "2721",
+      "ward_code": "27259",
+      "name": "Phường Xóm Chiếu",
+      "province_code": "79"
+    },
+    {
+      "id": "2722",
+      "ward_code": "27265",
+      "name": "Phường Khánh Hội",
+      "province_code": "79"
+    },
+    {
+      "id": "2723",
+      "ward_code": "27286",
+      "name": "Phường Vĩnh Hội",
+      "province_code": "79"
+    },
+    {
+      "id": "2724",
+      "ward_code": "27301",
+      "name": "Phường Chợ Quán",
+      "province_code": "79"
+    },
+    {
+      "id": "2725",
+      "ward_code": "27316",
+      "name": "Phường An Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2726",
+      "ward_code": "27343",
+      "name": "Phường Chợ Lớn",
+      "province_code": "79"
+    },
+    {
+      "id": "2727",
+      "ward_code": "27349",
+      "name": "Phường Phú Lâm",
+      "province_code": "79"
+    },
+    {
+      "id": "2728",
+      "ward_code": "27364",
+      "name": "Phường Bình Phú",
+      "province_code": "79"
+    },
+    {
+      "id": "2729",
+      "ward_code": "27367",
+      "name": "Phường Bình Tây",
+      "province_code": "79"
+    },
+    {
+      "id": "2730",
+      "ward_code": "27373",
+      "name": "Phường Bình Tiên",
+      "province_code": "79"
+    },
+    {
+      "id": "2731",
+      "ward_code": "27418",
+      "name": "Phường Chánh Hưng",
+      "province_code": "79"
+    },
+    {
+      "id": "2732",
+      "ward_code": "27424",
+      "name": "Phường Bình Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2733",
+      "ward_code": "27427",
+      "name": "Phường Phú Định",
+      "province_code": "79"
+    },
+    {
+      "id": "2734",
+      "ward_code": "27439",
+      "name": "Phường Bình Hưng Hòa",
+      "province_code": "79"
+    },
+    {
+      "id": "2735",
+      "ward_code": "27442",
+      "name": "Phường Bình Tân",
+      "province_code": "79"
+    },
+    {
+      "id": "2736",
+      "ward_code": "27448",
+      "name": "Phường Bình Trị Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2737",
+      "ward_code": "27457",
+      "name": "Phường Tân Tạo",
+      "province_code": "79"
+    },
+    {
+      "id": "2738",
+      "ward_code": "27460",
+      "name": "Phường An Lạc",
+      "province_code": "79"
+    },
+    {
+      "id": "2739",
+      "ward_code": "27475",
+      "name": "Phường Tân Hưng",
+      "province_code": "79"
+    },
+    {
+      "id": "2740",
+      "ward_code": "27478",
+      "name": "Phường Tân Thuận",
+      "province_code": "79"
+    },
+    {
+      "id": "2741",
+      "ward_code": "27484",
+      "name": "Phường Phú Thuận",
+      "province_code": "79"
+    },
+    {
+      "id": "2742",
+      "ward_code": "27487",
+      "name": "Phường Tân Mỹ",
+      "province_code": "79"
+    },
+    {
+      "id": "2743",
+      "ward_code": "27496",
+      "name": "Xã Tân An Hội",
+      "province_code": "79"
+    },
+    {
+      "id": "2744",
+      "ward_code": "27508",
+      "name": "Xã An Nhơn Tây",
+      "province_code": "79"
+    },
+    {
+      "id": "2745",
+      "ward_code": "27511",
+      "name": "Xã Nhuận Đức",
+      "province_code": "79"
+    },
+    {
+      "id": "2746",
+      "ward_code": "27526",
+      "name": "Xã Thái Mỹ",
+      "province_code": "79"
+    },
+    {
+      "id": "2747",
+      "ward_code": "27541",
+      "name": "Xã Phú Hòa Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2748",
+      "ward_code": "27544",
+      "name": "Xã Bình Mỹ",
+      "province_code": "79"
+    },
+    {
+      "id": "2749",
+      "ward_code": "27553",
+      "name": "Xã Củ Chi",
+      "province_code": "79"
+    },
+    {
+      "id": "2750",
+      "ward_code": "27559",
+      "name": "Xã Hóc Môn",
+      "province_code": "79"
+    },
+    {
+      "id": "2751",
+      "ward_code": "27568",
+      "name": "Xã Đông Thạnh",
+      "province_code": "79"
+    },
+    {
+      "id": "2752",
+      "ward_code": "27577",
+      "name": "Xã Xuân Thới Sơn",
+      "province_code": "79"
+    },
+    {
+      "id": "2753",
+      "ward_code": "27592",
+      "name": "Xã Bà Điểm",
+      "province_code": "79"
+    },
+    {
+      "id": "2754",
+      "ward_code": "27595",
+      "name": "Xã Tân Nhựt",
+      "province_code": "79"
+    },
+    {
+      "id": "2755",
+      "ward_code": "27601",
+      "name": "Xã Vĩnh Lộc",
+      "province_code": "79"
+    },
+    {
+      "id": "2756",
+      "ward_code": "27604",
+      "name": "Xã Tân Vĩnh Lộc",
+      "province_code": "79"
+    },
+    {
+      "id": "2757",
+      "ward_code": "27610",
+      "name": "Xã Bình Lợi",
+      "province_code": "79"
+    },
+    {
+      "id": "2758",
+      "ward_code": "27619",
+      "name": "Xã Bình Hưng",
+      "province_code": "79"
+    },
+    {
+      "id": "2759",
+      "ward_code": "27628",
+      "name": "Xã Hưng Long",
+      "province_code": "79"
+    },
+    {
+      "id": "2760",
+      "ward_code": "27637",
+      "name": "Xã Bình Chánh",
+      "province_code": "79"
+    },
+    {
+      "id": "2761",
+      "ward_code": "27655",
+      "name": "Xã Nhà Bè",
+      "province_code": "79"
+    },
+    {
+      "id": "2762",
+      "ward_code": "27658",
+      "name": "Xã Hiệp Phước",
+      "province_code": "79"
+    },
+    {
+      "id": "2763",
+      "ward_code": "27664",
+      "name": "Xã Cần Giờ",
+      "province_code": "79"
+    },
+    {
+      "id": "2764",
+      "ward_code": "27667",
+      "name": "Xã Bình Khánh",
+      "province_code": "79"
+    },
+    {
+      "id": "2765",
+      "ward_code": "27673",
+      "name": "Xã An Thới Đông",
+      "province_code": "79"
+    },
+    {
+      "id": "2766",
+      "ward_code": "27676",
+      "name": "Xã Thạnh An",
+      "province_code": "79"
+    }
+  ],
+  "ward_mappings": [
+    {
+      "id": "1",
+      "old_ward_code": "26881",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26882",
+      "new_ward_name": "Phường An Hội Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2",
+      "old_ward_code": "26882",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26882",
+      "new_ward_name": "Phường An Hội Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3",
+      "old_ward_code": "26872",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26878",
+      "new_ward_name": "Phường An Hội Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4",
+      "old_ward_code": "26878",
+      "old_ward_name": "Phường 16",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26878",
+      "new_ward_name": "Phường An Hội Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5",
+      "old_ward_code": "27460",
+      "old_ward_name": "Phường An Lạc",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27460",
+      "new_ward_name": "Phường An Lạc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "6",
+      "old_ward_code": "27463",
+      "old_ward_name": "Phường An Lạc A",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27460",
+      "new_ward_name": "Phường An Lạc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "7",
+      "old_ward_code": "27451",
+      "old_ward_name": "Phường Bình Trị Đông B",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27460",
+      "new_ward_name": "Phường An Lạc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8",
+      "old_ward_code": "26887",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26876",
+      "new_ward_name": "Phường An Nhơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9",
+      "old_ward_code": "26876",
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26876",
+      "new_ward_name": "Phường An Nhơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10",
+      "old_ward_code": "26992",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26983",
+      "new_ward_name": "Phường Bảy Hiền",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "11",
+      "old_ward_code": "26983",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26983",
+      "new_ward_name": "Phường Bảy Hiền",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "12",
+      "old_ward_code": "26971",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26983",
+      "new_ward_name": "Phường Bảy Hiền",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "13",
+      "old_ward_code": "27436",
+      "old_ward_name": "Phường Bình Hưng Hòa",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27439",
+      "new_ward_name": "Phường Bình Hưng Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "14",
+      "old_ward_code": "27439",
+      "old_ward_name": "Phường Bình Hưng Hoà A",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27439",
+      "new_ward_name": "Phường Bình Hưng Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "15",
+      "old_ward_code": "27445",
+      "old_ward_name": "Phường Bình Trị Đông",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27448",
+      "new_ward_name": "Phường Bình Trị Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "16",
+      "old_ward_code": "27448",
+      "old_ward_name": "Phường Bình Trị Đông A",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27448",
+      "new_ward_name": "Phường Bình Trị Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "17",
+      "old_ward_code": "27442",
+      "old_ward_name": "Phường Bình Hưng Hoà B",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27442",
+      "new_ward_name": "Phường Bình Tân",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "18",
+      "old_ward_code": "26884",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26884",
+      "new_ward_name": "Phường Gò Vấp",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "19",
+      "old_ward_code": "26875",
+      "old_ward_name": "Phường 17",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26884",
+      "new_ward_name": "Phường Gò Vấp",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "20",
+      "old_ward_code": "26890",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26890",
+      "new_ward_name": "Phường Hạnh Thông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "21",
+      "old_ward_code": "26902",
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26890",
+      "new_ward_name": "Phường Hạnh Thông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "25",
+      "old_ward_code": "27271",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "26",
+      "old_ward_code": "27265",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "27",
+      "old_ward_code": "27295",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "36",
+      "old_ward_code": "26898",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26898",
+      "new_ward_name": "Phường Thông Tây Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "37",
+      "old_ward_code": "26899",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26898",
+      "new_ward_name": "Phường Thông Tây Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "38",
+      "old_ward_code": "26974",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27004",
+      "new_ward_name": "Phường Tân Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "39",
+      "old_ward_code": "27004",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27004",
+      "new_ward_name": "Phường Tân Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "40",
+      "old_ward_code": "26995",
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26995",
+      "new_ward_name": "Phường Tân Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "41",
+      "old_ward_code": "26998",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26995",
+      "new_ward_name": "Phường Tân Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "42",
+      "old_ward_code": "27001",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26995",
+      "new_ward_name": "Phường Tân Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "43",
+      "old_ward_code": "27007",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27007",
+      "new_ward_name": "Phường Tân Sơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "44",
+      "old_ward_code": "26977",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26977",
+      "new_ward_name": "Phường Tân Sơn Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "45",
+      "old_ward_code": "26965",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26977",
+      "new_ward_name": "Phường Tân Sơn Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "46",
+      "old_ward_code": "26980",
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26977",
+      "new_ward_name": "Phường Tân Sơn Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "47",
+      "old_ward_code": "26968",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26968",
+      "new_ward_name": "Phường Tân Sơn Nhất",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "48",
+      "old_ward_code": "26989",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26968",
+      "new_ward_name": "Phường Tân Sơn Nhất",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "49",
+      "old_ward_code": "26986",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận Tân Bình",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26968",
+      "new_ward_name": "Phường Tân Sơn Nhất",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "50",
+      "old_ward_code": "27457",
+      "old_ward_name": "Phường Tân Tạo A",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27457",
+      "new_ward_name": "Phường Tân Tạo",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "51",
+      "old_ward_code": "27454",
+      "old_ward_name": "Phường Tân Tạo",
+      "old_district_name": "Quận Bình Tân",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27457",
+      "new_ward_name": "Phường Tân Tạo",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "52",
+      "old_ward_code": "27298",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27286",
+      "new_ward_name": "Phường Vĩnh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "53",
+      "old_ward_code": "27286",
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27286",
+      "new_ward_name": "Phường Vĩnh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "54",
+      "old_ward_code": "27292",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27286",
+      "new_ward_name": "Phường Vĩnh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "55",
+      "old_ward_code": "27283",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27286",
+      "new_ward_name": "Phường Vĩnh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "56",
+      "old_ward_code": "27259",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27259",
+      "new_ward_name": "Phường Xóm Chiếu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "57",
+      "old_ward_code": "27289",
+      "old_ward_name": "Phường 16",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27259",
+      "new_ward_name": "Phường Xóm Chiếu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "58",
+      "old_ward_code": "27277",
+      "old_ward_name": "Phường 18",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27259",
+      "new_ward_name": "Phường Xóm Chiếu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "99",
+      "old_ward_code": "27094",
+      "old_ward_name": "Phường An Khánh",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27094",
+      "new_ward_name": "Phường An Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "100",
+      "old_ward_code": "27115",
+      "old_ward_name": "Phường An Lợi Đông",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27094",
+      "new_ward_name": "Phường An Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "101",
+      "old_ward_code": "27088",
+      "old_ward_name": "Phường Thảo Điền",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27094",
+      "new_ward_name": "Phường An Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "102",
+      "old_ward_code": "27118",
+      "old_ward_name": "Phường Thủ Thiêm",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27094",
+      "new_ward_name": "Phường An Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "132",
+      "old_ward_code": "26779",
+      "old_ward_name": "Phường An Phú Đông",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26767",
+      "new_ward_name": "Phường An Phú Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "133",
+      "old_ward_code": "26767",
+      "old_ward_name": "Phường Thạnh Lộc",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26767",
+      "new_ward_name": "Phường An Phú Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "152",
+      "old_ward_code": "27334",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27316",
+      "new_ward_name": "Phường An Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "153",
+      "old_ward_code": "27316",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27316",
+      "new_ward_name": "Phường An Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "154",
+      "old_ward_code": "27304",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27316",
+      "new_ward_name": "Phường An Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "192",
+      "old_ward_code": "27160",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27154",
+      "new_ward_name": "Phường Bàn Cờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "193",
+      "old_ward_code": "27157",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27154",
+      "new_ward_name": "Phường Bàn Cờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "194",
+      "old_ward_code": "27154",
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27154",
+      "new_ward_name": "Phường Bàn Cờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "195",
+      "old_ward_code": "27151",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27154",
+      "new_ward_name": "Phường Bàn Cờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "196",
+      "old_ward_code": "27148",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27154",
+      "new_ward_name": "Phường Bàn Cờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "230",
+      "old_ward_code": "26923",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26905",
+      "new_ward_name": "Phường Bình Lợi Trung",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "231",
+      "old_ward_code": "26908",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26905",
+      "new_ward_name": "Phường Bình Lợi Trung",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "232",
+      "old_ward_code": "26905",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26905",
+      "new_ward_name": "Phường Bình Lợi Trung",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "239",
+      "old_ward_code": "27385",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27364",
+      "new_ward_name": "Phường Bình Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "240",
+      "old_ward_code": "27364",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27364",
+      "new_ward_name": "Phường Bình Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "247",
+      "old_ward_code": "26911",
+      "old_ward_name": "Phường 27",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26911",
+      "new_ward_name": "Phường Bình Quới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "248",
+      "old_ward_code": "26962",
+      "old_ward_name": "Phường 28",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26911",
+      "new_ward_name": "Phường Bình Quới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "254",
+      "old_ward_code": "26917",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26929",
+      "new_ward_name": "Phường Bình Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "255",
+      "old_ward_code": "26929",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26929",
+      "new_ward_name": "Phường Bình Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "256",
+      "old_ward_code": "26914",
+      "old_ward_name": "Phường 26",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26929",
+      "new_ward_name": "Phường Bình Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "257",
+      "old_ward_code": "27220",
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27232",
+      "new_ward_name": "Phường Bình Thới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "258",
+      "old_ward_code": "27232",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27232",
+      "new_ward_name": "Phường Bình Thới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "259",
+      "old_ward_code": "27229",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27232",
+      "new_ward_name": "Phường Bình Thới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "263",
+      "old_ward_code": "27373",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27373",
+      "new_ward_name": "Phường Bình Tiên",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "264",
+      "old_ward_code": "27382",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27373",
+      "new_ward_name": "Phường Bình Tiên",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "265",
+      "old_ward_code": "27376",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27373",
+      "new_ward_name": "Phường Bình Tiên",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "266",
+      "old_ward_code": "27097",
+      "old_ward_name": "Phường Bình Trưng Đông",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27097",
+      "new_ward_name": "Phường Bình Trưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "267",
+      "old_ward_code": "27100",
+      "old_ward_name": "Phường Bình Trưng Tây",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27097",
+      "new_ward_name": "Phường Bình Trưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "268",
+      "old_ward_code": "27091",
+      "old_ward_name": "Phường An Phú",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27097",
+      "new_ward_name": "Phường Bình Trưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "269",
+      "old_ward_code": "27367",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27367",
+      "new_ward_name": "Phường Bình Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "270",
+      "old_ward_code": "27352",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27367",
+      "new_ward_name": "Phường Bình Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "273",
+      "old_ward_code": "27424",
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27424",
+      "new_ward_name": "Phường Bình Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "274",
+      "old_ward_code": "27433",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27424",
+      "new_ward_name": "Phường Bình Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "337",
+      "old_ward_code": "26743",
+      "old_ward_name": "Phường Bến Thành",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26743",
+      "new_ward_name": "Phường Bến Thành",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "338",
+      "old_ward_code": "26749",
+      "old_ward_name": "Phường Phạm Ngũ Lão",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26743",
+      "new_ward_name": "Phường Bến Thành",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "339",
+      "old_ward_code": "26746",
+      "old_ward_name": "Phường Nguyễn Thái Bình",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26743",
+      "new_ward_name": "Phường Bến Thành",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "404",
+      "old_ward_code": "27397",
+      "old_ward_name": "Phường Rạch Ông",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "405",
+      "old_ward_code": "27403",
+      "old_ward_name": "Phường Hưng Phú",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "406",
+      "old_ward_code": "27409",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "407",
+      "old_ward_code": "27418",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "434",
+      "old_ward_code": "27328",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27343",
+      "new_ward_name": "Phường Chợ Lớn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "435",
+      "old_ward_code": "27310",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27343",
+      "new_ward_name": "Phường Chợ Lớn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "436",
+      "old_ward_code": "27343",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27343",
+      "new_ward_name": "Phường Chợ Lớn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "437",
+      "old_ward_code": "27331",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27343",
+      "new_ward_name": "Phường Chợ Lớn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "438",
+      "old_ward_code": "27325",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27301",
+      "new_ward_name": "Phường Chợ Quán",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "439",
+      "old_ward_code": "27307",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27301",
+      "new_ward_name": "Phường Chợ Quán",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "440",
+      "old_ward_code": "27301",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27301",
+      "new_ward_name": "Phường Chợ Quán",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "449",
+      "old_ward_code": "27109",
+      "old_ward_name": "Phường Cát Lái",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27112",
+      "new_ward_name": "Phường Cát Lái",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "450",
+      "old_ward_code": "27112",
+      "old_ward_name": "Phường Thạnh Mỹ Lợi",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27112",
+      "new_ward_name": "Phường Cát Lái",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "459",
+      "old_ward_code": "27058",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27058",
+      "new_ward_name": "Phường Cầu Kiệu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "460",
+      "old_ward_code": "27061",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27058",
+      "new_ward_name": "Phường Cầu Kiệu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "461",
+      "old_ward_code": "27052",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27058",
+      "new_ward_name": "Phường Cầu Kiệu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "462",
+      "old_ward_code": "27076",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27058",
+      "new_ward_name": "Phường Cầu Kiệu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "468",
+      "old_ward_code": "26758",
+      "old_ward_name": "Phường Nguyễn Cư Trinh",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26758",
+      "new_ward_name": "Phường Cầu Ông Lãnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "469",
+      "old_ward_code": "26761",
+      "old_ward_name": "Phường Cầu Kho",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26758",
+      "new_ward_name": "Phường Cầu Ông Lãnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "470",
+      "old_ward_code": "26755",
+      "old_ward_name": "Phường Cô Giang",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26758",
+      "new_ward_name": "Phường Cầu Ông Lãnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "471",
+      "old_ward_code": "26752",
+      "old_ward_name": "Phường Cầu Ông Lãnh",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26758",
+      "new_ward_name": "Phường Cầu Ông Lãnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "504",
+      "old_ward_code": "27202",
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27169",
+      "new_ward_name": "Phường Diên Hồng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "505",
+      "old_ward_code": "27187",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27169",
+      "new_ward_name": "Phường Diên Hồng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "506",
+      "old_ward_code": "27169",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27169",
+      "new_ward_name": "Phường Diên Hồng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "538",
+      "old_ward_code": "26944",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "539",
+      "old_ward_code": "26941",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "540",
+      "old_ward_code": "26926",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "541",
+      "old_ward_code": "26950",
+      "old_ward_name": "Phường 17",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "561",
+      "old_ward_code": "26812",
+      "old_ward_name": "Phường Hiệp Bình Chánh",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26809",
+      "new_ward_name": "Phường Hiệp Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "562",
+      "old_ward_code": "26809",
+      "old_ward_name": "Phường Hiệp Bình Phước",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26809",
+      "new_ward_name": "Phường Hiệp Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "563",
+      "old_ward_code": "26821",
+      "old_ward_name": "Phường Linh Đông",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26809",
+      "new_ward_name": "Phường Hiệp Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "670",
+      "old_ward_code": "27211",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27211",
+      "new_ward_name": "Phường Hòa Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "671",
+      "old_ward_code": "27214",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27211",
+      "new_ward_name": "Phường Hòa Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "682",
+      "old_ward_code": "27172",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27163",
+      "new_ward_name": "Phường Hòa Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "683",
+      "old_ward_code": "27166",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27163",
+      "new_ward_name": "Phường Hòa Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "684",
+      "old_ward_code": "27163",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27163",
+      "new_ward_name": "Phường Hòa Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "875",
+      "old_ward_code": "26800",
+      "old_ward_name": "Phường Linh Trung",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26800",
+      "new_ward_name": "Phường Linh Xuân",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "876",
+      "old_ward_code": "26794",
+      "old_ward_name": "Phường Linh Xuân",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26800",
+      "new_ward_name": "Phường Linh Xuân",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "877",
+      "old_ward_code": "26818",
+      "old_ward_name": "Phường Linh Tây",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26800",
+      "new_ward_name": "Phường Linh Xuân",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "899",
+      "old_ward_code": "26830",
+      "old_ward_name": "Phường Long Bình",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26833",
+      "new_ward_name": "Phường Long Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "900",
+      "old_ward_code": "26833",
+      "old_ward_name": "Phường Long Thạnh Mỹ",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26833",
+      "new_ward_name": "Phường Long Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "931",
+      "old_ward_code": "26857",
+      "old_ward_name": "Phường Long Phước",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26857",
+      "new_ward_name": "Phường Long Phước",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "932",
+      "old_ward_code": "26854",
+      "old_ward_name": "Phường Trường Thạnh",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26857",
+      "new_ward_name": "Phường Long Phước",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "935",
+      "old_ward_code": "26860",
+      "old_ward_name": "Phường Long Trường",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26860",
+      "new_ward_name": "Phường Long Trường",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "936",
+      "old_ward_code": "26866",
+      "old_ward_name": "Phường Phú Hữu",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26860",
+      "new_ward_name": "Phường Long Trường",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "994",
+      "old_ward_code": "27247",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "995",
+      "old_ward_code": "27238",
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "996",
+      "old_ward_code": "27253",
+      "old_ward_name": "Phường 16",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1179",
+      "old_ward_code": "27142",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1180",
+      "old_ward_code": "27133",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1181",
+      "old_ward_code": "27130",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1182",
+      "old_ward_code": "27127",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1278",
+      "old_ward_code": "27358",
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27349",
+      "new_ward_name": "Phường Phú Lâm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1279",
+      "old_ward_code": "27349",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27349",
+      "new_ward_name": "Phường Phú Lâm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1280",
+      "old_ward_code": "27346",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27349",
+      "new_ward_name": "Phường Phú Lâm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1292",
+      "old_ward_code": "27064",
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27073",
+      "new_ward_name": "Phường Phú Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1293",
+      "old_ward_code": "27070",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27073",
+      "new_ward_name": "Phường Phú Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1294",
+      "old_ward_code": "27073",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27073",
+      "new_ward_name": "Phường Phú Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1295",
+      "old_ward_code": "27085",
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27073",
+      "new_ward_name": "Phường Phú Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1296",
+      "old_ward_code": "27484",
+      "old_ward_name": "Phường Phú Thuận",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27484",
+      "new_ward_name": "Phường Phú Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1298",
+      "old_ward_code": "27028",
+      "old_ward_name": "Phường Phú Thạnh",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27028",
+      "new_ward_name": "Phường Phú Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1299",
+      "old_ward_code": "27037",
+      "old_ward_name": "Phường Hiệp Tân",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27028",
+      "new_ward_name": "Phường Phú Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1300",
+      "old_ward_code": "27040",
+      "old_ward_name": "Phường Tân Thới Hòa",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27028",
+      "new_ward_name": "Phường Phú Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1301",
+      "old_ward_code": "27226",
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27226",
+      "new_ward_name": "Phường Phú Thọ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1302",
+      "old_ward_code": "27208",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27226",
+      "new_ward_name": "Phường Phú Thọ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1306",
+      "old_ward_code": "27025",
+      "old_ward_name": "Phường Phú Thọ Hòa",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27022",
+      "new_ward_name": "Phường Phú Thọ Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1307",
+      "old_ward_code": "27022",
+      "old_ward_name": "Phường Tân Thành",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27022",
+      "new_ward_name": "Phường Phú Thọ Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1324",
+      "old_ward_code": "27415",
+      "old_ward_name": "Phường Xóm Củi",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1325",
+      "old_ward_code": "27421",
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1326",
+      "old_ward_code": "27427",
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1327",
+      "old_ward_code": "27430",
+      "old_ward_name": "Phường 16",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1353",
+      "old_ward_code": "26863",
+      "old_ward_name": "Phường Phước Bình",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26848",
+      "new_ward_name": "Phường Phước Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1354",
+      "old_ward_code": "26851",
+      "old_ward_name": "Phường Phước Long A",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26848",
+      "new_ward_name": "Phường Phước Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1355",
+      "old_ward_code": "26848",
+      "old_ward_name": "Phường Phước Long B",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26848",
+      "new_ward_name": "Phường Phước Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1474",
+      "old_ward_code": "26740",
+      "old_ward_name": "Phường Bến Nghé",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26740",
+      "new_ward_name": "Phường Sài Gòn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1515",
+      "old_ward_code": "26797",
+      "old_ward_name": "Phường Bình Chiểu",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26803",
+      "new_ward_name": "Phường Tam Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1516",
+      "old_ward_code": "26803",
+      "old_ward_name": "Phường Tam Bình",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26803",
+      "new_ward_name": "Phường Tam Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1517",
+      "old_ward_code": "26806",
+      "old_ward_name": "Phường Tam Phú",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26803",
+      "new_ward_name": "Phường Tam Bình",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1639",
+      "old_ward_code": "26953",
+      "old_ward_name": "Phường 19",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26956",
+      "new_ward_name": "Phường Thạnh Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1640",
+      "old_ward_code": "26956",
+      "old_ward_name": "Phường 22",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26956",
+      "new_ward_name": "Phường Thạnh Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1641",
+      "old_ward_code": "26920",
+      "old_ward_name": "Phường 25",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26956",
+      "new_ward_name": "Phường Thạnh Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1653",
+      "old_ward_code": "26773",
+      "old_ward_name": "Phường Thới An",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26773",
+      "new_ward_name": "Phường Thới An",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1654",
+      "old_ward_code": "26764",
+      "old_ward_name": "Phường Thạnh Xuân",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26773",
+      "new_ward_name": "Phường Thới An",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1675",
+      "old_ward_code": "26824",
+      "old_ward_name": "Phường Bình Thọ",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26824",
+      "new_ward_name": "Phường Thủ Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1676",
+      "old_ward_code": "26815",
+      "old_ward_name": "Phường Linh Chiểu",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26824",
+      "new_ward_name": "Phường Thủ Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1677",
+      "old_ward_code": "26827",
+      "old_ward_name": "Phường Trường Thọ",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26824",
+      "new_ward_name": "Phường Thủ Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1696",
+      "old_ward_code": "26785",
+      "old_ward_name": "Phường Trung Mỹ Tây",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26785",
+      "new_ward_name": "Phường Trung Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1697",
+      "old_ward_code": "26776",
+      "old_ward_name": "Phường Tân Chánh Hiệp",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26785",
+      "new_ward_name": "Phường Trung Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1817",
+      "old_ward_code": "27490",
+      "old_ward_name": "Phường Tân Phong",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27475",
+      "new_ward_name": "Phường Tân Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1818",
+      "old_ward_code": "27475",
+      "old_ward_name": "Phường Tân Hưng",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27475",
+      "new_ward_name": "Phường Tân Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1819",
+      "old_ward_code": "27472",
+      "old_ward_name": "Phường Tân Kiểng",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27475",
+      "new_ward_name": "Phường Tân Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1820",
+      "old_ward_code": "27481",
+      "old_ward_name": "Phường Tân Quy",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27475",
+      "new_ward_name": "Phường Tân Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1840",
+      "old_ward_code": "27487",
+      "old_ward_name": "Phường Tân Phú",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27487",
+      "new_ward_name": "Phường Tân Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1841",
+      "old_ward_code": "27493",
+      "old_ward_name": "Phường Phú Mỹ",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27487",
+      "new_ward_name": "Phường Tân Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1855",
+      "old_ward_code": "27031",
+      "old_ward_name": "Phường Phú Trung",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27031",
+      "new_ward_name": "Phường Tân Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1856",
+      "old_ward_code": "27034",
+      "old_ward_name": "Phường Hòa Thạnh",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27031",
+      "new_ward_name": "Phường Tân Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1859",
+      "old_ward_code": "27010",
+      "old_ward_name": "Phường Tân Sơn Nhì",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27019",
+      "new_ward_name": "Phường Tân Sơn Nhì",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1860",
+      "old_ward_code": "27016",
+      "old_ward_name": "Phường Sơn Kỳ",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27019",
+      "new_ward_name": "Phường Tân Sơn Nhì",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1861",
+      "old_ward_code": "27019",
+      "old_ward_name": "Phường Tân Quý",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27019",
+      "new_ward_name": "Phường Tân Sơn Nhì",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1862",
+      "old_ward_code": "27478",
+      "old_ward_name": "Phường Bình Thuận",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27478",
+      "new_ward_name": "Phường Tân Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1863",
+      "old_ward_code": "27466",
+      "old_ward_name": "Phường Tân Thuận Đông",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27478",
+      "new_ward_name": "Phường Tân Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1864",
+      "old_ward_code": "27469",
+      "old_ward_name": "Phường Tân Thuận Tây",
+      "old_district_name": "Quận 7",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27478",
+      "new_ward_name": "Phường Tân Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1872",
+      "old_ward_code": "26770",
+      "old_ward_name": "Phường Hiệp Thành",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26782",
+      "new_ward_name": "Phường Tân Thới Hiệp",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1873",
+      "old_ward_code": "26782",
+      "old_ward_name": "Phường Tân Thới Hiệp",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26782",
+      "new_ward_name": "Phường Tân Thới Hiệp",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1887",
+      "old_ward_code": "26734",
+      "old_ward_name": "Phường Tân Định",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26737",
+      "new_ward_name": "Phường Tân Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1888",
+      "old_ward_code": "26737",
+      "old_ward_name": "Phường Đa Kao",
+      "old_district_name": "Quận 1",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26737",
+      "new_ward_name": "Phường Tân Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1911",
+      "old_ward_code": "27013",
+      "old_ward_name": "Phường Tây Thạnh",
+      "old_district_name": "Quận Tân Phú",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27013",
+      "new_ward_name": "Phường Tây Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1930",
+      "old_ward_code": "26839",
+      "old_ward_name": "Phường Hiệp Phú",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26842",
+      "new_ward_name": "Phường Tăng Nhơn Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1931",
+      "old_ward_code": "26836",
+      "old_ward_name": "Phường Tân Phú",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26842",
+      "new_ward_name": "Phường Tăng Nhơn Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1932",
+      "old_ward_code": "26842",
+      "old_ward_name": "Phường Tăng Nhơn Phú A",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26842",
+      "new_ward_name": "Phường Tăng Nhơn Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "1933",
+      "old_ward_code": "26845",
+      "old_ward_name": "Phường Tăng Nhơn Phú B",
+      "old_district_name": "Thành phố Thủ Đức",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26842",
+      "new_ward_name": "Phường Tăng Nhơn Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2071",
+      "old_ward_code": "27184",
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2072",
+      "old_ward_code": "27190",
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2073",
+      "old_ward_code": "27193",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2074",
+      "old_ward_code": "27181",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2075",
+      "old_ward_code": "27178",
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2091",
+      "old_ward_code": "27139",
+      "old_ward_name": "Phường Võ Thị Sáu",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27139",
+      "new_ward_name": "Phường Xuân Hòa",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2204",
+      "old_ward_code": "26791",
+      "old_ward_name": "Phường Tân Thới Nhất",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26791",
+      "new_ward_name": "Phường Đông Hưng Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2205",
+      "old_ward_code": "26787",
+      "old_ward_name": "Phường Tân Hưng Thuận",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26791",
+      "new_ward_name": "Phường Đông Hưng Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2206",
+      "old_ward_code": "26788",
+      "old_ward_name": "Phường Đông Hưng Thuận",
+      "old_district_name": "Quận 12",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26791",
+      "new_ward_name": "Phường Đông Hưng Thuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2305",
+      "old_ward_code": "27043",
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27043",
+      "new_ward_name": "Phường Đức Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2306",
+      "old_ward_code": "27046",
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27043",
+      "new_ward_name": "Phường Đức Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2307",
+      "old_ward_code": "27049",
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27043",
+      "new_ward_name": "Phường Đức Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2451",
+      "old_ward_code": "27499",
+      "old_ward_name": "Xã Phú Mỹ Hưng",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27508",
+      "new_ward_name": "Xã An Nhơn Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2452",
+      "old_ward_code": "27502",
+      "old_ward_name": "Xã An Phú",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27508",
+      "new_ward_name": "Xã An Nhơn Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2453",
+      "old_ward_code": "27508",
+      "old_ward_name": "Xã An Nhơn Tây",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27508",
+      "new_ward_name": "Xã An Nhơn Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2498",
+      "old_ward_code": "27682",
+      "old_ward_name": "Xã Lý Nhơn",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27673",
+      "new_ward_name": "Xã An Thới Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2499",
+      "old_ward_code": "27673",
+      "old_ward_name": "Xã An Thới Đông",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27673",
+      "new_ward_name": "Xã An Thới Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2611",
+      "old_ward_code": "27589",
+      "old_ward_name": "Xã Xuân Thới Thượng",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27592",
+      "new_ward_name": "Xã Bà Điểm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2612",
+      "old_ward_code": "27592",
+      "old_ward_name": "Xã Bà Điểm",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27592",
+      "new_ward_name": "Xã Bà Điểm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2613",
+      "old_ward_code": "27586",
+      "old_ward_name": "Xã Trung Chánh",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27592",
+      "new_ward_name": "Xã Bà Điểm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2662",
+      "old_ward_code": "27637",
+      "old_ward_name": "Xã Bình Chánh",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27637",
+      "new_ward_name": "Xã Bình Chánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2663",
+      "old_ward_code": "27634",
+      "old_ward_name": "Xã Tân Quý Tây",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27637",
+      "new_ward_name": "Xã Bình Chánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2664",
+      "old_ward_code": "27625",
+      "old_ward_name": "Xã An Phú Tây",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27637",
+      "new_ward_name": "Xã Bình Chánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2701",
+      "old_ward_code": "27619",
+      "old_ward_name": "Xã Bình Hưng",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27619",
+      "new_ward_name": "Xã Bình Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2702",
+      "old_ward_code": "27622",
+      "old_ward_name": "Xã Phong Phú",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27619",
+      "new_ward_name": "Xã Bình Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2703",
+      "old_ward_code": "27667",
+      "old_ward_name": "Xã Bình Khánh",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27667",
+      "new_ward_name": "Xã Bình Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2704",
+      "old_ward_code": "27670",
+      "old_ward_name": "Xã Tam Thôn Hiệp",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27667",
+      "new_ward_name": "Xã Bình Khánh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2713",
+      "old_ward_code": "27607",
+      "old_ward_name": "Xã Bình Lợi",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27610",
+      "new_ward_name": "Xã Bình Lợi",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2714",
+      "old_ward_code": "27610",
+      "old_ward_name": "Xã Lê Minh Xuân",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27610",
+      "new_ward_name": "Xã Bình Lợi",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2738",
+      "old_ward_code": "27550",
+      "old_ward_name": "Xã Bình Mỹ",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27544",
+      "new_ward_name": "Xã Bình Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2739",
+      "old_ward_code": "27523",
+      "old_ward_name": "Xã Trung An",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27544",
+      "new_ward_name": "Xã Bình Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "2740",
+      "old_ward_code": "27544",
+      "old_ward_name": "Xã Hòa Phú",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27544",
+      "new_ward_name": "Xã Bình Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3406",
+      "old_ward_code": "27679",
+      "old_ward_name": "Xã Long Hòa",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27664",
+      "new_ward_name": "Xã Cần Giờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3407",
+      "old_ward_code": "27664",
+      "old_ward_name": "Thị trấn Cần Thạnh",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27664",
+      "new_ward_name": "Xã Cần Giờ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3509",
+      "old_ward_code": "27553",
+      "old_ward_name": "Xã Tân Phú Trung",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27553",
+      "new_ward_name": "Xã Củ Chi",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3510",
+      "old_ward_code": "27556",
+      "old_ward_name": "Xã Tân Thông Hội",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27553",
+      "new_ward_name": "Xã Củ Chi",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3511",
+      "old_ward_code": "27535",
+      "old_ward_name": "Xã Phước Vĩnh An",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27553",
+      "new_ward_name": "Xã Củ Chi",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3852",
+      "old_ward_code": "27652",
+      "old_ward_name": "Xã Nhơn Đức",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27658",
+      "new_ward_name": "Xã Hiệp Phước",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3853",
+      "old_ward_code": "27658",
+      "old_ward_name": "Xã Long Thới",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27658",
+      "new_ward_name": "Xã Hiệp Phước",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "3854",
+      "old_ward_code": "27661",
+      "old_ward_name": "Xã Hiệp Phước",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27658",
+      "new_ward_name": "Xã Hiệp Phước",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4124",
+      "old_ward_code": "27580",
+      "old_ward_name": "Xã Tân Xuân",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27559",
+      "new_ward_name": "Xã Hóc Môn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4125",
+      "old_ward_code": "27562",
+      "old_ward_name": "Xã Tân Hiệp",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27559",
+      "new_ward_name": "Xã Hóc Môn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4126",
+      "old_ward_code": "27559",
+      "old_ward_name": "Thị trấn Hóc Môn",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27559",
+      "new_ward_name": "Xã Hóc Môn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4165",
+      "old_ward_code": "27628",
+      "old_ward_name": "Xã Hưng Long",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27628",
+      "new_ward_name": "Xã Hưng Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4166",
+      "old_ward_code": "27640",
+      "old_ward_name": "Xã Quy Đức",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27628",
+      "new_ward_name": "Xã Hưng Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "4167",
+      "old_ward_code": "27631",
+      "old_ward_name": "Xã Đa Phước",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27628",
+      "new_ward_name": "Xã Hưng Long",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5915",
+      "old_ward_code": "27511",
+      "old_ward_name": "Xã Nhuận Đức",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27511",
+      "new_ward_name": "Xã Nhuận Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5916",
+      "old_ward_code": "27520",
+      "old_ward_name": "Xã Trung Lập Hạ",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27511",
+      "new_ward_name": "Xã Nhuận Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5917",
+      "old_ward_code": "27514",
+      "old_ward_name": "Xã Phạm Văn Cội",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27511",
+      "new_ward_name": "Xã Nhuận Đức",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5918",
+      "old_ward_code": "27643",
+      "old_ward_name": "Thị trấn Nhà Bè",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27655",
+      "new_ward_name": "Xã Nhà Bè",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5919",
+      "old_ward_code": "27655",
+      "old_ward_name": "Xã Phú Xuân",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27655",
+      "new_ward_name": "Xã Nhà Bè",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5920",
+      "old_ward_code": "27646",
+      "old_ward_name": "Xã Phước Kiển",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27655",
+      "new_ward_name": "Xã Nhà Bè",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "5921",
+      "old_ward_code": "27649",
+      "old_ward_name": "Xã Phước Lộc",
+      "old_district_name": "Huyện Nhà Bè",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27655",
+      "new_ward_name": "Xã Nhà Bè",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "6249",
+      "old_ward_code": "27541",
+      "old_ward_name": "Xã Tân Thạnh Tây",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27541",
+      "new_ward_name": "Xã Phú Hòa Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "6250",
+      "old_ward_code": "27547",
+      "old_ward_name": "Xã Tân Thạnh Đông",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27541",
+      "new_ward_name": "Xã Phú Hòa Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "6251",
+      "old_ward_code": "27517",
+      "old_ward_name": "Xã Phú Hòa Đông",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27541",
+      "new_ward_name": "Xã Phú Hòa Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "7358",
+      "old_ward_code": "27505",
+      "old_ward_name": "Xã Trung Lập Thượng",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27526",
+      "new_ward_name": "Xã Thái Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "7359",
+      "old_ward_code": "27538",
+      "old_ward_name": "Xã Thái Mỹ",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27526",
+      "new_ward_name": "Xã Thái Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "7360",
+      "old_ward_code": "27526",
+      "old_ward_name": "Xã Phước Thạnh",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27526",
+      "new_ward_name": "Xã Thái Mỹ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "7504",
+      "old_ward_code": "27676",
+      "old_ward_name": "Xã Thạnh An",
+      "old_district_name": "Huyện Cần Giờ",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27676",
+      "new_ward_name": "Xã Thạnh An",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8097",
+      "old_ward_code": "27529",
+      "old_ward_name": "Xã Phước Hiệp",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27496",
+      "new_ward_name": "Xã Tân An Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8098",
+      "old_ward_code": "27532",
+      "old_ward_name": "Xã Tân An Hội",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27496",
+      "new_ward_name": "Xã Tân An Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8099",
+      "old_ward_code": "27496",
+      "old_ward_name": "Thị trấn Củ Chi",
+      "old_district_name": "Huyện Củ Chi",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27496",
+      "new_ward_name": "Xã Tân An Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8265",
+      "old_ward_code": "27613",
+      "old_ward_name": "Xã Tân Nhựt",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27595",
+      "new_ward_name": "Xã Tân Nhựt",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8266",
+      "old_ward_code": "27595",
+      "old_ward_name": "Thị trấn Tân Túc",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27595",
+      "new_ward_name": "Xã Tân Nhựt",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8267",
+      "old_ward_code": "27616",
+      "old_ward_name": "Xã Tân Kiên",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27595",
+      "new_ward_name": "Xã Tân Nhựt",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8423",
+      "old_ward_code": "27604",
+      "old_ward_name": "Xã Vĩnh Lộc B",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27604",
+      "new_ward_name": "Xã Tân Vĩnh Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8424",
+      "old_ward_code": "27598",
+      "old_ward_name": "Xã Phạm Văn Hai",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27604",
+      "new_ward_name": "Xã Tân Vĩnh Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "8810",
+      "old_ward_code": "27601",
+      "old_ward_name": "Xã Vĩnh Lộc A",
+      "old_district_name": "Huyện Bình Chánh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27601",
+      "new_ward_name": "Xã Vĩnh Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9121",
+      "old_ward_code": "27583",
+      "old_ward_name": "Xã Xuân Thới Đông",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27577",
+      "new_ward_name": "Xã Xuân Thới Sơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9122",
+      "old_ward_code": "27577",
+      "old_ward_name": "Xã Xuân Thới Sơn",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27577",
+      "new_ward_name": "Xã Xuân Thới Sơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9123",
+      "old_ward_code": "27571",
+      "old_ward_name": "Xã Tân Thới Nhì",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27577",
+      "new_ward_name": "Xã Xuân Thới Sơn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9603",
+      "old_ward_code": "27568",
+      "old_ward_name": "Xã Đông Thạnh",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27568",
+      "new_ward_name": "Xã Đông Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9604",
+      "old_ward_code": "27565",
+      "old_ward_name": "Xã Nhị Bình",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27568",
+      "new_ward_name": "Xã Đông Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "9605",
+      "old_ward_code": "27574",
+      "old_ward_name": "Xã Thới Tam Thôn",
+      "old_district_name": "Huyện Hóc Môn",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27568",
+      "new_ward_name": "Xã Đông Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10040",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26882",
+      "new_ward_name": "Phường An Hội Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10041",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26878",
+      "new_ward_name": "Phường An Hội Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10042",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26890",
+      "new_ward_name": "Phường Hạnh Thông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10043",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26890",
+      "new_ward_name": "Phường Hạnh Thông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10044",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10045",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10046",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 14",
+      "old_district_name": "Quận 4",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27265",
+      "new_ward_name": "Phường Khánh Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10048",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận Gò Vấp",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26898",
+      "new_ward_name": "Phường Thông Tây Hội",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10092",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "11623",
+      "new_ward_name": "Phường An Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10093",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "11623",
+      "new_ward_name": "Phường An Đông",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10099",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26905",
+      "new_ward_name": "Phường Bình Lợi Trung",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10100",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26905",
+      "new_ward_name": "Phường Bình Lợi Trung",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10101",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27364",
+      "new_ward_name": "Phường Bình Phú",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10102",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 24",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "31473",
+      "new_ward_name": "Phường Bình Thạnh",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10103",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27232",
+      "new_ward_name": "Phường Bình Thới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10104",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27232",
+      "new_ward_name": "Phường Bình Thới",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10105",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27373",
+      "new_ward_name": "Phường Bình Tiên",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10106",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27373",
+      "new_ward_name": "Phường Bình Tiên",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10107",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27367",
+      "new_ward_name": "Phường Bình Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10108",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27367",
+      "new_ward_name": "Phường Bình Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10109",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27367",
+      "new_ward_name": "Phường Bình Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10128",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 1",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10129",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10130",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10131",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 8",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10132",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 9",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10133",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27418",
+      "new_ward_name": "Phường Chánh Hưng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10138",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27343",
+      "new_ward_name": "Phường Chợ Lớn",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10139",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận 5",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27301",
+      "new_ward_name": "Phường Chợ Quán",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10141",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 17",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27058",
+      "new_ward_name": "Phường Cầu Kiệu",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10142",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 7",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "23560",
+      "new_ward_name": "Phường Diên Hồng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10143",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 5",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "23560",
+      "new_ward_name": "Phường Diên Hồng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10150",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10151",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 15",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10152",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26944",
+      "new_ward_name": "Phường Gia Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10254",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 2",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10255",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 4",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10256",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 6",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27238",
+      "new_ward_name": "Phường Minh Phụng",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10315",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 10",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10316",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 3",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27142",
+      "new_ward_name": "Phường Nhiêu Lộc",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10340",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 6",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "9568",
+      "new_ward_name": "Phường Phú Lâm",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10343",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 11",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "25753",
+      "new_ward_name": "Phường Phú Thọ",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10344",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10345",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 12",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10346",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 13",
+      "old_district_name": "Quận 8",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27427",
+      "new_ward_name": "Phường Phú Định",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10394",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 21",
+      "old_district_name": "Quận Bình Thạnh",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "26956",
+      "new_ward_name": "Phường Thạnh Mỹ Tây",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10461",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 11",
+      "old_district_name": "Quận 10",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27190",
+      "new_ward_name": "Phường Vườn Lài",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    },
+    {
+      "id": "10480",
+      "old_ward_code": null,
+      "old_ward_name": "Phường 3",
+      "old_district_name": "Quận Phú Nhuận",
+      "old_province_name": "Thành phố Hồ Chí Minh",
+      "new_ward_code": "27043",
+      "new_ward_name": "Phường Đức Nhuận",
+      "new_province_name": "Thành phố Hồ Chí Minh"
+    }
+  ]
+}

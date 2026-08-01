@@ -1,0 +1,10 @@
+Flask
+neo4j
+graphdatascience
+pandas
+scikit-learn
+py2neo
+torch
+transformers
+pyvi
+accelerate

@@ -1,0 +1,453 @@
+id,name
+1,Viện bảo tàng lịch sử
+2,Điểm thu hút khách tham quan & thắng cảnh
+3,Chợ trời & chợ đường phố
+4,Rạp hát
+5,Tòa nhà kiến trúc • Tòa nhà chính phủ
+6,Điểm thu hút khách tham quan & thắng cảnh • Đài & tháp quan sát
+7,Sòng bạc • Trung tâm trò chơi & giải trí
+8,Địa điểm lịch sử • Tòa nhà kiến trúc
+9,Trung tâm mua sắm
+10,Nhà thờ & nhà thờ lớn
+11,Viện bảo tàng chuyên ngành
+12,Khu lân cận
+13,Viện bảo tàng nghệ thuật
+14,Công viên giải trí & công viên chủ đề • Công viên nước
+15,Địa điểm tôn giáo
+16,Sòng bạc
+17,Cửa hàng bách hóa • Trung tâm mua sắm
+18,Công viên
+19,Phòng trưng bày nghệ thuật
+20,Đài & tháp quan sát
+21,Điểm thu hút khách tham quan & thắng cảnh • Tòa nhà kiến trúc
+22,Khu vực tự nhiên & động vật hoang dã
+23,Điểm thu hút khách tham quan & thắng cảnh • Đài kỷ niệm & tượng
+24,Đài kỷ niệm & tượng
+25,Điểm thu hút khách tham quan & thắng cảnh • Chiến trường
+26,Cửa hàng bách hóa
+27,Spa • Spa nước nóng
+28,Cửa hàng đặc sản & cửa hàng quà tặng • Trung tâm mua sắm
+29,Vùng nước • Điểm thu hút khách tham quan & thắng cảnh
+30,Sở thú
+31,Điểm thu hút khách tham quan & thắng cảnh • Địa điểm tôn giáo
+32,Địa điểm tôn giáo • Đài kỷ niệm & tượng
+33,Trung tâm hội nghị • Sân gôn
+34,Địa điểm lịch sử
+35,Trung tâm hội nghị
+36,Cửa hàng đồ cổ
+37,Chợ nông sản
+38,Công viên giải trí & công viên chủ đề
+39,Khu liên hợp thể thao
+40,Cửa hàng đặc sản & cửa hàng quà tặng • Cửa hàng bách hóa
+41,Trung tâm trò chơi & giải trí
+42,Bến du thuyền • Vùng nước
+43,Phòng trưng bày nghệ thuật • Viện bảo tàng nghệ thuật
+44,Cầu
+45,Quán bar & câu lạc bộ tạm thời
+46,Chợ trời & chợ đường phố • Chợ nông sản
+47,Địa điểm tôn giáo • Nhà thờ & nhà thờ lớn
+48,Spa
+49,Quán bar & câu lạc bộ • Đồ ăn & đồ uống khác
+50,Quán bar & câu lạc bộ • Quầy bar dành cho người đồng tính
+51,Công viên • Sân chơi
+52,Cửa hàng đặc sản & cửa hàng quà tặng • Phòng trưng bày nghệ thuật
+53,Cửa hàng của nhà máy
+54,Sòng bạc • Sân chơi
+55,Khu vực đi dạo tham quan di tích lịch sử
+56,Cửa hàng đặc sản & cửa hàng quà tặng
+57,Khu lân cận • Điểm thu hút khách tham quan & thắng cảnh
+58,Sân chơi
+59,Phà
+60,Suối nước nóng & mạch nước phun
+61,Cửa hàng đặc sản & cửa hàng quà tặng • Thư viện
+62,Cửa hàng đặc sản & cửa hàng quà tặng • Cửa hàng đồ cổ
+63,Tour thăm quan thành phố • Chuyến tham quan nhiều ngày
+64,Tòa nhà kiến trúc
+65,Viện bảo tàng quân đội • Viện bảo tàng lịch sử
+66,Điểm thu hút khách tham quan & thắng cảnh • Sòng bạc
+67,Tour thăm quan thành phố • Chuyến tham quan lịch sử & di sản
+68,Triển lãm
+69,Lớp nấu ăn
+70,Phòng trưng bày nghệ thuật • Viện bảo tàng chuyên ngành
+71,Nông trại
+72,Quán bar & câu lạc bộ
+73,Chuyến tham quan nhiều ngày • Chuyến tham quan ngắm cảnh
+74,Buổi học & hội thảo
+75,Cửa hàng đặc sản & cửa hàng quà tặng • Viện bảo tàng chuyên ngành
+76,Cửa hàng đặc sản & cửa hàng quà tặng • Buổi học & hội thảo
+77,Taxi & xe đưa đón
+78,Chuyến tham quan văn hóa • Chuyến tham quan lịch sử & di sản
+79,Quầy bar dành cho người đồng tính • Spa
+80,Quán bar & câu lạc bộ • Quầy bar xì gà
+81,Buổi học & hội thảo • Lớp nấu ăn
+82,Sự kiện thể thao
+83,Cửa hàng đặc sản & cửa hàng quà tặng • Cửa hàng của nhà máy
+84,Chuyến tham quan bằng mô tô • Nếm bia & tham quan
+85,Sân gôn
+86,Câu lạc bộ sức khỏe
+87,Trò chơi giải thoát
+88,Chuyến tham quan văn hóa • Chuyến tham quan mua sắm
+89,Nhà tắm kiểu Ả Rập • Nhà tắm hơi & nhà tắm kiểu Thổ Nhĩ Kỳ
+90,Điểm thu hút khách tham quan & thắng cảnh • Spa
+91,Xưởng vẽ & làm đồ gốm
+92,Cho thuê tiện ích
+93,Tour thăm quan thành phố • Chuyến tham quan bằng mô tô
+94,Chuyến tham quan văn hóa • Chuyến tham quan bằng thuyền
+95,Quán bar & câu lạc bộ • Rạp hát kiêm nhà hàng
+96,Tour thăm quan thành phố • Chuyến tham quan ban đêm
+97,Trung tâm & trại thể thao • Khu liên hợp thể thao
+98,Chuyến đi trong ngày
+99,Quán bar & câu lạc bộ • Câu lạc bộ khiêu vũ & vũ trường
+100,Quán cà phê
+101,Chuyến tham quan lịch sử & di sản • Chuyến tham quan bằng thuyền
+102,Yoga & pilate • Spa
+103,Câu lạc bộ sức khỏe • Khu liên hợp thể thao
+104,Chuyến tham quan đi dạo • Chuyến tham quan ban đêm
+105,Nhà hát & biểu diễn
+106,Trường bắn
+107,Cửa hàng đặc sản & cửa hàng quà tặng • Nhà hát & biểu diễn
+108,Yoga & pilate
+109,Tour thăm quan thành phố • Chuyến tham quan đi dạo
+110,Spa tạm thời
+111,Rạp hát kiêm nhà hàng
+112,Chuyến tham quan bằng mô tô • Chuyến tham quan ban đêm
+113,Chuyến tham quan bằng thuyền • Chuyến tham quan ngắm cảnh
+114,Tour thăm quan thành phố • Chuyến tham quan bằng xe đạp
+115,Câu lạc bộ sức khỏe • Spa
+116,Chuyến tham quan lịch sử & di sản • Chuyến tham quan bằng xe đạp
+117,Dịch vụ xe buýt
+118,Tour thăm quan thành phố • Chuyến tham quan văn hóa
+119,Chuyến tham quan văn hóa • Chuyến tham quan sinh thái
+120,Chuyến tham quan bằng thuyền • Chuyến tham quan ban đêm
+121,Chuyến tham quan mua sắm • Chuyến tham quan văn học
+122,nghệ thuật & âm nhạc
+123,Tour thăm quan thành phố • Chuyến tham quan tư nhân
+124,Chuyến tham quan nhiều ngày • Taxi & xe đưa đón
+125,Chuyến tham quan tư nhân • Chuyến tham quan ẩm thực
+126,Chuyến tham quan nhiều ngày • Chuyến tham quan lịch sử & di sản
+127,Chuyến tham quan bằng xe đạp • Chuyến tham quan bằng thuyền
+128,Tour thăm quan thành phố • Chuyến tham quan quán bar
+129,câu lạc bộ & quán rượu
+130,Chuyến tham quan bằng thuyền
+131,Chuyến tham quan nhiều ngày • Chuyến tham quan tư nhân
+132,Taxi & xe đưa đón • Chuyến tham quan bằng thuyền
+133,Chuyến tham quan bằng thuyền • Thuyền cho thuê
+134,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng thuyền
+135,Chuyến tham quan đi dạo • Chuyến tham quan tư nhân
+136,Tour thăm quan thành phố • Chuyến tham quan ngắm cảnh
+137,Chuyến tham quan ẩm thực
+138,Chuyến tham quan bằng thuyền • Chuyến tham quan bằng tàu cao tốc
+139,Phòng trưng bày nghệ thuật • Buổi trình diễn & chuyến tham quan thời trang
+140,Chuyến tham quan quán bar
+141,câu lạc bộ & quán rượu • Chuyến tham quan văn hóa
+142,Chuyến tham quan nhiều ngày • Chuyến tham quan đi dạo
+143,Chuyến tham quan bằng xe đạp • Cho thuê tiện ích
+144,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng xe đạp
+145,Chuyến tham quan nhiều ngày • Chuyến tham quan văn hóa
+146,Tour thăm quan thành phố • Chuyến tham quan ẩm thực
+147,Chuyến tham quan bằng xe 4WD
+148,ATV & xe địa hình • Chuyến tham quan bằng mô tô
+149,Chuyến tham quan ngắm cảnh
+150,Tour thăm quan thành phố • Chuyến tham quan bằng thuyền
+151,Chuyến tham quan bằng mô tô • Cho thuê tiện ích
+152,Chuyến tham quan nhiều ngày • Núi
+153,câu lạc bộ & quán rượu • Chuyến tham quan bằng xe 4WD
+154,ATV & xe địa hình
+155,Chuyến tham quan bằng xe đạp
+156,Chuyến tham quan văn hóa • Chuyến tham quan ngắm cảnh
+157,Chuyến tham quan văn hóa • Chuyến tham quan bằng mô tô
+158,Tour thăm quan thành phố • Taxi & xe đưa đón
+159,Chuyến tham quan ngắm cảnh • Chuyến tham quan tư nhân
+160,Chuyến tham quan bằng xe đạp • Chuyến tham quan đi dạo
+161,ATV & xe địa hình • Taxi & xe đưa đón
+162,Chuyến tham quan nhiều ngày • Đường đi xe đạp
+163,câu lạc bộ & quán rượu • Quán bar & câu lạc bộ
+164,Chuyến tham quan đi dạo • Chuyến đi trong ngày
+165,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng xe 4WD
+166,Cửa hàng đặc sản & cửa hàng quà tặng • Chuyến tham quan văn hóa
+167,Chuyến tham quan lịch sử & di sản • Chuyến tham quan sinh thái
+168,Chuyến tham quan nhiều ngày • Chuyến tham quan cảm giác mạnh & mạo hiểm
+169,Tour thăm quan thành phố • Lớp nấu ăn
+170,Câu lạc bộ sức khỏe • Yoga & pilate
+171,Chuyến tham quan văn hóa • Chuyến tham quan bằng xe đạp
+172,Chuyến tham quan bằng thuyền • Chuyến tham quan đi dạo
+173,Chuyến tham quan tư nhân
+174,Dù kéo & dù lượn • Chuyến tham quan nhiều ngày
+175,câu lạc bộ & quán rượu • Chuyến tham quan nhiều ngày
+176,Tour thăm quan thành phố • Chuyến tham quan bằng xe buýt du lịch
+177,Chuyến tham quan bằng xe đạp • Chuyến tham quan tư nhân
+178,Lớp nấu ăn • Chuyến tham quan ẩm thực
+179,Chuyến tham quan mua sắm
+180,Taxi & xe đưa đón • Chuyến tham quan tư nhân
+181,Chuyến tham quan tự nhiên & động vật hoang dã
+182,Xưởng vẽ & làm đồ gốm • Taxi & xe đưa đón
+183,Tour thăm quan thành phố • Chuyến tham quan chụp ảnh
+184,Buổi trình diễn & chuyến tham quan thời trang
+185,Chuyến tham quan nhà máy rượu • Lớp nấu ăn
+186,Tour thăm quan thành phố • Buổi học & hội thảo
+187,Taxi & xe đưa đón • Chuyến tham quan trên không
+188,câu lạc bộ & quán rượu • Chuyến tham quan bằng xe đạp
+189,Lớp nấu ăn • Chuyến tham quan & nếm rượu vang
+190,Chuyến tham quan nhiều ngày • Chuyến tham quan ban đêm
+191,Spa • Trung tâm mua sắm
+192,Chuyến tham quan nhiều ngày
+193,Quán bar & câu lạc bộ • Trung tâm trò chơi & giải trí
+194,Chuyến tham quan lịch sử & di sản • Chuyến tham quan bằng xe buýt du lịch
+195,Nhà tắm kiểu La Mã • Spa
+196,Chuyến tham quan ngắm cảnh • Chuyến đi trong ngày
+197,Chuyến tham quan bằng thuyền • Chuyến tham quan tự nhiên & động vật hoang dã
+198,Chuyến tham quan văn hóa • Chuyến tham quan văn học
+199,Tour thăm quan thành phố • Nếm bia & tham quan
+200,Chuyến tham quan cà phê & trà • Lớp nấu ăn
+201,Quán bar & câu lạc bộ • Chuyến tham quan ban đêm
+202,Chuyến tham quan nhiều ngày • Chuyến đi trong ngày
+203,Chuyến tham quan nhiều ngày • Chèo xuồng & ngồi phao trên sông
+204,Quán bar rượu vang
+205,Taxi & xe đưa đón • Chuyến tham quan tự hướng dẫn & cho thuê
+206,câu lạc bộ & quán rượu • Chuyến tham quan ban đêm
+207,Chuyến tham quan văn học
+208,Taxi & xe đưa đón • Chuyến tham quan tự nhiên & động vật hoang dã
+209,Chuyến tham quan chụp ảnh
+210,Chuyến tham quan văn hóa • Chuyến tham quan cà phê & trà
+211,Chuyến tham quan lịch sử & di sản • Chuyến tham quan ngắm cảnh
+212,Quán bar & câu lạc bộ • Quán bar rượu vang
+213,nghệ thuật & âm nhạc • Quán bar rượu vang
+214,Chuyến tham quan bằng Vespa
+215,xe tay ga & xe máy
+216,Xưởng vẽ & làm đồ gốm • Chuyến tham quan bằng xe 4WD
+217,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng mô tô
+218,Chuyến tham quan văn hóa • Buổi trình diễn & chuyến tham quan thời trang
+219,Chuyến tham quan ẩm thực • Chuyến đi trong ngày
+220,Nếm bia & tham quan
+221,Cửa hàng đặc sản & cửa hàng quà tặng • Xưởng vẽ & làm đồ gốm
+222,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng Vespa
+223,Sân golf mini
+224,Quán bar & câu lạc bộ • Bữa tiệc
+225,Chuyến tham quan đi dạo • Chuyến tham quan bằng mô tô
+226,Nhà tắm hơi & nhà tắm kiểu Thổ Nhĩ Kỳ • Spa
+227,Chuyến tham quan lịch sử & di sản • Chuyến tham quan leo núi
+228,Chuyến tham quan tự hướng dẫn & cho thuê
+229,Chuyến tham quan bằng xe đạp • Lớp nấu ăn
+230,Quán cà phê • Chuyến tham quan tư nhân
+231,Nhà máy rượu vang & vườn nho
+232,Xưởng vẽ & làm đồ gốm • Trung tâm & trại thể thao
+233,Vườn thú Safari • Taxi & xe đưa đón
+234,câu lạc bộ & quán rượu • Xưởng vẽ & làm đồ gốm
+235,câu lạc bộ & quán rượu • Taxi & xe đưa đón
+236,Trung tâm & trại thể thao • Chuyến tham quan đi bộ & cắm trại
+237,Nhà máy rượu • Buổi học & hội thảo
+238,Cửa hàng đặc sản & cửa hàng quà tặng • Buổi trình diễn & chuyến tham quan thời trang
+239,Xưởng vẽ & làm đồ gốm • Lớp nấu ăn
+240,Chuyến tham quan cà phê & trà
+241,Chuyến tham quan nhiều ngày • Trung tâm & trại thể thao
+242,Chuyến tham quan chạy bộ
+243,câu lạc bộ & quán rượu • Chuyến tham quan cà phê & trà
+244,Buổi học & hội thảo • Spa
+245,Chuyến tham quan tư nhân • Chuyến đi trong ngày
+246,Chuyến tham quan vượt hẻm núi & tuột núi • Chuyến tham quan bằng thuyền
+247,Phòng trưng bày nghệ thuật • Buổi học & hội thảo
+248,Chuyến tham quan đi dạo • Chuyến tham quan sinh thái
+249,Taxi & xe đưa đón • Chuyến tham quan bằng xe đạp
+250,Chuyến tham quan nhiều ngày • Chuyến tham quan đi bộ & cắm trại
+251,Cửa hàng đặc sản & cửa hàng quà tặng • Trung tâm du lịch
+252,Quầy bar có nhạc jazz
+253,Chuyến tham quan bằng xe đạp • Chuyến tham quan bằng mô tô
+254,Chuyến tham quan cảm giác mạnh & mạo hiểm
+255,Cửa hàng đặc sản & cửa hàng quà tặng • Spa
+256,Quầy bar karaoke
+257,Tour thăm quan thành phố
+258,Chuyến tham quan văn hóa • Chuyến tham quan vượt hẻm núi & tuột núi
+259,Quán bar rượu vang tạm thời
+260,Khu nghỉ dưỡng có suối nước nóng • Spa
+261,Xưởng vẽ & làm đồ gốm • Buổi học & hội thảo
+262,Chuyến tham quan ngắm cảnh • Chuyến tham quan bằng Vespa
+263,Quầy bar xì gà
+264,Quán bar & câu lạc bộ • Quán bar có chơi piano
+265,Spa nước nóng
+266,ATV & xe địa hình • Chuyến tham quan bằng xe buýt du lịch
+267,Câu lạc bộ khiêu vũ & vũ trường
+268,Quán bar & câu lạc bộ • Quầy bar Blues
+269,Quán bar & câu lạc bộ • Quán bar đồng quê & quán bar phương Tây
+270,Chuyến tham quan đi dạo
+271,Chuyến tham quan văn hóa • Chuyến tham quan tư nhân
+272,Câu lạc bộ sức khỏe • Buổi học & hội thảo
+273,Chuyến tham quan nhiều ngày • Lớp nấu ăn
+274,Chuyến tham quan nhiều ngày • Chuyến tham quan vượt hẻm núi & tuột núi
+275,Taxi & xe đưa đón • Chuyến tham quan cà phê & trà
+276,Chuyến tham quan bằng thuyền • Nếm bia & tham quan
+277,Chuyến tham quan sinh thái
+278,Điểm thu hút khách tham quan & thắng cảnh • Khu vực tự nhiên & động vật hoang dã
+279,Chuyến tham quan lịch sử & di sản • Nếm bia & tham quan
+280,Lặn bằng bình khí & lặn bằng ống thở
+281,Cửa hàng đặc sản & cửa hàng quà tặng • Chuyến tham quan mua sắm
+282,Bến du thuyền • Lặn bằng bình khí & lặn bằng ống thở
+283,Trò chơi giải thoát • Trung tâm trò chơi & giải trí
+284,Chuyến tham quan trên không
+285,Trung tâm du lịch • Bến du thuyền
+286,Tour thăm quan thành phố • Chèo xuồng & ngồi phao trên sông
+287,Chuyến tham quan đi bộ & cắm trại
+288,câu lạc bộ & quán rượu • Nếm bia & tham quan
+289,Chuyến tham quan văn hóa • Chuyến đi trong ngày
+290,Điểm thu hút khách tham quan & thắng cảnh • Chuyến tham quan bằng xe buýt du lịch
+291,Chuyến tham quan bằng xe buýt • Chuyến đi trong ngày
+292,Nhà máy rượu
+293,Sân chơi bowling
+294,câu lạc bộ & quán rượu • Chuyến tham quan bằng mô tô
+295,Chuyến tham quan cảm giác mạnh & mạo hiểm • Taxi & xe đưa đón
+296,Địa điểm lịch sử • Khu vực đi dạo tham quan di tích lịch sử
+297,Nếm bia & tham quan • Chuyến tham quan cà phê & trà
+298,Bến du thuyền
+299,Chuyến tham quan cà phê & trà • Chuyến tham quan ẩm thực
+300,câu lạc bộ & quán rượu • Chuyến tham quan tư nhân
+301,Chuyến tham quan bằng xe buýt du lịch
+302,Phòng trưng bày nghệ thuật • Nhà hát & biểu diễn
+303,Tour thăm quan thành phố • Chuyến tham quan mua sắm
+304,Trung tâm & trại thể thao • Sân gôn
+305,Cho thuê tiện ích • Chuyến tham quan tự hướng dẫn & cho thuê
+306,Trung tâm du lịch
+307,Chuyến tham quan đi dạo • Chuyến tham quan ẩm thực
+308,Buổi trình diễn & chuyến tham quan thời trang • Chuyến tham quan mua sắm
+309,Công viên • Đài phun nước
+310,Chèo xuồng & ngồi phao trên sông • Chuyến tham quan cà phê & trà
+311,Trường đại học & trường học
+312,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng xe buýt
+313,Xưởng vẽ & làm đồ gốm • Cho thuê tiện ích
+314,Khu vực đi dạo ngắm cảnh
+315,Dịch vụ xe buýt • Taxi & xe đưa đón
+316,Taxi & xe đưa đón • Chuyến tham quan bằng Vespa
+317,Quán bar & câu lạc bộ • Quán cà phê
+318,Cửa hàng đặc sản & cửa hàng quà tặng • Quán bar & câu lạc bộ
+319,Khu liên hợp thể thao • Sự kiện thể thao
+320,Chuyến tham quan tư nhân • Sân gôn
+321,Quần đảo • Khu vực tự nhiên & động vật hoang dã
+322,Bữa tiệc • Trung tâm trò chơi & giải trí
+323,Xưởng vẽ & làm đồ gốm • Trung tâm trò chơi & giải trí
+324,Chuyến tham quan sinh thái • Chuyến tham quan đi bộ & cắm trại
+325,Chuyến tham quan lịch sử & di sản • Chuyến tham quan đi dạo
+326,Dịch vụ đường sắt
+327,Chuyến tham quan văn hóa • Lớp nấu ăn
+328,Phòng trưng bày nghệ thuật tạm thời
+329,Rạp chiếu phim
+330,Nhà hát & biểu diễn • Spa
+331,Tour thăm quan thành phố • Xưởng vẽ & làm đồ gốm
+332,Xưởng vẽ & làm đồ gốm • Chuyến tham quan nhiều ngày
+333,Chuyến tham quan văn hóa
+334,Trung tâm hành chính
+335,Câu lạc bộ sức khỏe • Điểm thu hút khách tham quan & thắng cảnh
+336,Chuyến tham quan ban đêm • Chuyến tham quan ngắm cảnh
+337,Taxi & xe đưa đón • Nếm bia & tham quan
+338,Chuyến tham quan nhiều ngày • Vườn thú Safari
+339,Chuyến tham quan vượt hẻm núi & tuột núi • Thuyền cho thuê
+340,Chuyến tham quan ban đêm • Chuyến tham quan ẩm thực
+341,Quán bar & câu lạc bộ • Quầy bar karaoke
+342,Taxi & xe đưa đón • Cho thuê tiện ích
+343,Trò chơi giải thoát • Săn tìm đồ vật
+344,Trung tâm & trại thể thao
+345,Xưởng vẽ & làm đồ gốm • Chuyến tham quan văn hóa
+346,Lặn bằng bình khí & lặn bằng ống thở • Chuyến tham quan bằng tàu ngầm
+347,Chuyến tham quan ngắm cảnh • Chuyến tham quan bằng xe ngựa kéo
+348,Chèo ván đứng
+349,Cửa hàng đặc sản & cửa hàng quà tặng • Cho thuê tiện ích
+350,Phòng chờ sân bay
+351,Chuyến tham quan bằng thuyền • Chuyến tham quan sinh thái
+352,Săn tìm đồ vật
+353,Sự kiện văn hóa • Nhà hát & biểu diễn
+354,Chuyến tham quan lịch sử & di sản • Chuyến tham quan ẩm thực
+355,Chuyến tham quan cảm giác mạnh & mạo hiểm • Chuyến tham quan ẩm thực
+356,Cửa hàng đặc sản & cửa hàng quà tặng • Trung tâm trò chơi & giải trí
+357,Chuyến tham quan bằng xe đạp • Nếm bia & tham quan
+358,Trò chơi giải thoát • Xưởng vẽ & làm đồ gốm
+359,Sân chơi • Trung tâm trò chơi & giải trí
+360,Xưởng vẽ & làm đồ gốm • Phòng trưng bày nghệ thuật
+361,Nếm bia & tham quan • Lớp nấu ăn
+362,Vùng nước
+363,Cửa hàng đặc sản & cửa hàng quà tặng • Quầy bar xì gà
+364,Taxi & xe đưa đón • Chuyến tham quan đi dạo
+365,Chuyến tham quan cảm giác mạnh & mạo hiểm • Chuyến tham quan lịch sử & di sản
+366,Buổi trình diễn & chuyến tham quan thời trang • Lặn bằng bình khí & lặn bằng ống thở
+367,Dù kéo & dù lượn • Chèo xuồng & ngồi phao trên sông
+368,Đường chạy bộ & đường mòn
+369,Chuyến tham quan mua sắm • Chuyến tham quan cà phê & trà
+370,Công viên bảo tồn quốc gia • Công viên
+371,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng xe buýt du lịch
+372,Câu lạc bộ sức khỏe • Đài quan sát
+373,Chuyến tham quan nhiều ngày • Chuyến tham quan bằng trực thăng
+374,Tour thăm quan thành phố • Chuyến tham quan vượt hẻm núi & tuột núi
+375,Chuyến tham quan nhiều ngày • Chuyến tham quan ẩm thực
+376,Chuyến tham quan văn hóa • Chuyến tham quan ban đêm
+377,Taxi & xe đưa đón • Hệ thống giao thông công cộng
+378,Chuyến tham quan nhiều ngày • Xe điện
+379,Tour thăm quan thành phố • Chuyến đi trong ngày
+380,Chuyến tham quan bằng thuyền • Thuê thuyền câu cá & tham quan
+381,Câu lạc bộ hài kịch
+382,Chuyến tham quan bằng mô tô • Chuyến tham quan tư nhân
+383,Chuyến tham quan bằng xe đạp • Chuyến tham quan ban đêm
+384,Nhà tắm kiểu La Mã • Spa nước nóng
+385,câu lạc bộ & quán rượu • Săn tìm đồ vật
+386,Chuyến tham quan đi dạo • Chuyến tham quan đường sắt
+387,Đài quan sát • Đấu trường & sân vận động
+388,Tour thăm quan thành phố • Buổi trình diễn & chuyến tham quan thời trang
+389,Taxi & xe đưa đón • Chuyến tham quan leo núi
+390,Thuyền cho thuê • Chuyến tham quan tự hướng dẫn & cho thuê
+391,Trường bắn • Khu liên hợp thể thao
+392,Phòng trưng bày nghệ thuật • Spa
+393,Thuê thuyền câu cá & tham quan
+394,Tour thăm quan thành phố • Quán cà phê
+395,Quán cà phê • Trung tâm trò chơi & giải trí
+396,Buổi trình diễn & chuyến tham quan thời trang • Bơi cùng cá heo
+397,Bữa tiệc • Nhà hát & biểu diễn
+398,Chợ trời & chợ đường phố tạm thời
+399,Chuyến tham quan cảm giác mạnh & mạo hiểm • Chuyến tham quan đi dạo
+400,Hệ thống giao thông công cộng
+401,Bãi biển
+402,Chuyến tham quan cảm giác mạnh & mạo hiểm • Chuyến tham quan tư nhân
+403,Chuyến tham quan mua sắm • Chuyến tham quan tư nhân
+404,Taxi & xe đưa đón • Buổi học & hội thảo
+405,Sân chơi • Spa
+406,Lâu đài
+407,Chuyến tham quan đi dạo • Chuyến tham quan ngắm cảnh
+408,Buổi học & hội thảo • Chuyến tham quan cà phê & trà
+409,Nhà máy rượu vang & vườn nho • Quán bar rượu vang
+410,Cửa hàng đặc sản & cửa hàng quà tặng • Điểm thu hút khách tham quan & thắng cảnh
+411,Đấu trường & sân vận động
+412,Chuyến tham quan mua sắm • Chuyến tham quan ban đêm
+413,Chuyến tham quan bằng mô tô • Chuyến tham quan ngắm cảnh
+414,Chuyến tham quan đi dạo • Buổi học & hội thảo
+415,Khu vực đi dạo ngắm cảnh • Spa
+416,câu lạc bộ & quán rượu • Chuyến tham quan & nếm rượu vang
+417,Chuyến tham quan văn hóa • Cho thuê tiện ích
+418,Chuyến tham quan bằng xe buýt du lịch • Chuyến tham quan bằng mô tô
+419,Viện hải dương học
+420,Trung tâm hội nghị • Trung tâm mua sắm
+421,Đồ ăn & đồ uống khác • Buổi học & hội thảo
+422,Địa điểm kỳ bí
+423,Nếm bia & tham quan • Cho thuê tiện ích
+424,Chuyến tham quan lịch sử & di sản • Taxi & xe đưa đón
+425,nghệ thuật & âm nhạc • Buổi học & hội thảo
+426,Bãi biển & câu lạc bộ bể bơi
+427,Bữa tiệc • Spa
+428,Xưởng vẽ & làm đồ gốm • Chuyến tham quan lịch sử & di sản
+429,Bữa tiệc
+430,Bữa tiệc • Câu lạc bộ khiêu vũ & vũ trường
+431,Trung tâm du lịch • Điểm thu hút khách tham quan & thắng cảnh
+432,Chuyến tham quan phim ảnh & TV
+433,Cửa hàng đặc sản & cửa hàng quà tặng • Câu lạc bộ sức khỏe
+434,Nông trại
+435,Quán bar rượu vang • Spa
+436,Chuyến tham quan cưỡi ngựa
+437,Chuyến tham quan bằng mô tô
+438,Chuyến tham quan lịch sử & di sản
+439,Buổi học & hội thảo • Cho thuê tiện ích
+440,Cửa hàng đặc sản & cửa hàng quà tặng • Chợ trời & chợ đường phố
+441,Trung tâm du lịch • Khu vực đi dạo ngắm cảnh
+442,Chuyến tham quan cà phê & trà • Chuyến đi trong ngày
+443,Quán bar & câu lạc bộ • Chuyến tham quan & nếm rượu vang
+444,Chuyến tham quan lịch sử & di sản • Chuyến tham quan tư nhân
+445,Trung tâm du lịch • Spa
+446,Sự kiện văn hóa
+447,ATV & xe địa hình • Chuyến tham quan bằng xe đạp
+448,Chuyến tham quan nhiều ngày • Phòng trưng bày nghệ thuật
+449,Cửa hàng đặc sản & cửa hàng quà tặng • Sự kiện thể thao
+450,Chuyến tham quan sinh thái • Chuyến tham quan ban đêm
+451,Thư viện
+452,câu lạc bộ & quán rượu • Buổi trình diễn & chuyến tham quan thời trang

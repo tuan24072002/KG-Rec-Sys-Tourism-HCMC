@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="vi" class="h-full bg-slate-50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
+    <title>HCMC Tourism - Trang cá nhân</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen text-slate-800">
+    <!-- Navigation Bar -->
+    <header
+      class="bg-white border-b border-slate-200/80 sticky top-0 z-40 backdrop-blur-md bg-white/90"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div
+            class="p-2 rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200"
+          >
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span
+              class="font-bold text-slate-900 text-base md:text-lg tracking-tight block"
+              >HCMC Tourism</span
+            >
+          </div>
+        </a>
+
+        <!-- User Authentication Control -->
+        <div class="flex items-center gap-3">
+          {% if session.get('user_id') %}
+          <div class="flex items-center gap-4">
+            <a
+              href="{{ url_for('user_profile') }}"
+              class="p-2 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-blue-600 border border-transparent hover:border-slate-100 transition-all duration-200"
+              title="Trang cá nhân"
+            >
+              <i data-lucide="user" class="w-6 h-6"></i>
+            </a>
+            <form action="{{ url_for('logout') }}" method="POST" class="inline">
+              <button
+                type="submit"
+                class="p-2 rounded-xl text-slate-600 hover:bg-red-50 hover:text-red-600 border border-transparent hover:border-red-100 transition-all duration-200"
+                title="Đăng xuất"
+              >
+                <i data-lucide="log-out" class="w-6 h-6"></i>
+              </button>
+            </form>
+          </div>
+          {% else %}
+          <a
+            href="/login?mode=login"
+            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-xl shadow-md shadow-blue-500/20 transition-all duration-200 hover:scale-[1.02]"
+          >
+            Đăng nhập
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      class="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12"
+    >
+      <div
+        class="max-w-xl w-full bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-sm"
+      >
+        <div class="flex flex-col items-center">
+          <!-- Avatar Section -->
+          <div class="relative mb-6">
+            <div
+              class="w-24 h-24 rounded-full bg-blue-50 border-4 border-white shadow-md flex items-center justify-center text-blue-600"
+            >
+              <i data-lucide="user" class="w-12 h-12"></i>
+            </div>
+            <span
+              class="absolute bottom-0 right-0 block h-6 w-6 rounded-full ring-4 ring-white bg-green-400"
+            ></span>
+          </div>
+
+          <!-- Main Titles -->
+          <h1 class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
+            Trang cá nhân
+          </h1>
+          <p class="text-sm text-slate-400 font-light mb-8">
+            Thông tin thành viên HCMC Tourism
+          </p>
+
+          <!-- Details Grid List -->
+          <div class="w-full space-y-4">
+            <!-- Username -->
+            <div
+              class="flex items-center justify-between p-4 bg-slate-50 border border-slate-100 rounded-2xl"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="p-2 bg-white border border-slate-100 rounded-xl text-slate-500"
+                >
+                  <i data-lucide="user" class="w-5 h-5"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-500"
+                  >Tên người dùng</span
+                >
+              </div>
+              <span class="text-sm font-bold text-slate-800"
+                >{{ user['name'] }}</span
+              >
+            </div>
+
+            <!-- User ID -->
+            <!-- <div
+              class="flex items-center justify-between p-4 bg-slate-50 border border-slate-100 rounded-2xl"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="p-2 bg-white border border-slate-100 rounded-xl text-slate-500"
+                >
+                  <i data-lucide="hash" class="w-5 h-5"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-500">Mã ID</span>
+              </div>
+              <span class="text-sm font-bold text-slate-800"
+                >{{ user['id'] }}</span
+              >
+            </div> -->
+
+            <!-- Origin -->
+            <div
+              class="flex items-center justify-between p-4 bg-slate-50 border border-slate-100 rounded-2xl"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="p-2 bg-white border border-slate-100 rounded-xl text-slate-500"
+                >
+                  <i data-lucide="globe" class="w-5 h-5"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-500">Thuộc</span>
+              </div>
+              <span class="text-sm font-bold text-slate-800"
+                >{{ origin['name'] if origin else 'N/A' }}</span
+              >
+            </div>
+
+            <!-- Review count -->
+            <div
+              class="flex items-center justify-between p-4 bg-slate-50 border border-slate-100 rounded-2xl"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="p-2 bg-white border border-slate-100 rounded-xl text-slate-500"
+                >
+                  <i data-lucide="message-square" class="w-5 h-5"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-500"
+                  >Số lượt đánh giá</span
+                >
+              </div>
+              <span class="text-sm font-bold text-slate-800"
+                >{{ review_count }}</span
+              >
+            </div>
+          </div>
+
+          <!-- Back button link inside card -->
+          <a
+            href="/"
+            class="mt-8 inline-flex items-center justify-center gap-2 w-full py-3.5 border border-slate-200 hover:border-blue-200 rounded-xl text-sm font-semibold text-slate-600 hover:text-blue-600 hover:bg-blue-50/20 transition-all duration-200"
+          >
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Quay lại trang chủ</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
+        <p>Bản quyền &copy; <span id="currentYear"></span> Trần Lê Anh Tuấn.</p>
+      </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

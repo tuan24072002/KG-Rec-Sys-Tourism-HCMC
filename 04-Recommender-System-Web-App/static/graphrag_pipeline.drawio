@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Antigravity">
+  <diagram id="Hinh_5_3_Dialog_Map" name="Hình 5.3 - Sơ đồ luồng chuyển trang">
+    <mxGraphModel dx="2673" dy="1583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="VuF5SloogChczlUyUEEG-0" />
+        <mxCell id="VuF5SloogChczlUyUEEG-1" parent="VuF5SloogChczlUyUEEG-0" />
+        <mxCell id="759S0qjRarNM-wg1_ofV-46" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#eff6ff;strokeColor=#2563eb;strokeWidth=2;shadow=1;spacing=4;" value="&lt;div style=&quot;font-size: 14px; font-weight: bold; color: #1e3a8a;&quot;&gt;Trình duyệt Du khách&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #475569;&quot;&gt;Chatbot Widget UI&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #2563eb; font-weight: 500;&quot;&gt;Giao diện Chatbot&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="200" x="150.000048828125" y="537.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-47" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#f0fdf4;strokeColor=#16a34a;strokeWidth=2;shadow=1;spacing=4;" value="&lt;div style=&quot;font-size: 14px; font-weight: bold; color: #14532d;&quot;&gt;Backend Server&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #475569;&quot;&gt;app.py&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #16a34a; font-weight: 500;&quot;&gt;API: /api/chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="200" x="540.000048828125" y="537.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-48" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#faf5ff;strokeColor=#9333ea;strokeWidth=2;shadow=1;spacing=4;" value="&lt;div style=&quot;font-size: 14px; font-weight: bold; color: #581c87;&quot;&gt;GraphRAG Agent&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #475569;&quot;&gt;rag_agent.py&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #9333ea; font-weight: 500;&quot;&gt;Bộ điều phối RAG&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="200" x="920.000048828125" y="537.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-49" parent="VuF5SloogChczlUyUEEG-1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=15;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#ea580c;strokeWidth=2;shadow=1;spacing=4;" value="&lt;div style=&quot;font-size: 14px; font-weight: bold; color: #7c2d12;&quot;&gt;CSDL Đồ thị Neo4j&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #475569;&quot;&gt;Nút POI, Review, Region...&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #ea580c; font-weight: 500;&quot;&gt;Neo4j Graph Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="210" x="1280.000048828125" y="417.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-50" parent="VuF5SloogChczlUyUEEG-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#f0f9ff;strokeColor=#0284c7;strokeWidth=2;shadow=1;spacing=4;" value="&lt;div style=&quot;font-size: 14px; font-weight: bold; color: rgb(12, 74, 110);&quot;&gt;Local LLM Engine&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: rgb(71, 85, 105);&quot;&gt;Qwen2.5-1.5B-Instruct&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: rgb(2, 132, 199); font-weight: 500;&quot;&gt;HuggingFace (Transformers)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="210" x="1280.000048828125" y="657.0000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-51" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2;strokeColor=#2563eb;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="759S0qjRarNM-wg1_ofV-47" value="1. Gửi câu hỏi tự nhiên">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="370" y="560.75" as="sourcePoint" />
+            <mxPoint x="520" y="571.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-52" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=3 3;endArrow=classic;strokeWidth=2;strokeColor=#16a34a;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="759S0qjRarNM-wg1_ofV-46" value="8. Hiển thị kết quả">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="540" y="607" />
+              <mxPoint x="380" y="607" />
+              <mxPoint x="380" y="608.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-53" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2;strokeColor=#16a34a;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="759S0qjRarNM-wg1_ofV-48" value="2. Chuyển giao yêu cầu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="560.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-54" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=3 3;endArrow=classic;strokeWidth=2;strokeColor=#9333ea;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" target="759S0qjRarNM-wg1_ofV-47" value="7. Luồng dữ liệu SSE">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="608.25" />
+              <mxPoint x="830" y="608.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-55" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2;strokeColor=#ea580c;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" target="759S0qjRarNM-wg1_ofV-49" value="3. Truy vấn Cypher ngữ cảnh">
+          <mxGeometry relative="1" x="0.443" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="970" y="452" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-56" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=3 3;endArrow=classic;strokeWidth=2;strokeColor=#ea580c;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="759S0qjRarNM-wg1_ofV-48" value="4. Trả dữ liệu thực thể thực tế">
+          <mxGeometry relative="1" x="-0.0769" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1070" y="487" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-57" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeWidth=2;strokeColor=#0284c7;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="759S0qjRarNM-wg1_ofV-50" value="5. Truyền System Prompt + Context">
+          <mxGeometry relative="1" x="0.1698" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1070" y="680.8" />
+            </Array>
+            <mxPoint x="1040" y="657" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="759S0qjRarNM-wg1_ofV-58" edge="1" parent="VuF5SloogChczlUyUEEG-1" source="759S0qjRarNM-wg1_ofV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=3 3;endArrow=classic;strokeWidth=2;strokeColor=#0284c7;fontSize=11;fontColor=#1e293b;labelBackgroundColor=#ffffff;labelBorderColor=#cbd5e1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="759S0qjRarNM-wg1_ofV-48" value="6. Trả về token câu trả lời">
+          <mxGeometry relative="1" x="-0.2836" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="970" y="728.3" />
+            </Array>
+            <mxPoint x="1240" y="777" as="sourcePoint" />
+            <mxPoint x="940" y="667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
