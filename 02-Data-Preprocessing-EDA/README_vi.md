@@ -48,6 +48,7 @@ PASSWORD = [PASSWORD]
 ## Người thực hiện
 
 Xiong Ying
+Trần Lê Anh Tuấn
 
 ## Giấy phép
 
@@ -163,10 +164,12 @@ Mục tiêu là duyệt qua địa chỉ thô của tất cả các POI trong `p
 #### Cơ chế truy vấn ánh xạ địa chỉ cũ và địa chỉ mới bằng Ontology
 
 Khi người dùng query thông tin địa điểm, chúng ta sử dụng ontology để tự động ánh xạ từ địa chỉ cũ sang địa chỉ mới theo các định dạng sau:
+
 - **Địa chỉ cũ:** `Số nhà tên đường, phường, quận, thành phố`
 - **Địa chỉ mới:** `Số nhà tên đường, phường (mới), thành phố`
 
 ##### Câu lệnh Cypher ví dụ:
+
 ```cypher
 MATCH (poi:Poi)-[:LOCATED_IN]->(old_w:Ward)
 MATCH (old_w)-[:BELONGS_TO]->(old_d:District)
@@ -177,7 +180,7 @@ WITH poi, old_w, old_d, active_w, active_d,
      replace(poi.address, ", " + old_w.name + ", " + old_d.name + ", Thành phố Hồ Chí Minh", "") AS street_part
 RETURN poi.name AS TenPOI,
        poi.address AS DiaChiCu,
-       street_part + ", " + active_w.name + ", " + 
+       street_part + ", " + active_w.name + ", " +
        case when active_d.name = 'Thành phố Thủ Đức' then 'Thành phố Thủ Đức, Thành phố Hồ Chí Minh' else 'Thành phố Hồ Chí Minh' end AS DiaChiMoi
 LIMIT 10
 ```

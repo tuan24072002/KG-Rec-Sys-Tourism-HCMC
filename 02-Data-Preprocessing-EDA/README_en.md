@@ -1,5 +1,5 @@
-
 # 02 Data Preprocessing and Exploratory Data Analysis (EDA)
+
 This directory contains Jupyter notebooks for data preprocessing and exploratory data analysis (EDA) tasks related to the project.
 
 ## Introduction
@@ -25,8 +25,9 @@ This notebook contains exploratory queries written in Cypher, the query language
 Follow these steps:
 
 1. Ensure the required dependencies are installed.
-2. Save the credentials required to connect to the Neo4j database in a file named `neo4j.ini` and place in the root directory of this module. 
-Sample `neo4j.ini` File:
+2. Save the credentials required to connect to the Neo4j database in a file named `neo4j.ini` and place in the root directory of this module.
+   Sample `neo4j.ini` File:
+
 ```
 [NEO4J]
 HOST = bolt://[IP]:[PORT]
@@ -34,6 +35,7 @@ USERNAME = neo4j
 DATABASE = neo4j
 PASSWORD = [PASSWORD]
 ```
+
 3. Run the desired notebook.
 
 ## Dependencies
@@ -46,6 +48,7 @@ PASSWORD = [PASSWORD]
 ## Contributors
 
 Xiong Ying
+Tran Le Anh Tuan
 
 ## License
 
@@ -60,7 +63,7 @@ This project is licensed under the [MIT License](LICENSE).
 In recent years (specifically in 2021 and the 2024-2025 transition period), Ho Chi Minh City has undergone major administrative restructuring of its districts and wards:
 
 - **District Merger:** Districts 2, 9, and Thu Duc were merged into **Thu Duc City** (a municipal city equivalent to a district level, eliminating the previous sub-districts).
-- **Ward Merger:** Multiple old wards merged to form new wards (e.g., *Vo Thi Sau Ward* in District 3 was merged from Wards 6, 7, and 8; *An Khanh Ward* in Thu Duc City was merged from Binh An, Binh Khanh, and old An Khanh wards, etc.).
+- **Ward Merger:** Multiple old wards merged to form new wards (e.g., _Vo Thi Sau Ward_ in District 3 was merged from Wards 6, 7, and 8; _An Khanh Ward_ in Thu Duc City was merged from Binh An, Binh Khanh, and old An Khanh wards, etc.).
 
 #### 2. Ontology Design in Graph Database (Neo4j)
 
@@ -103,10 +106,12 @@ The preprocessing step parses raw addresses in `poi_info.csv` and preserves the 
 #### Querying Old vs. New Address via Ontology
 
 To dynamically retrieve both the old and new address of a POI, we traverse the ontology in Neo4j. The target formats are:
+
 - **Old Address Format:** `Street address, ward, district, city`
 - **New Address Format:** `Street address, ward (new), city`
 
 ##### Example Cypher Query:
+
 ```cypher
 MATCH (poi:Poi)-[:LOCATED_IN]->(old_w:Ward)
 MATCH (old_w)-[:BELONGS_TO]->(old_d:District)
@@ -117,7 +122,7 @@ WITH poi, old_w, old_d, active_w, active_d,
      replace(poi.address, ", " + old_w.name + ", " + old_d.name + ", Thành phố Hồ Chí Minh", "") AS street_part
 RETURN poi.name AS TenPOI,
        poi.address AS DiaChiCu,
-       street_part + ", " + active_w.name + ", " + 
+       street_part + ", " + active_w.name + ", " +
        case when active_d.name = 'Thành phố Thủ Đức' then 'Thành phố Thủ Đức, Thành phố Hồ Chí Minh' else 'Thành phố Hồ Chí Minh' end AS DiaChiMoi
 LIMIT 10
 ```

@@ -6,16 +6,20 @@ More details could be found in the project report "[FYP Report-Xiong Ying.pdf](h
 
 ## Introduction
 
-### 01-TripAdvisor-Scraper 
+### 01-TripAdvisor-Scraper
+
 This module contains the code for scraping tourist information from TripAdvisor.
 
 ### 02-Data-Preprocessing-EDA
+
 The data preprocessing and exploratory data analysis (EDA) are performed.
 
 ### 03-Recommender-Engine-Experiments
+
 This module involves experimenting with various recommendation algorithms.
 
 ### 04-Recommender-System-Web-App
+
 Finally, the web application for the recommender system is developed.
 
 ## Usage
@@ -33,6 +37,7 @@ To install and use the project, follow these steps:
 ## Contributors
 
 Xiong Ying
+Tran Le Anh Tuan
 
 ## License
 
