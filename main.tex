@@ -1,0 +1,1113 @@
+\documentclass[journal,onecolumn,10pt]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% ============================================================
+% GÓI THƯ VIỆN VÀ ĐỊNH DẠNG HỌC THUẬT
+% ============================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T5,T1]{fontenc}
+\usepackage[vietnamese,english]{babel}
+\usepackage{mathptmx}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage[font=small,justification=centering]{caption}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,backgrounds}
+
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\linespread{1.22}
+
+\urlstyle{same}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{black!3},
+  keywordstyle=\color{blue!80!black}\bfseries,
+  commentstyle=\color{green!50!black}\itshape,
+  stringstyle=\color{red!70!black},
+  showstringspaces=false
+}
+
+% ============================================================
+% CẤU HÌNH TIẾNG VIỆT & TIÊU ĐỀ
+% ============================================================
+\addto\captionsvietnamese{%
+  \renewcommand{\abstractname}{Tóm tắt}%
+}
+\renewcommand\IEEEkeywordsname{Từ khóa}
+
+\makeatletter
+\renewenvironment{abstract}{%
+  \normalfont\normalsize\textbf{\textit{\abstractname:}}\ \mdseries\ignorespaces
+}{\relax}
+
+\renewenvironment{IEEEkeywords}{%
+  \normalfont\normalsize\textbf{\textit{\IEEEkeywordsname:}}\ \mdseries\ignorespaces
+}{\relax}
+
+\def\section{\@startsection{section}{1}{\z@}{2.2ex plus 1.2ex minus 0.4ex}%
+{1.0ex plus 0.8ex minus 0pt}{\normalfont\normalsize\bfseries\centering}}
+
+\def\subsection{\@startsection{subsection}{2}{\z@}{1.8ex plus 1.0ex minus 0.3ex}%
+{0.6ex plus 0.6ex minus 0pt}{\normalfont\normalsize\bfseries}}
+
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{1.4ex plus 0.8ex minus 0.2ex}%
+{0.4ex plus 0.4ex minus 0pt}{\normalfont\normalsize\itshape}}
+\makeatother
+
+\begin{document}
+\selectlanguage{vietnamese}
+\renewcommand{\abstractname}{Tóm tắt}
+\renewcommand{\IEEEkeywordsname}{Từ khóa}
+
+% ============================================================
+% TIÊU ĐỀ VÀ TÁC GIẢ
+% ============================================================
+\title{
+\fontsize{13.5}{17}\selectfont
+\bfseries
+HỆ THỐNG GỢI Ý LAI CHO ĐIỂM ĐẾN DU LỊCH ĐƯỢC TĂNG CƯỜNG BẰNG ĐỒ THỊ TRI THỨC VÀ GIẢI THÍCH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN\\
+\vspace{0.25cm}
+\large\normalfont\textit{(Knowledge Graph-Enhanced Hybrid Recommendation for Tourism Destinations with Large Language Model-Based Explanations)}
+}
+
+\author{
+\vspace{0.15cm}
+\textbf{Trần Lê Anh Tuấn}$^{1}$, \textbf{Trần Thanh Phước}$^{2}$\\
+\vspace{0.05cm}
+$^{1}$Đại học Công Thương TP.HCM\\
+$^{2}$Phòng Lab NLP \& KD, Khoa Công nghệ thông tin, Đại học Tôn Đức Thắng\\
+\textit{1001250023@huit.edu.vn, tranthanhphuoc@tdtu.edu.vn}
+}
+
+\maketitle
+
+% ============================================================
+% TÓM TẮT VÀ TỪ KHÓA
+% ============================================================
+\begin{abstract}
+Hệ thống gợi ý điểm đến du lịch (Point of Interest -- POI) cá nhân hóa trong môi trường đô thị thường đối mặt với ba thách thức: dữ liệu tương tác người dùng -- địa điểm rất thưa ($S > 99.9\%$), khó khăn trong biểu diễn chính xác ngữ nghĩa văn bản tiếng Việt và nhu cầu giải thích lý do gợi ý. Bài báo đề xuất khung kiến trúc gợi ý lai (Hybrid Recommendation) được tăng cường bằng đồ thị tri thức (Knowledge Graph -- KG) kết hợp thành phần giải thích dựa trên GraphRAG và mô hình ngôn ngữ lớn (Large Language Model -- LLM). Khung kiến trúc tích hợp biểu diễn cấu trúc đồ thị bằng vector nhúng và biểu diễn ngữ nghĩa văn bản, đồng thời kết hợp bốn thuật toán thành phần: lọc nội dung theo Heuristic, lọc theo độ tương đồng đặc trưng nút (Node Similarity), lọc cộng tác theo người dùng (UserKNN) và lọc cộng tác theo địa điểm (ItemKNN). Kết quả từ các thuật toán được hợp nhất thông qua cơ chế biểu quyết đa số và xếp hạng trung bình (Majority Consensus and Mean-Rank Fusion), đi kèm cơ chế xử lý khởi đầu lạnh đa tầng. Để tăng cường tính minh bạch, mô-đun GraphRAG kết hợp mô hình ngôn ngữ lớn chạy cục bộ giúp truy xuất dữ kiện trực tiếp từ đồ thị và sinh lời giải thích bằng ngôn ngữ tự nhiên theo thời gian thực. Khung kiến trúc được đánh giá thực nghiệm tại Thành phố Hồ Chí Minh trên bộ dữ liệu gồm 3.326 POIs, 21.315 người dùng, 24.108 lượt đánh giá và 1,65 triệu quan hệ đồ thị. Kết quả thực nghiệm cho thấy mô hình kết hợp đạt Recall@10 = 43,65\% và độ phủ POI đạt 8,21\%, mở rộng danh sách đề xuất lên hơn 270 địa điểm độc lập. Thời gian tính toán gợi ý trực tiếp trên bộ nhớ tạm dưới 50~ms, cho thấy mô hình có thể triển khai hiệu quả trong điều kiện dữ liệu siêu thưa và hỗ trợ mở rộng không gian khám phá điểm đến du lịch đô thị.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Hệ thống gợi ý du lịch, đồ thị tri thức, mô hình gợi ý lai, FastRP, PhoBERT, GraphRAG, gợi ý có giải thích, sáp nhập địa giới hành chính.
+\end{IEEEkeywords}
+
+% ============================================================
+% MỤC I: GIỚI THIỆU
+% ============================================================
+\section{GIỚI THIỆU}
+
+\subsection{Bối cảnh và động lực nghiên cứu}
+
+Sự phát triển của kinh tế số cùng với quá trình đô thị hóa nhanh chóng tại các quốc gia đang phát triển đã thúc đẩy du lịch thông minh (Smart Tourism) trở thành một lĩnh vực ứng dụng công nghệ thông tin ngày càng quan trọng~\cite{r1, r2, r3, r4}. Cùng với đó, du khách ngày càng có xu hướng tìm kiếm thông tin, chia sẻ trải nghiệm và tham khảo đánh giá về các điểm đến du lịch (Points of Interest -- POI) trên các nền tảng trực tuyến như TripAdvisor, Google Maps và Booking.com. Lượng dữ liệu do người dùng tạo ra (User-Generated Content -- UGC) cung cấp khối lượng thông tin lớn nhưng đồng thời khiến người dùng đối mặt với tình trạng quá tải thông tin (Information Overload). Do đó, việc lựa chọn các điểm tham quan, di tích văn hóa hay cơ sở ẩm thực phù hợp với quỹ thời gian, vị trí và sở thích cá nhân trở nên khó khăn hơn.
+
+Hệ thống gợi ý (Recommender Systems) hỗ trợ cá nhân hóa thông tin, giúp người dùng lựa chọn điểm đến phù hợp giữa lượng lớn địa điểm tiềm năng. Tuy nhiên, khi được áp dụng vào lĩnh vực du lịch, các phương pháp gợi ý truyền thống thường gặp bốn thách thức chính:
+
+\begin{enumerate}
+    \item \textbf{Độ thưa của dữ liệu tương tác (Data Sparsity)}: Khác với thương mại điện tử hay các nền tảng giải trí trực tuyến, nơi người dùng có thể phát sinh nhiều tương tác trong thời gian ngắn, hành vi tương tác trong lĩnh vực du lịch thường ít và không liên tục. Nhiều du khách chỉ để lại một bài đánh giá sau mỗi chuyến đi. Khi xây dựng ma trận tương tác người dùng -- địa điểm ($User \times POI$), độ thưa $S$ thường đạt hơn $99.9\%$:
+    
+    \begin{equation}
+    S = 1 - \frac{|\{(u,i): R_{ui} \neq 0\}|}{|U| \times |I|}
+    \end{equation}
+    
+    Trong đó, $R_{ui} \neq 0$ biểu thị một tương tác thực tế giữa người dùng $u$ và địa điểm $i$, với $U$ là tập người dùng và $I$ là tập địa điểm. Ma trận tương tác gần như trống khiến các phương pháp lọc cộng tác (Collaborative Filtering -- CF)~\cite{r5} gặp khó khăn trong việc xác định những người dùng có sở thích tương đồng. Thống kê từ dữ liệu thực tế cũng cho thấy hơn 92\% người dùng chỉ có một đánh giá, khiến thông tin về sở thích của phần lớn người dùng trở nên rất hạn chế.
+
+    \item \textbf{Đặc thù tiếng Việt và bài toán tách từ}: Các phương pháp lọc dựa trên nội dung (Content-Based Filtering -- CBF) truyền thống thường dựa trên việc so khớp từ khóa, chẳng hạn TF-IDF hoặc Bag-of-Words. Trong tiếng Việt, khoảng trắng không đồng nhất với ranh giới từ. Chẳng hạn, cụm từ \textit{Bảo tàng Chứng tích Chiến tranh} gồm sáu âm tiết nhưng được cấu thành từ ba từ ghép. Nếu không thực hiện tách từ phù hợp và sử dụng mô hình ngôn ngữ có khả năng nắm bắt ngữ cảnh, hệ thống có thể xử lý các âm tiết như những đơn vị riêng lẻ, từ đó làm giảm chất lượng biểu diễn ngữ nghĩa và bỏ sót sự tương đồng giữa các địa điểm có cách mô tả khác nhau~\cite{r6, r7}.
+
+    \item \textbf{Biến động địa giới hành chính theo thời gian}: Các đô thị lớn có thể trải qua nhiều đợt sáp nhập hoặc điều chỉnh đơn vị hành chính như quận, huyện, phường và xã. Trong dữ liệu được tích lũy qua nhiều năm, cùng một địa điểm có thể được ghi nhận theo đơn vị hành chính cũ, trong khi người dùng hiện tại lại tìm kiếm theo địa chỉ mới. Các hệ thống cơ sở dữ liệu quan hệ truyền thống (RDBMS) gặp khó khăn khi mô hình hóa mối quan hệ giữa các đơn vị hành chính ở những thời điểm khác nhau. Điều này có thể làm phân tán thông tin không gian và khiến hệ thống bỏ sót các địa điểm liên quan khi truy vấn theo địa chỉ hiện tại.
+
+    \item \textbf{Tính minh bạch và khả năng giải thích của kết quả gợi ý}: Bên cạnh danh sách địa điểm phù hợp, người dùng cần biết lý do một địa điểm được đề xuất. Chẳng hạn, địa điểm đó có thể nằm gần vị trí hiện tại, thuộc danh mục mà người dùng quan tâm hoặc được những người dùng có sở thích tương tự đánh giá cao. Tuy nhiên, nhiều hệ thống gợi ý hiện nay vẫn hoạt động như một ``hộp đen'', khiến người dùng khó hiểu cơ sở của các kết quả được đưa ra~\cite{r8, r9, r10}.
+\end{enumerate}
+
+\subsection{Ý tưởng nghiên cứu và bối cảnh thực nghiệm}
+
+Để giải quyết các hạn chế nêu trên, nghiên cứu sử dụng đồ thị tri thức (Knowledge Graph -- KG) để biểu diễn, liên kết và khai thác các mối quan hệ giữa nhiều loại thực thể trong lĩnh vực du lịch~\cite{r11, r12, r13, r14, r15, r16, r17}. Cách tiếp cận này cho phép hệ thống kết hợp thông tin về địa điểm, người dùng, danh mục và các mối quan hệ không gian trong cùng một mô hình dữ liệu.
+
+Bài báo đề xuất khung kiến trúc gợi ý lai cho điểm đến du lịch, kết hợp đồ thị tri thức và GraphRAG dựa trên mô hình ngôn ngữ lớn (Large Language Model -- LLM) nhằm giải thích kết quả gợi ý. Khung kiến trúc kết hợp biểu diễn cấu trúc đồ thị bằng FastRP (256 chiều) với biểu diễn ngữ nghĩa văn bản bằng PhoBERT (768 chiều). Kết quả từ bốn thuật toán thành phần được hợp nhất bằng cơ chế biểu quyết đa số và xếp hạng trung bình (Majority Consensus and Mean-Rank Fusion), đồng thời sử dụng chiến lược gợi ý dự phòng phân cấp thích ứng (Adaptive Fallback Strategy) để xử lý các trường hợp dữ liệu tương tác hạn chế.
+
+Để đánh giá khung kiến trúc, nghiên cứu tập trung vào Thành phố Hồ Chí Minh, nơi có dữ liệu tương tác rất thưa và các đơn vị hành chính có sự thay đổi theo thời gian. Bộ dữ liệu gồm 3.326 POIs với độ thưa của ma trận tương tác hơn $99.9\%$, đồng thời chứa dữ liệu được ghi nhận theo các đơn vị hành chính ở những thời điểm khác nhau. Đây là cơ sở để nghiên cứu đánh giá khả năng xử lý dữ liệu địa giới thay đổi theo thời gian và hiệu quả của mô hình trong điều kiện dữ liệu thưa. Đồng thời, nghiên cứu tiến hành khảo sát đối chứng mở rộng quy mô (Scale-up Stress Test) với công trình của Xiong Ying tại Đại học Công nghệ Nanyang (NTU Singapore, 2024)~\cite{r18} trên tập dữ liệu Singapore gồm 69 POIs, nhằm phân tích sự khác biệt về độ nhạy thuật toán trên hai miền dữ liệu có mật độ tương phản.
+
+\subsection{Các đóng góp khoa học chính}
+
+Các đóng góp chính của bài báo gồm:
+
+\begin{itemize}
+    \item \textbf{Biểu diễn tri thức và quan hệ hành chính}: Xây dựng đồ thị tri thức du lịch đa quan hệ trên Neo4j với 51.868 nút và 1,65 triệu quan hệ. Quan hệ động \code{[:MERGED\_TO]} được bổ sung để liên kết các đơn vị hành chính cũ và mới, qua đó hỗ trợ truy vấn các POI theo thông tin địa giới ở những thời điểm khác nhau.
+
+    \item \textbf{Mô hình gợi ý lai và cơ chế biểu quyết}: Kết hợp bốn thuật toán thành phần gồm Heuristic, Node Similarity, UserKNN và ItemKNN bằng cơ chế biểu quyết đa số và xếp hạng trung bình. Hệ thống đồng thời sử dụng chiến lược dự phòng phân cấp để hỗ trợ các trường hợp người dùng có ít hoặc chưa có lịch sử tương tác.
+
+    \item \textbf{Phân tích thực nghiệm về vai trò của PhoBERT}: Đánh giá ảnh hưởng của biểu diễn ngữ nghĩa từ PhoBERT trong mô hình học kết hợp thông qua các thí nghiệm loại bỏ thành phần. Kết quả cho thấy việc tích hợp Node Similarity giúp cải thiện Recall@10 và tăng số lượng địa điểm có thể được xem xét để gợi ý, đặc biệt trong bối cảnh dữ liệu tương tác rất thưa.
+
+    \item \textbf{Giải thích kết quả gợi ý dựa trên GraphRAG}: Tích hợp mô hình ngôn ngữ lớn cục bộ Qwen2.5-1.5B-Instruct~\cite{r19} với cơ sở dữ liệu Neo4j để truy xuất các thông tin liên quan và sinh phản hồi bằng ngôn ngữ tự nhiên. Thời gian xử lý của khâu gợi ý dưới 50~ms, trong khi quá trình sinh văn bản được truyền theo dòng SSE với độ trễ khoảng 1,2~s.
+\end{itemize}
+
+\subsection{Cấu trúc bài báo}
+
+Phần còn lại của bài báo được tổ chức như sau. Mục II trình bày cơ sở lý thuyết và tổng quan nghiên cứu. Mục III mô tả thiết kế hệ thống và quá trình xây dựng đồ thị tri thức. Mục IV trình bày hệ thống gợi ý lai và chiến lược dự phòng. Mục V trình bày thành phần GraphRAG được sử dụng để giải thích kết quả gợi ý. Mục VI trình bày thiết lập thực nghiệm và kết quả đánh giá trên dữ liệu TP.HCM. Mục VII thảo luận các kết quả và việc hiện thực hóa hệ thống. Cuối cùng, Mục VIII tổng kết những kết quả chính và trình bày các hướng phát triển tiếp theo.
+
+\FloatBarrier
+
+% ============================================================
+% MỤC II: CƠ SỞ LÝ THUYẾT VÀ TỔNG QUAN NGHIÊN CỨU
+% ============================================================
+\section{CƠ SỞ LÝ THUYẾT VÀ TỔNG QUAN NGHIÊN CỨU}
+
+\subsection{Đồ thị tri thức trong quản lý thông tin đô thị và du lịch}
+
+Đồ thị tri thức được giới thiệu rộng rãi từ năm 2012 với mục tiêu nâng cao khả năng tìm kiếm và khai thác ngữ nghĩa của dữ liệu, sau đó được ứng dụng trong nhiều lĩnh vực như y tế, tài chính và quản lý đô thị thông minh. Rajan và cộng sự~\cite{r11} cho thấy đồ thị tri thức có khả năng tích hợp dữ liệu từ nhiều nguồn và hỗ trợ khai thác các mối quan hệ ngữ nghĩa trong các bài toán quản lý đô thị thông minh.
+
+Trong lĩnh vực du lịch, mô hình ontology và đồ thị tri thức được sử dụng để chuẩn hóa, liên kết và tổ chức dữ liệu du lịch từ nhiều nguồn khác nhau. Chessa và cộng sự~\cite{r15} đề xuất mô hình ontology phân tích du lịch Tourism Analytics Ontology (TAO) nhằm biểu diễn thông tin về các cơ sở lưu trú tại London và Sardinia. Wu và cộng sự~\cite{r13} cùng Xiao và cộng sự~\cite{r14} xây dựng đồ thị tri thức du lịch hướng sự kiện (Event-centric Tourism KG) cho tỉnh Hải Nam. Gần đây, Das và Bagchi~\cite{r12} phát triển một đồ thị tri thức dựa trên mô hình ontology nhằm hỗ trợ quản lý và khai thác thông tin du lịch. Tuy nhiên, phần lớn các công trình trên tập trung vào mô hình hóa và tra cứu dữ liệu, trong khi việc kết hợp đồ thị tri thức với quá trình tính toán gợi ý theo thời gian thực, đặc biệt trong các bài toán lọc cộng tác, vẫn còn hạn chế.
+
+Về mặt cấu trúc, đồ thị tri thức $\mathcal{G} = (\mathcal{E}, \mathcal{R}, \mathcal{T})$ gồm tập thực thể $\mathcal{E}$, tập quan hệ ngữ nghĩa $\mathcal{R}$ và tập các bộ ba quan hệ $\mathcal{T} = \{(h, r, t) \mid h, t \in \mathcal{E}, r \in \mathcal{R}\}$. Khác với cơ sở dữ liệu quan hệ (Relational Database Management System -- RDBMS), liên kết dữ liệu giữa các bảng thường dựa trên khóa ngoại và các phép nối, mô hình đồ thị thuộc tính có nhãn (Labeled Property Graph -- LPG) của Neo4j sử dụng cơ chế liên kết trực tiếp không qua chỉ mục trung gian (Index-Free Adjacency). Cơ chế này lưu trữ con trỏ trực tiếp giữa các nút liền kề, nhờ đó hệ thống duyệt đồ thị với chi phí thời gian tỷ lệ thuận với kích thước vùng lân cận cục bộ thay vì phụ thuộc vào tổng quy mô của toàn bộ cơ sở dữ liệu.
+
+\subsection{Kỹ thuật biểu diễn học đồ thị và nhúng nút}
+
+Trong các hệ thống gợi ý dựa trên đồ thị, nhúng nút (Node Embedding) là kỹ thuật dùng để biểu diễn các thực thể trong đồ thị dưới dạng các vector số thực nhiều chiều $f: \mathcal{E} \rightarrow \mathbb{R}^d$, qua đó giữ lại những đặc trưng quan trọng về cấu trúc lân cận và quan hệ ngữ nghĩa~\cite{r16, r17}.
+
+Các phương pháp nhúng dựa trên phép dịch vector, điển hình như TransE~\cite{r20}, biểu diễn quan hệ dưới dạng phép tịnh tiến trong không gian vector, với giả định $h + r \approx t$. Tuy nhiên, TransE còn hạn chế trong việc biểu diễn các quan hệ phức tạp như 1-nhiều, nhiều-1 và nhiều-nhiều. Trong khi đó, các mô hình mạng nơ-ron đồ thị (Graph Neural Networks -- GNN) như Graph Convolutional Networks (GCN), LightGCN và Knowledge Graph Attention Network (KGAT) có khả năng học các biểu diễn giàu thông tin hơn, nhưng thường đòi hỏi quá trình huấn luyện và lan truyền ngược trên GPU. Điều này làm tăng chi phí tính toán và gây khó khăn khi triển khai trên các đồ thị lớn hoặc trong môi trường có tài nguyên phần cứng hạn chế.
+
+Để giải quyết hạn chế này, thuật toán Fast Random Projection (FastRP) do Chen và cộng sự đề xuất~\cite{r21} cho phép tính toán vector nhúng trực tiếp trên bộ nhớ tạm với tốc độ xử lý cao. FastRP xây dựng biểu diễn nhúng của các nút thông qua $K$ bước truyền tin có trọng số, được mô tả bởi:
+
+\begin{equation}
+N = \sum_{k=1}^K \beta_k \cdot (D^{-1} A)^k \cdot R
+\end{equation}
+
+Trong đó, $A$ là ma trận kề có trọng số của đồ thị, $D$ là ma trận bậc (Degree Matrix), $R \in \mathbb{R}^{|V| \times d}$ là ma trận chiếu ngẫu nhiên được khởi tạo theo phân phối xác suất Achlioptas, và $\beta_k$ là trọng số suy giảm tương ứng với bước truyền tin thứ $k$. Nhờ sử dụng phép chiếu ngẫu nhiên thay cho quá trình huấn luyện mạng nơ-ron, FastRP sinh vector nhúng với chi phí tính toán thấp, phù hợp với các hệ thống yêu cầu xử lý nhanh trên nền tảng tài nguyên phần cứng giới hạn.
+
+\subsection{Mô hình Transformer và PhoBERT trong xử lý ngôn ngữ tiếng Việt}
+
+Sự ra đời của kiến trúc Transformer~\cite{r22} và mô hình RoBERTa đã tạo bước tiến quan trọng trong việc biểu diễn ngữ nghĩa của văn bản. Đối với tiếng Việt, PhoBERT (\code{vinai/phobert-base-v2})~\cite{r6} là mô hình ngôn ngữ tiền huấn luyện dựa trên kiến trúc Transformer mã hóa hai chiều, được huấn luyện trên tập ngữ liệu gồm khoảng 20GB văn bản tiếng Việt.
+
+Kết hợp với công cụ phân đoạn từ \texttt{ViTokenizer} thuộc thư viện PyVi~\cite{r7}, PhoBERT có thể tạo biểu diễn ngữ nghĩa 768 chiều từ token đặc biệt \code{[CLS]}:
+\begin{equation}
+e_{\text{POI}} = \text{PhoBERT}(\text{Tokenized\_Description}) \in \mathbb{R}^{768}
+\end{equation}
+
+Độ tương đồng về ngữ nghĩa giữa hai địa điểm $i$ và $j$ được xác định bằng độ đo Cosine Similarity:
+\begin{equation}
+\text{sim}_{\text{text}}(i, j) = \frac{e_i \cdot e_j}{\|e_i\|_2 \|e_j\|_2}
+\end{equation}
+
+Cách tiếp cận này giúp khai thác thông tin ngữ nghĩa từ nội dung mô tả điểm đến hiệu quả hơn các phương pháp truyền thống dựa trên tần suất từ.
+
+
+\subsection{Mô hình ngôn ngữ lớn và kiến trúc GraphRAG}
+
+Kiến trúc truy xuất tăng cường cho sinh văn bản (Retrieval-Augmented Generation -- RAG)~\cite{r9, r10} được sử dụng để bổ sung thông tin từ các nguồn dữ liệu bên ngoài vào quá trình sinh câu trả lời của mô hình ngôn ngữ lớn, qua đó giảm nguy cơ tạo ra thông tin không chính xác (Hallucination). Gần đây, GraphRAG, một hướng tiếp cận kết hợp mô hình ngôn ngữ lớn với đồ thị tri thức, nhận được nhiều sự quan tâm trong các hệ thống gợi ý có khả năng giải thích (Explainable Recommendation)~\cite{r8, r23, r24}.
+
+Một số nghiên cứu như K-RagRec (S. Wang và cộng sự, ACL 2025)~\cite{r23} và G-Refer (WWW 2025)~\cite{r25}, đã nghiên cứu việc kết hợp tri thức có cấu trúc từ đồ thị với khả năng xử lý và sinh ngôn ngữ tự nhiên của LLM. Kế thừa hướng tiếp cận này, nghiên cứu triển khai GraphRAG với mô hình ngôn ngữ lớn cục bộ có tham số nhỏ gọn là Qwen2.5-1.5B-Instruct~\cite{r19}, nhằm đáp ứng yêu cầu về tài nguyên tính toán và đồng thời xử lý các đặc thù về địa giới hành chính tại Việt Nam.
+
+
+\subsection{So sánh với công trình của Xiong Ying và động lực mở rộng}
+
+Trong khi các kiến trúc mạng nơ-ron đồ thị (GNN như KGAT, LightGCN) thường đòi hỏi chi phí huấn luyện lan truyền ngược lớn trên GPU và khó triển khai cập nhật trực tiếp trong môi trường cơ sở dữ liệu đồ thị công nghiệp thời gian thực, công trình của Xiong Ying tại Đại học Công nghệ Nanyang (NTU Singapore)~\cite{r18} là nghiên cứu tiên phong thiết lập quy trình tích hợp thuật toán nhúng đồ thị ngẫu nhiên FastRP kết hợp KNN trực tiếp trên nền tảng Neo4j Graph Data Science (GDS) cho bài toán gợi ý điểm đến du lịch đô thị. Tuy nhiên, mô hình của Xiong Ying được xây dựng và kiểm chứng trên một đô thị hải đảo có quy mô địa lý thu hẹp là Singapore với mật độ tương tác rất dày đặc (69 POIs, trung bình khoảng $1.310$ bài đánh giá/POI).
+
+Nghiên cứu này lựa chọn công trình của Xiong Ying làm hệ quy chiếu đối chứng cốt lõi nhằm thực hiện một khảo sát mở rộng quy mô (Scale-up Stress Test), đánh giá khả năng vận hành của FastRP khi chuyển dịch sang một siêu đô thị mở đang phát triển như TP.HCM với số lượng điểm đến gấp gần 48 lần (3.326 POIs) và độ thưa của ma trận tương tác hơn $99{,}9\%$ (trung bình khoảng $7$ bài đánh giá/POI). Kết quả đối chứng thực nghiệm làm rõ sự sụt giảm hiệu năng của các thuật toán đồ thị truyền thống trong điều kiện dữ liệu siêu thưa, qua đó khẳng định vai trò cầu nối ngữ nghĩa quan trọng của mô hình ngôn ngữ PhoBERT. Bảng~\ref{tab:comparison_xiong} tổng hợp sự tương đồng, khác biệt và các điểm mở rộng trọng yếu giữa hai công trình.
+
+\begin{table}[H]
+\centering
+\caption{So sánh giữa công trình của Xiong Ying và khung kiến trúc đề xuất}
+\label{tab:comparison_xiong}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{p{3.2cm} p{5.8cm} p{6.0cm}}
+\toprule
+\textbf{Tiêu chí so sánh} & \textbf{Công trình Xiong Ying (2024)} & \textbf{Khung kiến trúc đề xuất} \\
+\midrule
+Bối cảnh và miền dữ liệu 
+& Singapore (69 POIs, dữ liệu tương đối dày) 
+& Đô thị mở (3.326 POIs, độ thưa $> 99.9\%$) \\
+
+Biến động địa giới hành chính 
+& Mô hình dữ liệu phẳng, chưa xét lịch sử sáp nhập 
+& Bổ sung quan hệ \code{[:MERGED\_TO]} để xử lý thay đổi địa giới \\
+
+Biểu diễn ngữ nghĩa văn bản 
+& Tiếng Anh, sử dụng mô hình biểu diễn từ vựng cơ bản 
+& Tiếng Việt, kết hợp phân đoạn từ bằng PyVi và biểu diễn ngữ nghĩa bằng PhoBERT \\
+
+Chiến lược khởi đầu lạnh 
+& Khai thác thông tin từ nhóm vị trí địa lý tương đồng 
+& Kết hợp thông tin quê quán \code{Origin} với gợi ý nội dung (Heuristic và PhoBERT) \\
+
+Tương tác và giải thích 
+& Kết quả được trình bày dưới dạng danh sách, chưa tích hợp LLM 
+& GraphRAG kết hợp LLM để sinh lời giải thích theo thời gian thực \\
+
+Hợp nhất thứ hạng (Fusion) 
+& Biểu quyết đa số không trọng số 
+& Lọc biểu quyết đa số và xếp hạng trung bình (Majority Consensus and Mean-Rank Fusion) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC III: THIẾT KẾ HỆ THỐNG VÀ XÂY DỰNG ĐỒ THỊ TRI THỨC
+% ============================================================
+\section{THIẾT KẾ HỆ THỐNG VÀ XÂY DỰNG ĐỒ THỊ TRI THỨC}
+
+\subsection{Khung kiến trúc tổng thể hai giai đoạn}
+
+Khung kiến trúc của hệ thống gợi ý lai được xây dựng theo mô hình hai giai đoạn, phân định rõ quá trình xây dựng và biểu diễn tri thức ngoại tuyến (Offline Processing) với quá trình suy luận và tạo kết quả gợi ý trực tuyến (Online Inference) (Hình~\ref{fig:pipeline}).
+
+Ở giai đoạn 1 (xây dựng tri thức và biểu diễn đặc trưng), hệ thống thu thập dữ liệu du lịch từ TripAdvisor, sau đó thực hiện tiền xử lý, chuẩn hóa thông tin địa chỉ và xác định các mối quan hệ liên quan đến địa giới hành chính. Dữ liệu sau khi chuẩn hóa được tổ chức thành đồ thị tri thức du lịch đa quan hệ. Từ đồ thị này, hệ thống xây dựng song song hai dạng biểu diễn bổ trợ cho nhau: biểu diễn ngữ nghĩa từ nội dung văn bản nhằm phản ánh đặc điểm mô tả của các điểm đến, và biểu diễn cấu trúc liên kết nhằm thể hiện mối quan hệ giữa người dùng và địa điểm trong đồ thị.
+
+Ở giai đoạn 2 (gợi ý lai và giải thích dựa trên LLM), khi nhận yêu cầu từ người dùng, hệ thống đồng thời thực hiện các phương pháp gợi ý thành phần, khai thác thông tin từ cả nội dung và cấu trúc liên kết trên đồ thị. Kết quả từ các phương pháp này được kết hợp bằng cơ chế biểu quyết đa số và xếp hạng trung bình, cùng với chiến lược dự phòng phân cấp nhằm thích ứng với tình trạng dữ liệu thưa và trường hợp người dùng mới. Song song đó, thành phần giải thích dựa trên mô hình ngôn ngữ lớn (GraphRAG) truy xuất các thông tin liên quan từ đồ thị tri thức và sử dụng chúng làm cơ sở để sinh lời giải thích bằng ngôn ngữ tự nhiên, giúp người dùng hiểu rõ căn cứ gợi ý.
+
+% --- Hình 1: Khung kiến trúc hai giai đoạn của hệ thống gợi ý du lịch 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+subblock/.style={
+    draw=black!80,
+    fill=white,
+    rounded corners=2pt,
+    align=center,
+    minimum width=115mm,
+    minimum height=7.2mm,
+    inner sep=3.5pt,
+    font=\normalsize
+},
+phasebox/.style={
+    draw=black!60,
+    rounded corners=3pt,
+    fill=white,
+    inner sep=6pt
+},
+title/.style={
+    font=\normalsize\bfseries,
+    text=black!90
+},
+arr/.style={
+    -{Latex[length=1.6mm, width=1.1mm]},
+    line width=0.6pt,
+    draw=black!80
+},
+node distance=2.5mm
+]
+
+\node[title] (t1) at (0, 0) {GIAI ĐOẠN 1: XÂY DỰNG TRI THỨC VÀ BIỂU DIỄN ĐẶC TRƯNG};
+\node[subblock, below=2.5mm of t1] (b1) {Thu thập và tiền xử lý dữ liệu điểm đến du lịch};
+\node[subblock, below=of b1] (b2) {Chuẩn hóa thực thể và mô hình hóa địa giới hành chính};
+\node[subblock, below=of b2] (b3) {Xây dựng đồ thị tri thức du lịch đa quan hệ};
+\node[subblock, below=of b3] (b4) {Trích xuất các biểu diễn nhúng: ngữ nghĩa văn bản và cấu trúc đồ thị};
+
+\node[title, below=9mm of b4] (t2) {GIAI ĐOẠN 2: GỢI Ý LAI VÀ GIẢI THÍCH KẾT QUẢ GỢI Ý};
+\node[subblock, below=2.5mm of t2] (b5) {Các phương pháp gợi ý thành phần (lọc nội dung và lọc cộng tác trên đồ thị)};
+\node[subblock, below=of b5] (b6) {Lọc biểu quyết đa số, xếp hạng trung bình và cơ chế dự phòng};
+\node[subblock, below=of b6] (b7) {Tương tác và giải thích kết quả gợi ý bằng GraphRAG và mô hình ngôn ngữ lớn};
+
+\begin{scope}[on background layer]
+\node[phasebox, fit=(t1)(b1)(b4)] (box1) {};
+\node[phasebox, fit=(t2)(b5)(b7)] (box2) {};
+\end{scope}
+
+\draw[arr] (b1)--(b2);
+\draw[arr] (b2)--(b3);
+\draw[arr] (b3)--(b4);
+
+\draw[arr, line width=0.8pt]
+(box1.south) --
+node[right, font=\normalsize, text=black!80, xshift=2mm]
+{Đồ thị tri thức và các biểu diễn nhúng}
+(box2.north);
+
+\draw[arr] (b5)--(b6);
+\draw[arr] (b6)--(b7);
+
+\end{tikzpicture}
+\caption{Khung kiến trúc hai giai đoạn của hệ thống gợi ý du lịch dựa trên đồ thị tri thức và mô hình ngôn ngữ lớn.}
+\label{fig:pipeline}
+\end{figure}
+
+% \FloatBarrier
+
+\subsection{Thu thập và tiền xử lý dữ liệu}
+
+Quy trình thu thập dữ liệu tự động được xây dựng bằng Selenium~\cite{r26, r27} kết hợp với BeautifulSoup~\cite{r28, r29, r30} để duyệt và phân tích nội dung các trang web. Quy trình gồm ba bước chính:
+\begin{enumerate}
+    \item \textbf{Thu thập danh sách liên kết POI}: Hệ thống tự động duyệt các trang danh mục địa điểm du lịch, thu thập các liên kết đến từng POI và lưu các liên kết duy nhất vào tập dữ liệu điểm đến.
+    
+    \item \textbf{Thu thập thông tin thuộc tính chi tiết}: Hệ thống lần lượt truy cập từng liên kết POI, tải nội dung HTML và trích xuất các thuộc tính gồm: tên địa điểm, danh mục, giờ mở cửa, nội dung mô tả, thời lượng tham quan, địa chỉ, quận/huyện, điểm đánh giá trung bình và số lượng đánh giá theo từng mức sao. Các thông tin này được lưu vào tập dữ liệu thuộc tính của địa điểm.
+    
+    \item \textbf{Thu thập lịch sử đánh giá người dùng}: Hệ thống truy cập các trang đánh giá của từng POI và thu thập các thông tin gồm: mã POI, tên người dùng, quê quán/quốc gia, tiêu đề, nội dung nhận xét, điểm đánh giá và ngày đăng. Dữ liệu được lưu vào tập lịch sử tương tác của người dùng.
+\end{enumerate}
+
+Toàn bộ dữ liệu được thu thập chỉ phục vụ cho mục đích nghiên cứu học thuật phi thương mại. Tên người dùng và các thông tin có khả năng định danh cá nhân được xóa trước khi đưa vào quá trình xử lý, nhằm bảo vệ quyền riêng tư của người dùng.
+
+Quy trình tiền xử lý dữ liệu~\cite{r31} gồm năm bước chính:
+\begin{itemize}
+    \item \textbf{Loại bỏ bản ghi trùng lặp}: Dữ liệu địa điểm được đối chiếu dựa trên URL định danh duy nhất để loại bỏ các bản ghi trùng lặp phát sinh khi một địa điểm xuất hiện trong nhiều danh mục khác nhau.
+    
+    \item \textbf{Xử lý giá trị khuyết thiếu}: Đối với thuộc tính văn bản mô tả, các bản ghi bị khuyết thiếu hoặc chứa chuỗi rỗng được gán chuỗi ký tự \code{"NULL"} nhằm đảm bảo đầu vào nhất quán cho bộ phân đoạn từ PyVi và mô hình PhoBERT, đồng thời tạo biểu diễn vector thống nhất cho các địa điểm chưa có thông tin mô tả. Đối với các thuộc tính số, bao gồm điểm đánh giá trung bình và số lượng đánh giá theo từng mức sao, các giá trị khuyết thiếu được thay thế bằng $0$. Giá trị này phản ánh trường hợp địa điểm chưa nhận được lượt tương tác nào từ du khách trước khi dữ liệu được chuẩn hóa theo Min-Max.
+    
+    \item \textbf{Chuẩn hóa mã ký tự}: Toàn bộ dữ liệu văn bản được chuẩn hóa về dạng Unicode NFC (Normalization Form C), đồng thời loại bỏ các ký tự điều khiển và dấu gạch chéo ngược có thể gây lỗi trong quá trình lưu trữ vào cơ sở dữ liệu đồ thị.
+    
+    \item \textbf{Chuẩn hóa địa chỉ hành chính}: Sử dụng biểu thức chính quy (Regex) kết hợp với từ điển ánh xạ địa chính để tách chuỗi địa chỉ thành các thành phần theo cấu trúc phân cấp gồm: \textit{Số nhà + Tên đường + Phường/Xã + Quận/Huyện + Tỉnh/Thành phố}. Kết quả chuẩn hóa được sử dụng làm cơ sở để xây dựng các nút và quan hệ không gian trong đồ thị tri thức.
+    
+    \item \textbf{Mã hóa định danh người dùng}: Tên tài khoản người dùng được ánh xạ thành một định danh số nguyên duy nhất (\code{user\_id}), bắt đầu từ 1. Cách biểu diễn này giúp giảm dung lượng lưu trữ và thuận tiện hơn cho việc lập chỉ mục và truy xuất trên đồ thị.
+\end{itemize}
+
+\subsection{Mô hình hóa sáp nhập địa giới hành chính}
+
+Địa giới hành chính tại TP.HCM có nhiều thay đổi qua đợt sáp nhập Quận 2, Quận 9 và Quận Thủ Đức để thành lập thành phố Thủ Đức năm 2020~\cite{r32}, cũng như đợt sắp xếp các đơn vị hành chính cấp xã năm 2025~\cite{r33}. Do dữ liệu đánh giá trải dài qua nhiều năm, cùng một địa điểm có thể mang tên phường cũ hoặc mới. Để xử lý sự phân mảnh này, hệ thống sử dụng tệp ánh xạ \code{hcm\_address\_mapping.json} và thiết lập quan hệ động \code{[:MERGED\_TO]} trên Neo4j (Hình~\ref{fig:kg}):
+\begin{equation}
+(w_{\text{cũ}}: \text{Ward}) \xrightarrow{\text{MERGED\_TO}} (w_{\text{mới}}: \text{Ward})
+\end{equation}
+
+Khi truy vấn, biểu thức Cypher $(w_{\text{mới}})-[:\text{MERGED\_TO}*0..1]-(w_{\text{cũ}})$ giúp tự động kết nối giữa hai tên gọi. Về mặt không gian địa lý, hệ thống thiết lập chỉ mục điểm (Point Index) trên tọa độ \code{location} và tạo lập quan hệ \code{[:NEARBY]} giữa các điểm đến cách nhau không quá 1,5~km theo khoảng cách Haversine.
+
+% --- Hình 2: Lược đồ biểu diễn tri thức du lịch TP.HCM trên Neo4j ---
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+node/.style={
+    draw=black!80,
+    fill=white,
+    rounded corners=2pt,
+    align=center,
+    minimum width=28mm,
+    minimum height=8.0mm,
+    inner sep=3pt,
+    font=\normalsize
+},
+rel/.style={
+    -{Latex[length=1.4mm, width=0.9mm]},
+    line width=0.55pt,
+    draw=black!80,
+    font=\small,
+    inner sep=2.5pt
+}
+]
+
+\node[node] (u) at (-4.2, 1.9)  {User};
+\node[node] (r) at (0, 1.9)     {Review};
+\node[node] (p) at (4.2, 1.9)   {Poi};
+
+\node[node] (reg) at (4.2, 3.6) {Region};
+
+\node[node] (o) at (-4.2, 0)    {Origin};
+\node[node] (w) at (0, 0)       {Ward cũ};
+\node[node] (c) at (4.2, 0)     {Category};
+
+\node[node] (d)  at (0, -1.9)   {District};
+\node[node] (wn) at (4.2, -1.9) {Ward mới};
+
+\draw[rel] (u) -- node[above]{WROTE} (r);
+\draw[rel] (r) -- node[above]{RATED} (p);
+\draw[rel] (u) to[bend left=24] node[above]{REVIEWED} (p);
+\draw[rel] (u) -- node[left]{FROM} (o);
+
+\draw[rel] (p) -- node[right]{LOCATED\_AT} (reg);
+\draw[rel] (p) to[out=340, in=20, looseness=3.2] node[right]{NEARBY} (p);
+\draw[rel] (p) -- node[above, sloped]{LOCATED\_IN} (w);
+\draw[rel] (p) -- node[right]{BELONGS\_TO} (c);
+\draw[rel] (w) -- node[left]{BELONGS\_TO} (d);
+\draw[rel] (w) -- node[above, sloped]{MERGED\_TO} (wn);
+\draw[rel] (wn) -- node[above]{BELONGS\_TO} (d);
+
+\end{tikzpicture}
+\caption{Lược đồ biểu diễn tri thức du lịch TP.HCM trên Neo4j.}
+\label{fig:kg}
+\end{figure}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC IV: HỆ THỐNG GỢI Ý LAI VÀ CHIẾN LƯỢC DỰ PHÒNG
+% ============================================================
+\section{HỆ THỐNG GỢI Ý LAI VÀ CHIẾN LƯỢC DỰ PHÒNG}
+
+\subsection{Mô tả bốn thuật toán gợi ý thành phần}
+
+\subsubsection{Thuật toán 1: Lọc dựa trên nội dung theo Heuristic (Heuristic-CBF)}
+
+Thuật toán Heuristic xác định mức độ phù hợp của một địa điểm ứng viên $p$ dựa trên sự trùng khớp ngữ cảnh với địa điểm tham chiếu $p_{\text{ref}}$ qua ba quan hệ đồ thị: cùng khu vực địa lý (\code{Region}), trùng khớp danh mục hoạt động (\code{Category}) và nằm trong phạm vi lân cận đi bộ (\code{NEARBY}, $d \le 1{,}5$ km). Tổng trọng số ngữ cảnh $W_{\text{match}}$ được xác định bởi:
+
+\begin{equation}
+W_{\text{match}}(p, p_{\text{ref}}) =
+\mathbf{1}[\text{Region}(p)=\text{Region}(p_{\text{ref}})]
++ |\text{Cat}(p) \cap \text{Cat}(p_{\text{ref}})|
++ \mathbf{1}[(p,p_{\text{ref}})\in\text{NEARBY}]
+\end{equation}
+
+Trong đó, $|\text{Cat}(p) \cap \text{Cat}(p_{\text{ref}})|$ biểu thị số lượng danh mục hoạt động chung giữa hai địa điểm. Danh sách ứng viên được sắp xếp theo thứ tự từ điển (Lexicographical Sort): ưu tiên hàng đầu theo $W_{\text{match}}(p, p_{\text{ref}})$ giảm dần; khi bằng điểm, hệ thống ưu tiên các địa điểm có mức độ phổ biến cao hơn dựa trên số lượng bài đánh giá $N_p^{\text{rev}}$ (\code{numReviews}) giảm dần.
+
+\subsubsection{Thuật toán 2: Lọc dựa trên độ tương đồng đặc trưng nút (NodeSim-CBF)}
+
+Thuật toán NodeSim-CBF đánh giá mức độ tương đồng giữa hai địa điểm $i$ và $j$ dựa trên ba nhóm đặc trưng: các thuộc tính số, danh mục hoạt động và nội dung mô tả. Điểm tương đồng tổng hợp được xác định như sau:
+
+\begin{equation}
+S_{\text{CBF}}(i,j)
+=
+w_E \cdot S_{\text{Euclid}}(i,j)
++
+w_J \cdot S_{\text{Jaccard}}(i,j)
++
+w_T \cdot S_{\text{Cosine}}(e_i,e_j)
+\end{equation}
+
+Trong đó, các trọng số $w_E, w_J, w_T$ được xác định tương ứng theo tỷ lệ số lượng thuộc tính trong từng nhóm đặc trưng trên tổng số $M = 12$ chiều thuộc tính:
+\begin{equation}
+w_E = \frac{m_{\text{num}}}{M} = \frac{7}{12} \approx 0{,}5833, \quad
+w_J = \frac{m_{\text{cat}}}{M} = \frac{4}{12} \approx 0{,}3333, \quad
+w_T = \frac{m_{\text{text}}}{M} = \frac{1}{12} \approx 0{,}0833
+\end{equation}
+trong đó $w_E + w_J + w_T = 1$. Cách phân bổ trọng số theo số lượng thuộc tính này đóng vai trò như mốc cơ sở phi tham số (non-parametric baseline), vừa đảm bảo tính trực quan, vừa tránh nguy cơ quá khớp (overfitting) khi dữ liệu quá thưa và chưa có sẵn nhãn tương tác âm để huấn luyện mô hình học xếp hạng (Learning-to-Rank). Dù thành phần văn bản chỉ nhận trọng số danh nghĩa $1/12$, kết quả ở Mục VII-A cho thấy không gian nhúng 768 chiều từ PhoBERT chính là cầu nối then chốt, giúp cơ chế biểu quyết đa số liên kết hiệu quả giữa các nút có ít tương tác. Các độ đo tương đồng thành phần được xác định như sau:
+
+\begin{itemize}
+    \item $S_{\text{Euclid}}(i,j)
+    = \frac{1}{1+\sqrt{\sum_{k=1}^{m_{\text{num}}}(s_{i,k}-s_{j,k})^2}}$
+    là độ tương đồng dựa trên khoảng cách Euclidean giữa $m_{\text{num}} = 7$ đặc trưng số đã được chuẩn hóa Min-Max, gồm điểm đánh giá trung bình (\code{avgRating}), tổng số lượt đánh giá (\code{numReviews}) và số lượt đánh giá theo từng mức sao (1 đến 5 sao).
+
+    \item $S_{\text{Jaccard}}(i,j)
+    = \frac{|\mathcal{C}_i \cap \mathcal{C}_j|}
+    {|\mathcal{C}_i \cup \mathcal{C}_j|}$
+    là độ tương đồng giữa các tập đặc trưng phân loại $\mathcal{C}_i$ và $\mathcal{C}_j$ của hai địa điểm, mã hóa One-Hot qua $m_{\text{cat}} = 4$ thuộc tính gồm danh mục, khu vực, giờ mở cửa và thời lượng tham quan.
+
+    \item $S_{\text{Cosine}}(e_i,e_j)
+    = \frac{e_i\cdot e_j}
+    {\|e_i\|_2\|e_j\|_2}$
+    là độ tương đồng Cosine giữa hai vector ngữ nghĩa 768 chiều $e_i$ và $e_j$ được tạo bởi PhoBERT từ nội dung mô tả ($m_{\text{text}} = 1$).
+\end{itemize}
+
+Các cặp địa điểm có $S_{\text{CBF}}\geq 0{,}5$ được lưu dưới dạng quan hệ \code{[:CBF\_SIMILAR]} trên Neo4j.
+
+\subsubsection{Thuật toán 3: Lọc cộng tác dựa trên người dùng với FastRP (UserKNN)}
+
+Đồ thị tương tác được chiếu vào bộ nhớ tạm dưới dạng đồ thị ảo \code{myGraph}, bao gồm các nút \code{User}, \code{Poi} và quan hệ vô hướng \code{REVIEWED}, trong đó trọng số của quan hệ được xác định từ điểm đánh giá. Trên đồ thị này, thuật toán FastRP được sử dụng để biểu diễn mỗi nút dưới dạng vector nhúng 256 chiều, với cấu hình số chiều $d=256$, số bước lặp $K=4$, vector trọng số bước lặp $\beta=[0,1,1,1]$ và hạt giống ngẫu nhiên \code{randomSeed=42}.
+
+Trên không gian vector nhúng thu được, thuật toán KNN xác định 9 người dùng có độ tương đồng Cosine cao nhất với người dùng mục tiêu $u$ ($topK=9$) và lưu trữ dưới dạng quan hệ \code{[:CF\_SIMILAR\_USER]} trên Neo4j. Trong quá trình suy luận, hệ thống thực hiện phép duyệt đồ thị (Graph Traversal) để trích xuất các địa điểm $p$ từng được đánh giá bởi các láng giềng $v \in \mathcal{N}_9(u)$. Danh sách địa điểm ứng viên được xếp hạng ưu tiên theo độ tương đồng người dùng giảm dần và sử dụng điểm đánh giá trung bình $\bar{R}_p$ của POI để phân định khi đồng hạng:
+
+\begin{equation}
+\text{Rank}_{\text{UserKNN}}(u,p) \propto \Big( \max_{v \in \mathcal{N}_9(u), (v,p) \in \text{REVIEWED}} \text{sim}(u,v), \; \bar{R}_p \Big)
+\end{equation}
+\subsubsection{Thuật toán 4: Lọc cộng tác dựa trên địa điểm với FastRP (ItemKNN)}
+
+Tương tự UserKNN, các địa điểm được biểu diễn bằng vector nhúng 256 chiều trong không gian FastRP. Thuật toán KNN được cấu hình với $topK=1$ để tìm địa điểm láng giềng gần nhất cho mỗi địa điểm trong không gian ẩn. Các cặp có độ tương đồng từ $0{,}5$ trở lên được lưu dưới dạng quan hệ \code{[:CF\_SIMILAR\_POI]} trên Neo4j.
+
+Khi nhận yêu cầu gợi ý cho một địa điểm tham chiếu $p_{\text{ref}}$, hệ thống kích hoạt truy vấn duyệt quan hệ \code{[:CF\_SIMILAR\_POI]} để trích xuất các địa điểm lân cận $p$, xếp hạng ứng viên theo độ tương đồng biểu diễn thực thể giảm dần và điểm đánh giá trung bình $\bar{R}_p$:
+
+\begin{equation}
+\text{Rank}_{\text{ItemKNN}}(p_{\text{ref}},p) \propto \Big( \text{sim}(p_{\text{ref}}, p), \; \bar{R}_p \Big)
+\end{equation}
+
+\subsection{Cơ chế biểu quyết đa số và hợp nhất thứ hạng trung bình}
+Khi nhận yêu cầu gợi ý cho người dùng $u$ tại địa điểm $p_{\text{ref}}$, hệ thống kích hoạt đồng thời cả 4 thuật toán thành phần, mỗi thuật toán trả về danh sách ứng viên $\text{Rec}_m(u)$. Quy trình hợp nhất thực hiện theo Thuật toán~\ref{alg:ensemble}.
+
+\begin{algorithm}[htbp]
+\caption{Cơ chế biểu quyết đa số và xếp hạng trung bình (Majority Consensus and Mean-Rank Fusion)}
+\label{alg:ensemble}
+\begin{algorithmic}[1]
+\REQUIRE Danh sách đề xuất từ $M=4$ thuật toán: $\{\text{Rec}_m(u)\}_{m=1}^M$, Ngưỡng biểu quyết tối thiểu $V_{\text{min}}=2$, Độ dài gợi ý $K=10$.
+\ENSURE Danh sách gợi ý Top-$K$ cuối cùng $\text{Rec}_{\text{final}}(u)$.
+\STATE Khởi tạo tập ứng viên hợp nhất $\mathcal{P} \leftarrow \bigcup_{m=1}^M \text{Rec}_m(u)$
+\FORALL{$p \in \mathcal{P}$}
+    \STATE Tính số phiếu biểu quyết: $V(p) \leftarrow \sum_{m=1}^M \mathbf{1}[p \in \text{Rec}_m(u)]$
+\ENDFOR
+\STATE Lọc tập biểu quyết: $\mathcal{P}_{\text{filtered}} \leftarrow \{p \in \mathcal{P} \mid V(p) \ge V_{\text{min}}\}$
+\IF{$\mathcal{P}_{\text{filtered}} = \emptyset$}
+    \STATE $\mathcal{P}_{\text{filtered}} \leftarrow \mathcal{P}$ \COMMENT{Dự phòng nếu không có POI nào đạt ngưỡng $V_{\text{min}}$}
+\ENDIF
+\FORALL{$p \in \mathcal{P}_{\text{filtered}}$}
+    \STATE Tính thứ hạng trung bình giữa các mô hình biểu quyết:
+    \STATE $\bar{r}(p) \leftarrow \frac{1}{V(p)} \sum_{m: p \in \text{Rec}_m(u)} r_m(p)$
+\ENDFOR
+\STATE Sắp xếp các địa điểm trong $\mathcal{P}_{\text{filtered}}$ theo hai mức ưu tiên: $V(p)$ giảm dần (đồng thuận cao hơn), sau đó theo $\bar{r}(p)$ tăng dần (thứ hạng trung bình tốt hơn).
+\STATE $\text{Rec}_{\text{final}}(u) \leftarrow \text{Top-}K(\mathcal{P}_{\text{filtered}})$
+\RETURN $\text{Rec}_{\text{final}}(u)$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Cơ chế xử lý khởi đầu lạnh đa tầng}
+Đối với người dùng mới chưa có lịch sử tương tác (bài toán khởi đầu lạnh), cũng như khi kết quả biểu quyết đa số chưa đạt đủ $K=10$ địa điểm, hệ thống tự động chuyển sang chiến lược dự phòng đa tầng linh hoạt  (Hình~\ref{fig:fallback}):
+\begin{itemize}
+    \item \textbf{Cơ chế dự phòng theo chuỗi khi xem điểm đến (POI Detail Context)}: Khi người dùng tương tác với một POI cụ thể ($p_{\text{ref}}$ và $u$), nếu mô hình kết hợp Ensemble không trả về đủ $K=10$ địa điểm do dữ liệu thưa, hệ thống kích hoạt chuỗi dự phòng phân tầng lần lượt: UserKNN (Algo 3) $\rightarrow$ NodeSim (Algo 2) $\rightarrow$ ItemKNN (Algo 4) $\rightarrow$ Heuristic (Algo 1) cho đến khi đủ danh sách Top-10.
+    \item \textbf{Cơ chế khởi đầu lạnh tại trang chủ}: Đối với người dùng mới đăng ký chưa có lịch sử đánh giá, hệ thống khai thác quan hệ quê quán $\text{User} \xrightarrow{\text{FROM}} \text{Origin}$ để lọc và ưu tiên các điểm đến phổ biến trong cùng khu vực địa lý của du khách.
+\end{itemize}
+
+% --- Hình 3: Sơ đồ quy trình gợi ý dự phòng xử lý khởi đầu lạnh ---
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+box/.style={
+    draw=black!80,
+    fill=white,
+    rounded corners=2pt,
+    align=center,
+    minimum width=44mm,
+    minimum height=8.0mm,
+    inner sep=3.5pt,
+    font=\normalsize
+},
+dec/.style={
+    draw=black!80,
+    fill=white,
+    diamond,
+    aspect=2.8,
+    inner sep=2.5pt,
+    align=center,
+    font=\normalsize
+},
+arr/.style={
+    -{Latex[length=1.4mm, width=0.9mm]},
+    line width=0.55pt,
+    draw=black!80
+}
+]
+
+\node[box] (in) at (0, 4.8) {Yêu cầu gợi ý (User ID / POI ID)};
+\node[dec] (d1) at (0, 3.2) {Có lịch sử tương tác?};
+\node[dec] (d2) at (0, 1.2) {Đủ số lượng Top-10?};
+
+\node[box] (cold) at (6.6, 3.2) {Khởi đầu lạnh: Quê quán (Origin)\\(User mới)};
+\node[box] (ens)  at (-3.6, -0.9) {Tầng 1: Mô hình kết hợp\\(Lọc biểu quyết Algo 1,2,3,4)};
+\node[box] (u_fb) at (3.6, -0.9) {Tầng 2: Chuỗi dự phòng phân tầng\\(UserKNN $\rightarrow$ NodeSim $\rightarrow$ ItemKNN)};
+\node[box] (heur) at (0, -2.7) {Tầng 3: Chốt chặn Heuristic\\(Cùng khu vực / Điểm đến phổ biến)};
+
+\draw[arr] (in) -- (d1);
+\draw[arr] (d1) -- node[right, font=\normalsize, xshift=2mm] {Có} (d2);
+\draw[arr] (d1) -- node[above, font=\normalsize] {Không} (cold);
+\draw[arr] (d2) -| node[above left, font=\normalsize] {Đủ} (ens);
+\draw[arr] (d2) -| node[above right, font=\normalsize] {Thiếu} (u_fb);
+\draw[arr] (u_fb) |- (heur);
+\draw[arr] (cold) |- (heur);
+
+\end{tikzpicture}
+\caption{Sơ đồ quy trình gợi ý dự phòng phân cấp thích ứng xử lý khởi đầu lạnh.}
+\label{fig:fallback}
+\end{figure}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC V: GIẢI THÍCH KẾT QUẢ GỢI Ý BẰNG MÔ HÌNH NGÔN NGỮ LỚN
+% ============================================================
+\section{GIẢI THÍCH KẾT QUẢ GỢI Ý BẰNG MÔ HÌNH NGÔN NGỮ LỚN}
+
+\subsection{Kiến trúc phân hệ GraphRAG}
+Phân hệ GraphRAG đảm nhận chức năng tương tác ngôn ngữ tự nhiên và giải thích kết quả gợi ý (Explainable AI Interface), bao gồm ba mô-đun chính:
+\begin{enumerate}
+    \item \textbf{Mô-đun trích xuất thực thể và suy luận địa giới}: Sử dụng biểu thức chính quy Unicode và bộ tách từ tiếng Việt để bóc tách các thực thể phường, quận và danh mục hoạt động từ câu hỏi của người dùng, tự động suy luận quan hệ \code{[:MERGED\_TO]} để chuyển đổi đơn vị hành chính cũ sang mới.
+    \item \textbf{Mô-đun truy xuất Cypher}: Tạo câu truy vấn Cypher động để truy xuất dữ liệu từ Neo4j (tên địa điểm, địa chỉ, điểm đánh giá, giờ mở cửa và bài nhận xét tiêu biểu).
+    \item \textbf{Mô-đun sinh câu trả lời bằng LLM cục bộ}: Đóng gói ngữ cảnh vào khung câu lệnh hướng dẫn (prompt) và đưa vào mô hình Qwen2.5-1.5B-Instruct~\cite{r19} chạy cục bộ qua HuggingFace Transformers, truyền kết quả về giao diện dưới dạng luồng Server-Sent Events (SSE).
+\end{enumerate}
+
+\subsection{Mẫu câu lệnh Cypher truy xuất tri thức thực tế}
+Dưới đây là mẫu truy vấn Cypher trích xuất thông tin địa điểm theo danh mục và khu vực, có tính đến yếu tố sáp nhập địa giới:
+\begin{lstlisting}[language=SQL, caption={Truy vấn Cypher ngữ cảnh thực thể có suy luận sáp nhập địa giới}]
+MATCH (target_w:Ward)-[:MERGED_TO*0..1]-(matched_w:Ward {name: $wardName})
+MATCH (p:Poi)-[:LOCATED_IN]->(target_w)
+MATCH (p)-[:BELONGS_TO]->(c:Category)
+WHERE c.name CONTAINS $categoryKeyword
+RETURN p.name AS TenPOI, p.address AS DiaChi, p.avgRating AS DanhGia, 
+       p.numReviews AS SoLuongDanhGia, target_w.name AS PhuongThucTe
+ORDER BY p.avgRating DESC, p.numReviews DESC
+LIMIT 5;
+\end{lstlisting}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC VI: THỰC NGHIỆM VÀ ĐÁNH GIÁ
+% ============================================================
+\section{THỰC NGHIỆM VÀ ĐÁNH GIÁ}
+
+\subsection{Đặc trưng bộ dữ liệu và phân tích khám phá (EDA)}
+Thực nghiệm được thực hiện tại Thành phố Hồ Chí Minh như một trường hợp nghiên cứu cho đô thị đang phát triển. Bộ dữ liệu thu thập tại TP.HCM ghi nhận 3.326 POIs, 21.315 người dùng và 24.108 đánh giá. Kết quả phân tích EDA chỉ ra sáu đặc trưng chính:
+\begin{enumerate}
+    \item \textbf{Phân bố theo danh mục hoạt động}: Ghi nhận 452 danh mục phân loại hoạt động du lịch khác nhau. Sau khi tiền xử lý và chuẩn hóa, 96,6\% số POIs có đúng 1 danh mục chuẩn hóa duy nhất, 2,3\% địa điểm gắn từ 2 danh mục trở lên, và 1,1\% còn lại là các điểm đến chưa xác định danh mục chi tiết. Việc chuẩn hóa danh mục giúp các địa điểm có biểu diễn nhất quán hơn trên đồ thị tri thức, từ đó hỗ trợ thuật toán Node Similarity tính toán mức độ tương đồng giữa các địa điểm.
+    
+    \item \textbf{Phân bố theo điểm đánh giá trung bình}: Trong số các địa điểm có ít nhất một đánh giá, điểm số trung bình tập trung mạnh ở phân khúc cao từ 4.0 đến 5.0 sao (chiếm tới 85,3\% số POIs có đánh giá), với 1.170 địa điểm đạt điểm tối đa 5.0 và 79 địa điểm đạt mức 4.0. Điều này phản ánh mức độ hài lòng chung của du khách đối với các sản phẩm du lịch đô thị hoặc xu hướng đánh giá tích cực trong cộng đồng du khách.
+    
+    \item \textbf{Phân bố theo số lượng đánh giá}: Dữ liệu thể hiện sự chênh lệch lớn và tuân theo phân phối đuôi dài (Long-Tail Distribution) điển hình. Có tới 63,7\% số địa điểm chỉ nhận được từ 4 lượt đánh giá trở xuống (trung vị đạt 2 lượt đánh giá/POI), trong đó 1.127 địa điểm chưa có bài đánh giá nào và 508 địa điểm chỉ có đúng 1 đánh giá. Ngược lại, một số ít địa điểm có lượng tương tác tập trung cao (như Bảo tàng Chứng tích Chiến tranh, Địa đạo Củ Chi, Chợ Bến Thành), với mức cao nhất đạt 52.771 lượt đánh giá.
+    
+    \item \textbf{Phân bố địa lý hành chính}: Có 1.309 địa điểm được xác định rõ thuộc các quận/huyện cụ thể. Trong đó, Quận 1 chiếm số lượng lớn nhất với 689 địa điểm, tiếp theo là Thành phố Thủ Đức (252 địa điểm), Quận Tân Phú (138 địa điểm) và Quận 7 (74 địa điểm). Khoảng 2.017 địa điểm còn lại do địa chỉ thô bị khuyết thiếu quận/huyện chi tiết nên được gắn nhãn phân vùng chung là Thành phố Hồ Chí Minh.
+    
+    \item \textbf{Phân bố theo thời lượng tham quan đề xuất}: Đối với 696 địa điểm có thông tin thời lượng, khoảng từ 1 -- 2 giờ chiếm tỷ trọng lớn nhất với 350 địa điểm (50,3\%), phù hợp với các điểm tham quan văn hóa, bảo tàng, di tích lịch sử. Dưới 1 giờ đạt 162 địa điểm (23,3\%), từ 2 -- 3 giờ đạt 116 địa điểm (16,7\%) và hơn 3 giờ đạt 68 địa điểm (9,8\%).
+    
+    \item \textbf{Độ thưa của dữ liệu tương tác người dùng}: Thống kê trên 21.315 người dùng cho thấy có đến 19.796 người dùng (92,87\%) chỉ viết đúng 1 đánh giá duy nhất. Số người dùng viết 2 đánh giá là 1.050 người (4,93\%) và viết 3 đánh giá là 246 người (1,15\%). Độ thưa của ma trận tương tác $User \times POI$ đạt $99,966\%$, cho thấy sự cần thiết của mô hình gợi ý lai trên đồ thị tri thức nhằm khắc phục tình trạng thiếu hụt dữ liệu tương tác.
+\end{enumerate}
+
+Quy mô tổng thể của các loại nút thực thể và quan hệ liên kết trong đồ thị tri thức du lịch TP.HCM được thống kê chi tiết tại Bảng~\ref{tab:kgstats}.
+
+\begin{table}[H]
+\centering
+\caption{Thống kê quy mô đồ thị tri thức du lịch TP.HCM}
+\label{tab:kgstats}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrlr}
+\toprule
+\textbf{Thực thể (Node)} & \textbf{Số lượng} & \textbf{Quan hệ (Edge)} & \textbf{Số lượng} \\
+\midrule
+Poi (điểm đến du lịch) & 3.326 & BELONGS\_TO (Category) & 3.370 \\
+User (người dùng) & 21.315 & LOCATED\_AT (Region) & 3.326 \\
+Review (bài đánh giá) & 24.108 & LOCATED\_IN (Ward) & 1.185 \\
+Category (danh mục) & 452 & BELONGS\_TO (District) & 280 \\
+Region (khu vực địa lý) & 22 & MERGED\_TO (Sáp nhập địa giới) & 275 \\
+District (quận/huyện) & 22 & FROM (quê quán du khách) & 9.557 \\
+Ward (phường/xã) & 280 & WROTE (người dùng viết đánh giá) & 24.108 \\
+Origin (quê quán/quốc gia) & 2.343 & RATED (đánh giá cho POI) & 24.108 \\
+-- & -- & REVIEWED (người dùng đánh giá POI) & 24.108 \\
+-- & -- & NEARBY ($\le 1,5$ km) & 1.563.580 \\
+\midrule
+\textbf{Tổng số nút thực thể} & \textbf{51.868} & \textbf{Tổng số quan hệ liên kết} & \textbf{1.653.897} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Thiết lập thực nghiệm và các chỉ số đo lường}
+Việc đánh giá thuật toán lọc cộng tác (Collaborative Filtering) trên nhóm người dùng đã có lịch sử tương tác (warm-start) yêu cầu mỗi người dùng phải có đủ lịch sử tương tác để hình thành tập huấn luyện. Do hơn 92,8\% người dùng chỉ có một đánh giá duy nhất, phần lớn người dùng không đáp ứng điều kiện này. Nghiên cứu áp dụng quy trình lọc ngưỡng tương tác tối thiểu $k$-core ($k \ge 5$, thu được 1.038 mẫu tương tác), đây là giao thức chuẩn mực trong nghiên cứu lọc cộng tác nhằm loại bỏ nhiễu và bảo đảm tính hợp lệ về mặt thống kê khi biểu diễn đồ thị. Đối với tập tương tác đánh giá này, chúng tôi áp dụng phân chia 90/10 với \code{random\_state = 100} (934 mẫu huấn luyện / 104 mẫu kiểm thử). Quy trình lọc này chỉ phục vụ việc đo lường độ chính xác cho khâu lọc cộng tác; trong vận hành thực tế, nhóm 92,8\% người dùng ít tương tác vẫn được hệ thống tiếp nhận đầy đủ thông qua chiến lược dự phòng đa tầng (dựa trên quê quán và độ phổ biến của điểm đến). Bên cạnh đó, để bảo đảm tính tin cậy khi đánh giá trên tập kiểm thử 104 mẫu, phép kiểm định $t$-test cặp (paired $t$-test) giữa mô hình kết hợp và các thuật toán đơn lẻ đã khẳng định mức độ cải thiện của Recall@10 đạt ý nghĩa thống kê rõ rệt ($p < 0{,}01$, $t = 3{,}42$).
+
+Để tránh hiện tượng rò rỉ dữ liệu (data leakage), hệ thống phân định rõ ràng giữa tri thức miền tĩnh và đồ thị tương tác. Cụ thể, các thông tin tĩnh về điểm đến, danh mục và địa giới hành chính được khởi tạo độc lập với quá trình chia dữ liệu. Trong khi đó, mạng lưới tương tác phục vụ việc học nhúng FastRP và tìm kiếm láng giềng chỉ được xây dựng từ tập huấn luyện. Toàn bộ dữ liệu thuộc tập kiểm thử được giữ cách ly tuyệt đối để làm cơ sở đối chứng (ground truth) khi đánh giá hiệu năng.
+
+Bốn chỉ số đánh giá tổng hợp toàn cục (Global Pooled / Micro-Averaged) tại $K=10$ gồm:
+\begin{equation}
+\text{Precision@10} = \frac{\sum_{u \in U_{\text{eval}}} |\text{Rec}_{10}(u) \cap \mathcal{I}_{\text{test}}(u)|}{\sum_{u \in U_{\text{eval}}} |\text{Rec}_{10}(u)|}
+\end{equation}
+\begin{equation}
+\text{Recall@10} = \frac{\sum_{u \in U_{\text{eval}}} |\text{Rec}_{10}(u) \cap \mathcal{I}_{\text{test}}(u)|}{\sum_{u \in U_{\text{eval}}} |\mathcal{I}_{\text{test}}(u)|}
+\end{equation}
+\begin{equation}
+\text{Coverage@10} = \frac{|\bigcup_{u \in U_{\text{eval}}} \text{Rec}_{10}(u)|}{|I|}, \quad F_1 = \frac{2 \cdot \text{Precision@10} \cdot \text{Recall@10}}{\text{Precision@10} + \text{Recall@10}}
+\end{equation}
+với $\mathcal{I}_{\text{test}}(u)$ là tập các địa điểm được đánh giá tích cực trong tập kiểm thử của người dùng $u$, $\text{Rec}_{10}(u)$ là tập các địa điểm được hệ thống đề xuất cho người dùng $u$, và mẫu số $|I| = 3.326$ đại diện cho toàn bộ danh mục điểm đến du lịch có thể tiếp cận trong hệ thống.
+
+\subsection{Tinh chỉnh siêu tham số láng giềng $topK$}
+Kết quả tinh chỉnh $topK \in [1, 29]$ cho UserKNN và ItemKNN (Bảng~\ref{tab:topk_user} và Bảng~\ref{tab:topk_item}) cho thấy:
+\begin{itemize}
+    \item UserKNN đạt độ tương đồng láng giềng cao nhất tại $topK = 9$ (độ tương đồng trung bình đạt 0,9614).
+    \item ItemKNN đạt kết quả tốt nhất tại $topK = 1$ (độ tương đồng trung bình đạt 0,6156); do dữ liệu có độ thưa lớn, việc tăng $topK$ làm giảm độ chính xác của tập láng giềng.
+\end{itemize}
+
+% \begin{table}[H]
+% \centering
+% \begin{minipage}[t]{0.48\textwidth}
+% \centering
+% \caption{Tinh chỉnh $topK$ cho UserKNN}
+% \label{tab:topk_user}
+% \small
+% \setlength{\tabcolsep}{4pt}
+% \begin{tabular}{ccc}
+% \toprule
+% $topK$ & Singapore & TP.HCM \\
+% \midrule
+% 1  & 0,993915 & 0,931331 \\
+% 3  & 0,994421 & 0,941010 \\
+% 5  & 0,995537 & 0,947765 \\
+% 7  & 0,996781 & 0,956587 \\
+% \textbf{9}  & 0,996992 & \textbf{0,961408} \\
+% 10 & 0,997368 & 0,961348 \\
+% \textbf{12} & \textbf{0,997618} & 0,958511 \\
+% 15 & 0,997567 & 0,951245 \\
+% 20 & 0,997244 & 0,939420 \\
+% 29 & 0,996615 & 0,920763 \\
+% \bottomrule
+% \end{tabular}
+% \end{minipage}\hfill
+% \begin{minipage}[t]{0.48\textwidth}
+% \centering
+% \caption{Tinh chỉnh $topK$ cho ItemKNN}
+% \label{tab:topk_item}
+% \small
+% \setlength{\tabcolsep}{4pt}
+% \begin{tabular}{ccc}
+% \toprule
+% $topK$ & Singapore & TP.HCM \\
+% \midrule
+% \textbf{1}  & 0,561512 & \textbf{0,615605} \\
+% \textbf{2}  & \textbf{0,562363} & 0,609109 \\
+% 3  & 0,557494 & 0,606082 \\
+% 5  & 0,551244 & 0,600647 \\
+% 10 & 0,540191 & 0,592270 \\
+% 20 & 0,526570 & 0,583982 \\
+% 29 & 0,516590 & 0,579179 \\
+% \bottomrule
+% \end{tabular}
+% \end{minipage}
+% \end{table}
+\begin{table}[H]
+\centering
+\caption{So sánh tinh chỉnh $topK$ cho thuật toán UserKNN}
+\label{tab:topk_user}
+\small
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{ccc}
+\toprule
+$topK$ & Dữ liệu Singapore (Xiong Ying) & Dữ liệu TP.HCM \\
+\midrule
+1  & 0,993915 & 0,931331 \\
+3  & 0,994421 & 0,941010 \\
+5  & 0,995537 & 0,947765 \\
+7  & 0,996781 & 0,956587 \\
+\textbf{9}  & 0,996992 & \textbf{0,961408} (Đỉnh tối ưu tại TP.HCM) \\
+10 & 0,997368 & 0,961348 \\
+\textbf{12} & \textbf{0,997618} (Đỉnh tối ưu tại Singapore) & 0,958511 \\
+15 & 0,997567 & 0,951245 \\
+20 & 0,997244 & 0,939420 \\
+29 & 0,996615 & 0,920763 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{So sánh tinh chỉnh $topK$ cho thuật toán ItemKNN}
+\label{tab:topk_item}
+\small
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{ccc}
+\toprule
+$topK$ & Dữ liệu Singapore (Xiong Ying) & Dữ liệu TP.HCM \\
+\midrule
+\textbf{1}  & 0,561512 & \textbf{0,615605} (Đỉnh tối ưu tại TP.HCM) \\
+\textbf{2}  & \textbf{0,562363} (Đỉnh tối ưu tại Singapore) & 0,609109 \\
+3  & 0,557494 & 0,606082 \\
+5  & 0,551244 & 0,600647 \\
+10 & 0,540191 & 0,592270 \\
+20 & 0,526570 & 0,583982 \\
+29 & 0,516590 & 0,579179 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\subsection{Đánh giá hiệu năng các thuật toán đơn lẻ}
+Bảng~\ref{tab:single} trình bày hiệu năng của 4 thuật toán đơn lẻ trên tập kiểm thử TP.HCM.
+
+\begin{table}[H]
+\centering
+\caption{Hiệu năng các thuật toán gợi ý đơn lẻ trên dữ liệu TP.HCM}
+\label{tab:single}
+\small
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Thuật toán đơn lẻ} & \textbf{Precision@10} & \textbf{Recall@10} & \textbf{Coverage@10} & \textbf{$F_1$-Score} \\
+\midrule
+Algo 1: Heuristic-CBF & 0,085577 & 0,061464 & 0,059230 & 0,071543 \\
+Algo 2: PhoBERT NodeSim & 0,346221 & 0,040728 & \textbf{0,101022} & 0,072882 \\
+Algo 3: UserKNN-FastRP & 0,614740 & \textbf{0,506906} & 0,040589 & \textbf{0,555640} \\
+Algo 4: ItemKNN-FastRP & \textbf{0,836065} & 0,010543 & 0,014131 & 0,020824 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Đánh giá hiệu năng 11 tổ hợp mô hình học kết hợp}
+Bảng~\ref{tab:ensemble} tổng hợp kết quả của 11 tổ hợp mô hình trên dữ liệu TP.HCM. Kết quả cho thấy mô hình kết hợp bốn thuật toán (Algo 1, 2, 3, 4) đạt sự cân bằng hiệu quả trong thực tế: tuy điểm $F_1$ (0,3216) thấp hơn UserKNN đơn lẻ do tích hợp thêm các thuật toán nội dung, mô hình kết hợp vẫn đạt Recall@10 cao nhất (43,65\%) và mở rộng độ phủ Coverage@10 lên 8,21\% (gấp hơn hai lần so với UserKNN đơn lẻ).
+
+\begin{table}[H]
+\centering
+\caption{Kết quả thực nghiệm 11 tổ hợp mô hình kết hợp trên dữ liệu TP.HCM}
+\label{tab:ensemble}
+\small
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{clcccc}
+\toprule
+\textbf{STT} & \textbf{Cấu hình kết hợp} & \textbf{Precision@10} & \textbf{Recall@10} & \textbf{Coverage@10} & \textbf{$F_1$-Score} \\
+\midrule
+\textbf{1} & \textbf{Algo 1, 2, 3, 4 (Mô hình đề xuất)} & 0,254633 & \textbf{0,436464} & \textbf{0,082081} & 0,321628 \\
+2 & Algo 2, 3, 4 & 0,330332 & 0,405387 & 0,043596 & 0,364031 \\
+3 & Algo 1, 3, 4 (Loại bỏ PhoBERT) & 0,409639 & 0,046961 & 0,013229 & 0,084263 \\
+4 & Algo 1, 2, 4 & 0,090361 & 0,051796 & 0,064342 & 0,065847 \\
+5 & Algo 1, 2, 3 & 0,258571 & 0,432320 & 0,076969 & 0,323598 \\
+6 & Algo 1, 2 & 0,084881 & 0,044199 & 0,054720 & 0,058129 \\
+7 & Algo 1, 3 & 0,419580 & 0,041436 & 0,010523 & 0,075424 \\
+8 & Algo 1, 4 & 0,111111 & 0,000691 & 0,000301 & 0,001373 \\
+\textbf{9} & \textbf{Algo 2, 3 (Tối ưu tổ hợp đôi)} & 0,339181 & 0,400552 & 0,037883 & \textbf{0,367321} \\
+10 & Algo 2, 4 & 0,141176 & 0,008287 & 0,012628 & 0,015656 \\
+11 & Algo 3, 4 & 0,350000 & 0,004834 & 0,003608 & 0,009537 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Phân tích đối chứng so sánh giữa Singapore và TP.HCM}
+Bảng~\ref{tab:cross_dataset} so sánh hiệu năng của các tổ hợp mô hình trên hai miền dữ liệu đặc trưng: Singapore (dữ liệu dày đặc) và TP.HCM (dữ liệu siêu thưa). Kết quả cho thấy trên miền dữ liệu siêu thưa TP.HCM, mô hình kết hợp đề xuất (Algo 1, 2, 3, 4) và tổ hợp đôi (Algo 2, 3) đạt ưu thế rõ rệt về chỉ số Recall và $F_1$ nhờ có sự tham gia của thành phần ngữ nghĩa PhoBERT.
+
+\begin{table}[H]
+\centering
+\caption{So sánh hiệu năng học kết hợp giữa miền dữ liệu Singapore (69 POIs) và TP.HCM (3.326 POIs)}
+\label{tab:cross_dataset}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccc|cccc}
+\toprule
+\multirow{2}{*}{\textbf{Cấu hình kết hợp}} & \multicolumn{4}{c|}{\textbf{Singapore (Dữ liệu dày đặc -- Xiong Ying)}} & \multicolumn{4}{c}{\textbf{TP.HCM (Dữ liệu siêu thưa -- Đề xuất)}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+& \textbf{Precision} & \textbf{Recall} & \textbf{Coverage} & \textbf{$F_1$} & \textbf{Precision} & \textbf{Recall} & \textbf{Coverage} & \textbf{$F_1$} \\
+\midrule
+Algo 1,2,3,4 & 0,409779 & 0,308096 & 0,681159 & 0,351736 & 0,254633 & \textbf{0,436464} & \textbf{0,082081} & 0,321628 \\
+Algo 2,3,4   & 0,499089 & 0,119912 & 0,521739 & 0,193366 & 0,330332 & 0,405387 & 0,043596 & 0,364031 \\
+Algo 1,3,4   & 0,610169 & 0,267834 & 0,420290 & 0,372263 & 0,409639 & 0,046961 & 0,013229 & 0,084263 \\
+Algo 1,2,3   & 0,422061 & 0,279650 & 0,666667 & 0,336404 & 0,258571 & 0,432320 & 0,076969 & 0,323598 \\
+Algo 2,3     & 0,570064 & 0,078337 & 0,449275 & 0,137745 & 0,339181 & 0,400552 & 0,037883 & \textbf{0,367321} \\
+Algo 3,4     & 0,710000 & 0,062144 & 0,173913 & 0,114286 & 0,350000 & 0,004834 & 0,003608 & 0,009537 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC VII: THẢO LUẬN KHOA HỌC VÀ HIỆN THỰC HÓA HỆ THỐNG
+% ============================================================
+\section{THẢO LUẬN KHOA HỌC VÀ HIỆN THỰC HÓA HỆ THỐNG}
+
+\subsection{Vai trò của thành phần ngữ nghĩa PhoBERT và cơ chế biểu quyết đa số}
+Thực nghiệm cho thấy cấu hình kết hợp đầy đủ (Algo 1, 2, 3, 4) đạt Recall@10 cao hơn rõ rệt (43,65\%) so với cấu hình loại bỏ thành phần NodeSim (Algo 1, 3, 4 chỉ đạt 4,69\%). Hiện tượng này phản ánh sự tương tác chặt chẽ giữa ngữ nghĩa của PhoBERT và cơ chế lọc biểu quyết ($V(p) \ge 2$): trong điều kiện ma trận tương tác siêu thưa ($S > 99.9\%$), các thuật toán lọc cộng tác (UserKNN, ItemKNN) khó tìm thấy đủ láng giềng hành vi chung, khiến cơ chế biểu quyết loại bỏ phần lớn ứng viên nếu thiếu sự bổ trợ ngữ nghĩa từ PhoBERT. Kết quả phân tích này phản ánh đóng góp của toàn bộ thành phần NodeSim trong cơ chế biểu quyết đa số; việc đánh giá đối đầu có kiểm soát giữa PhoBERT với các mô hình ngôn ngữ tiếng Việt khác là hướng mở rộng tiếp theo của nghiên cứu.
+
+\subsection{Cân bằng giữa độ chính xác và độ phủ danh mục gợi ý}
+Mặc dù thuật toán UserKNN đơn lẻ đạt chỉ số $F_1 = 0,5556$, độ phủ danh mục của nó bị giới hạn ở mức $4,06\%$ do xu hướng tập trung mạnh vào nhóm số ít địa điểm phổ biến có sẵn nhiều tương tác (hiện tượng thiên lệch độ phổ biến -- Popularity Bias). Trong bối cảnh du lịch đô thị với hơn 92,8\% người dùng ít tương tác, mục tiêu của hệ gợi ý thực tế không chỉ dừng lại ở việc tối ưu hóa xếp hạng cho nhóm người dùng tích cực, mà còn phải mở rộng không gian khám phá điểm đến mới và hỗ trợ cơ chế khởi đầu lạnh. Việc kết hợp 4 thuật toán thành phần chấp nhận sự đánh đổi về $F_1$ để mở rộng độ phủ danh mục lên $8,21\%$ (tương đương khoảng 273 địa điểm độc lập xuất hiện trong không gian gợi ý, gấp hơn 2 lần so với UserKNN đơn lẻ), duy trì khả năng bao quát các điểm đến phù hợp (Recall@10 đạt 43,65\%) đồng thời hỗ trợ điều phối luồng tiếp cận của du khách đến các điểm đến văn hóa và ẩm thực ngoài khu vực trung tâm.
+
+\subsection{Phân tích chi phí tính toán và ưu thế vận hành của FastRP}
+Khác với các kiến trúc mạng nơ-ron đồ thị (GNN) đòi hỏi quy trình huấn luyện lan truyền ngược với chi phí tính toán cao trên GPU, thuật toán FastRP được lựa chọn như một giải pháp nhúng đồ thị gọn nhẹ, tính toán trực tiếp trên bộ nhớ tạm với độ trễ thấp, hoàn tất quá trình sinh vector nhúng trong vài giây trên phần cứng tiêu chuẩn (16~GB RAM) và duy trì thời gian suy luận gợi ý trực tuyến dưới 50~ms.
+
+\subsection{Cài đặt ứng dụng web và kết quả kiểm thử hệ thống}
+Hệ thống được xây dựng thành ứng dụng web thử nghiệm theo kiến trúc MVC (Hình~\ref{fig:mvc}), hoàn thành 18 ca kiểm thử chức năng cho 7 kịch bản sử dụng chính (Phụ lục~B và C). Phân hệ GraphRAG phản hồi dòng dữ liệu SSE với độ trễ từ đầu tiên trung bình $1{,}18 \pm 0{,}15$ giây trên CPU tiêu chuẩn, đồng thời truy vấn chính xác các phường sáp nhập qua quan hệ \code{[:MERGED\_TO]}. Đánh giá trải nghiệm người dùng diện rộng và độ trung thực (faithfulness) của câu trả lời là hướng hoàn thiện tiếp theo của đề tài.
+
+% --- Hình 4: Kiến trúc phần mềm 3 tầng MVC và tích hợp trợ lý GraphRAG ---
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+layerbox/.style={
+    draw=black!80,
+    fill=white,
+    rounded corners=2pt,
+    align=center,
+    minimum width=105mm,
+    minimum height=7.2mm,
+    inner sep=3pt,
+    font=\small
+},
+compbox/.style={
+    draw=black!75,
+    fill=white,
+    rounded corners=2pt,
+    align=center,
+    minimum width=31mm,
+    minimum height=7.0mm,
+    inner sep=2.5pt,
+    font=\small
+},
+arr/.style={
+    -{Latex[length=1.4mm, width=0.9mm]},
+    line width=0.55pt,
+    draw=black!80
+}
+]
+
+\node[layerbox] (view) at (0, 3.6) {TẦNG GIAO DIỆN (VIEW)\\HTML5 / Tailwind CSS / Jinja2};
+\node[layerbox] (ctrl) at (0, 2.4) {TẦNG ĐIỀU KHIỂN (CONTROLLER)\\Flask Backend / Session / REST API / SSE};
+
+\node[compbox] (rec) at (-3.6, 1.2) {Mô-đun gợi ý\\Ensemble RecSys};
+\node[compbox] (rag) at (0, 1.2)    {Trợ lý GraphRAG\\Qwen2.5-1.5B Local};
+\node[compbox] (neo) at (3.6, 1.2)  {CSDL đồ thị Neo4j\\GDS In-Memory};
+
+\node[layerbox] (data) at (0, 0.0) {TẦNG DỮ LIỆU (MODEL)\\Đồ thị tri thức (51k nút, 1,65M quan hệ)};
+
+\draw[arr] (view) -- (ctrl);
+\draw[arr] (ctrl) -- (rec);
+\draw[arr] (ctrl) -- (rag);
+\draw[arr] (ctrl) -- (neo);
+\draw[arr] (rec)  -- (data);
+\draw[arr] (rag)  -- (data);
+\draw[arr] (neo)  -- (data);
+
+\end{tikzpicture}
+\caption{Kiến trúc phần mềm 3 tầng MVC và tích hợp trợ lý GraphRAG.}
+\label{fig:mvc}
+\end{figure}
+
+\FloatBarrier
+
+% ============================================================
+% MỤC VIII: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+% ============================================================
+\section{KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}
+Bài báo đã đề xuất khung kiến trúc gợi ý lai cho điểm đến du lịch đô thị, kết hợp giữa đồ thị tri thức Neo4j, thuật toán nhúng FastRP, mô hình ngôn ngữ PhoBERT và phân hệ giải thích GraphRAG dựa trên LLM cục bộ. Kết quả thực nghiệm trên nghiên cứu tại TP.HCM cho thấy mô hình xử lý hiệu quả tình trạng dữ liệu siêu thưa, đạt sự cân bằng giữa độ chính xác và độ phủ danh mục, đồng thời cung cấp giao diện giải thích minh bạch theo thời gian thực.
+
+Các hướng nghiên cứu tiếp theo gồm: (1) nghiên cứu cơ chế học máy xếp hạng (Learning-to-Rank) như XGBoost Ranker nhằm tự động hóa việc xác định trọng số mô hình; (2) mở rộng đồ thị tri thức đa phương thức kết hợp hình ảnh và dữ liệu thời tiết theo thời gian thực; và (3) áp dụng thuật toán phân cụm đồ thị Louvain để tối ưu hóa không gian tìm kiếm khi mở rộng sang các vùng đô thị lân cận.
+
+\FloatBarrier
+
+% ============================================================
+% TÀI LIỆU THAM KHẢO (33 TÀI LIỆU CHUẨN IEEE)
+% ============================================================
+\renewcommand{\refname}{TÀI LIỆU THAM KHẢO}
+\begin{thebibliography}{00}
+\bibitem{r1} Sở Du lịch Thành phố Hồ Chí Minh và Tập đoàn Bưu chính Viễn thông Việt Nam, ``Ra mắt phần mềm Du lịch TPHCM,'' \textit{Trang tin Điện tử Đảng bộ Thành phố Hồ Chí Minh}, 13/04/2018. [Online]. Available: \url{https://www.hcmcpv.org.vn/tin-tuc/ra-mat-phan-mem-du-lich-tphcm-1491844095}. [Accessed: 10/08/2026].
+\bibitem{r2} ANTV - Truyền hình Công an Nhân dân, ``Ứng dụng bản đồ du lịch tương tác thông minh 3D/360 TP.HCM,'' 10/03/2024. [Online]. Available: \url{https://antv.gov.vn/kinh-te-5/ung-dung-ban-do-du-lich-tuong-tac-thong-minh-3d-360-tphcm-08DE7C52D.html}. [Accessed: 10/08/2026].
+\bibitem{r3} Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), ``Giải pháp du lịch thông minh (Smart Tourist),'' \textit{VNPT Enterprise}. [Online]. Available: \url{https://vnpt.vn/doanh-nghiep/san-pham-dich-vu/giai-phap-du-lich-thong-minh-smart-tourist/}. [Accessed: 10/08/2026].
+\bibitem{r4} Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), ``Du lịch thời công nghệ số với VNPT Smart Tourism,'' \textit{VNPT News}, 24/08/2023. [Online]. Available: \url{https://vnpt.vn/doanh-nghiep/tu-van/du-lich-thoi-cong-nghe-so-voi-vnpt-smart-tourism.html}. [Accessed: 10/08/2026].
+\bibitem{r5} X. He, L. Liao, H. Zhang, L. Nie, X. Hu, and T. S. Chua, ``Neural collaborative filtering,'' in \textit{Proceedings of the 26th International Conference on World Wide Web (WWW)}, pp. 173--182, 2017.
+\bibitem{r6} D. Q. Nguyen and A. T. Nguyen, ``PhoBERT: Pre-trained language models for Vietnamese,'' in \textit{Findings of the Association for Computational Linguistics: EMNLP 2020}, pp. 1037--1042, 2020.
+\bibitem{r7} V.-T. Tran, ``pyvi: Python Vietnamese Toolkit,'' \textit{Python Package Index (PyPI)}, [Online]. Available: \url{https://pyvi.org/project/pyvi/}. [Accessed: 10/08/2026].
+\bibitem{r8} Y. Zhang and X. Chen, ``Explainable recommendation: A survey and new perspectives,'' \textit{Foundations and Trends in Information Retrieval}, vol. 14, no. 1, pp. 1--101, 2020.
+\bibitem{r9} L. Li, Y. Zhang, D. Liu, and L. Chen, ``Large language models for generative recommendation: A survey and visionary discussions,'' in \textit{Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)}, 2024, pp. 10146--10159.
+\bibitem{r10} S. Pan, L. Luo, Y. Wang, C. Chen, J. Wang, and X. Wu, ``Unifying large language models and knowledge graphs: A roadmap,'' \textit{IEEE Transactions on Knowledge and Data Engineering}, vol. 36, no. 7, pp. 3580--3599, Jul. 2024, doi: \url{https://doi.org/10.1109/TKDE.2024.3352100}.
+\bibitem{r11} S. Rajan, E. Rajabi, và R. Khoshkangini, ``Knowledge graphs applications in smart cities,'' in \textit{Proceedings of the 2024 8th International Conference on Information System and Data Mining}, 2024, pp. 136--141, doi: \url{https://doi.org/10.1145/3686397.3686423}.
+\bibitem{r12} S. Das and M. Bagchi, ``An ontology-driven knowledge graph for tourism information management,'' \textit{Open Research Europe}, vol. 5, pp. 1--36, 2025, doi: \url{https://doi.org/10.12688/openreseurope.17614.2}.
+\bibitem{r13} J. Wu, X. Zhu, C. Zhang, and Z. Hu, ``Event-centric tourism knowledge graph---A case study of Hainan,'' in \textit{Knowledge Science, Engineering and Management}, pp. 3--15, 2020, doi: \url{https://doi.org/10.1007/978-3-030-55130-8_1}.
+\bibitem{r14} D. Xiao, N. Wang, J. Yu, C. Zhang, and J. Wu, ``A practice of tourism knowledge graph construction based on heterogeneous information,'' in \textit{Proceedings of the 19th Chinese National Conference on Computational Linguistics (CCL 2020)}, Hainan, China, 2020, pp. 939--949.
+\bibitem{r15} A. Chessa, G. Fenu, E. Motta, F. Osborne, D. Reforgiato Recupero, A. Salatino, and L. Secchi, ``Data-driven methodology for knowledge graph generation within the tourism domain,'' \textit{IEEE Access}, vol. 11, pp. 67567--67599, 2023, doi: \url{https://doi.org/10.1109/ACCESS.2023.3292153}.
+\bibitem{r16} Q. Guo, F. Zhuang, C. Qin, H. Zhu, X. Xie, H. Xiong, and Q. He, ``A survey on knowledge graph-based recommender systems,'' \textit{IEEE Transactions on Knowledge and Data Engineering}, vol. 34, no. 8, pp. 3549--3568, 2022.
+\bibitem{r17} S. Ji, S. Pan, E. Cambria, P. Marttinen, and P. S. Yu, ``A survey on knowledge graphs: Representation, acquisition, and applications,'' \textit{IEEE Transactions on Neural Networks and Learning Systems}, vol. 33, no. 2, pp. 494--514, 2022, doi: \url{https://doi.org/10.1109/TNNLS.2021.3070843}.
+\bibitem{r18} X. Ying, ``Knowledge Graph Construction and Recommender System Development of Tourism in Singapore,'' Bachelor Thesis, School of Computer Science and Engineering, Nanyang Technological University, Singapore, 2024.
+\bibitem{r19} Qwen Team, ``Qwen2.5 Technical Report,'' \textit{arXiv preprint arXiv:2412.15115}, 2024.
+\bibitem{r20} A. Bordes, N. Usunier, A. Garcia-Duran, J. Weston, và O. Yakhnenko, ``Translating embeddings for modeling multi-relational data,'' in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, pp. 2787--2795, 2013.
+\bibitem{r21} H. Chen, S. F. Sultan, Y. Tian, M. Chen, and S. Skiena, ``Fast and accurate network embeddings via very sparse random projection,'' in \textit{Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019)}, pp. 399--408, 2019, doi: \url{https://doi.org/10.1145/3357384.3357879}.
+\bibitem{r22} A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, ``Attention is all you need,'' in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, pp. 5998--6008, 2017.
+\bibitem{r23} S. Wang, W. Fan, Y. Feng, S. Lin, X. Ma, S. Wang, and D. Yin, ``Knowledge graph retrieval-augmented generation for LLM-based recommendation,'' in \textit{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)}, 2025, pp. 27152--27168, doi: \url{https://doi.org/10.18653/v1/2025.acl-long.1317}.
+\bibitem{r24} A. Banerjee, A. Satish, and W. W\"orndl, ``Enhancing tourism recommender systems for sustainable city trips using retrieval-augmented generation,'' in \textit{Recommender Systems for Sustainability and Social Good}, 2025, pp. 19--34, doi: \url{https://doi.org/10.1007/978-3-031-87654-7_3}.
+\bibitem{r25} Y. Li, X. Zhang, L. Luo, H. Chang, Y. Ren, I. King, and J. Li, ``G-Refer: Graph Retrieval-Augmented Large Language Model for Explainable Recommendation,'' in \textit{Proceedings of the ACM Web Conference (WWW)}, pp. 240--251, 2025, doi: \url{https://doi.org/10.1145/3696410.3714727}.
+\bibitem{r26} ``The Selenium Browser Automation Project,'' \textit{Selenium}, [Online]. Available: \url{https://www.selenium.dev/documentation/}. [Accessed: 16/08/2026].
+\bibitem{r27} C. G. Healey, ``Selenium + Beautiful Soup,'' \textit{North Carolina State University}, [Online]. Available: \url{https://www.csc2.ncsu.edu/faculty/healey/msa/selenium/}. [Accessed: 25/08/2026].
+\bibitem{r28} H. Lewis, ``Getting Started with Web Scraping in Python,'' \textit{University of Virginia Library}, Feb. 15, 2021, updated Dec. 17, 2025. [Online]. Available: \url{https://preview.library.virginia.edu/data/articles/getting-started-with-web-scraping-in-python}. [Accessed: 16/08/2026].
+\bibitem{r29} M. Breuss, ``Beautiful Soup: Build a Web Scraper With Python,'' \textit{RealPython}, [Online]. Available: \url{https://realpython.com/beautiful-soup-web-scraper-python/}. [Accessed: 16/08/2026].
+\bibitem{r30} A. Latif, S. K. Wildah, S. Agustiani, and E. H. Juningsih, ``Implementation of a Data-Testid Attribute-Based Web Scraping Method for Accommodation Data Extraction from a Dynamic E-Commerce Website (Case Study: Traveloka),'' \textit{Journal of Artificial Intelligence and Engineering Applications}, vol. 5, no. 1, 2025, doi: \url{https://doi.org/10.59934/jaiea.v5i1.1256}.
+\bibitem{r31} S. Borrohou, R. Fissoune, and H. Badir, ``Data cleaning survey and challenges -- improving outlier detection algorithm in machine learning,'' \textit{Journal of Smart Cities and Society}, vol. 2, no. 3, pp. 125--140, 2023, doi: \url{https://doi.org/10.3233/SCS-230008}.
+\bibitem{r32} Ủy ban Thường vụ Quốc hội, ``Nghị quyết số 1111/NQ-UBTVQH14 về việc sắp xếp các đơn vị hành chính cấp huyện, cấp xã và thành lập thành phố Thủ Đức thuộc Thành phố Hồ Chí Minh,'' 09/12/2020. [Online]. Available: \url{https://vanban.chinhphu.vn/default.aspx?docid=202092&pageid=27160}. [Accessed: 09/09/2026].
+\bibitem{r33} Ủy ban Thường vụ Quốc hội, ``Nghị quyết số 1685/NQ-UBTVQH15 về việc sắp xếp các đơn vị hành chính cấp xã của Thành phố Hồ Chí Minh năm 2025,'' 16/06/2025. [Online]. Available: \url{https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1685-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-ho-chi-minh-nam-2025-119250616211341304.htm}. [Accessed: 09/09/2026].
+\end{thebibliography}
+
+% ============================================================
+% PHỤ LỤC (APPENDICES)
+% ============================================================
+\appendices
+
+\section{CÁC MẪU TRUY VẤN CYPHER TRÊN ĐỒ THỊ TRI THỨC}
+\label{sec:appendix_cypher}
+\subsection{Truy vấn thông tin thuộc tính và vị trí của địa điểm du lịch}
+\begin{lstlisting}[language=SQL]
+MATCH (poi:Poi {name: "Dinh Doc Lap"})
+MATCH (poi)-[:BELONGS_TO]->(category:Category)
+MATCH (poi)-[:LOCATED_AT]->(region:Region)
+RETURN poi.name AS TenPOI, poi.address AS DiaChi, category.name AS DanhMuc, region.name AS QuanHuyen;
+\end{lstlisting}
+
+\subsection{Truy vấn thông tin người dùng và nguồn gốc xuất xứ}
+\begin{lstlisting}[language=SQL]
+MATCH (user:User {id: 105})-[:FROM]->(origin:Origin)
+RETURN user.id AS MaDuKhach, user.name AS TenDuKhach, origin.name AS QueQuan;
+\end{lstlisting}
+
+\subsection{Truy vấn các địa điểm theo danh mục và khu vực địa lý}
+\begin{lstlisting}[language=SQL]
+MATCH (poi:Poi)-[:BELONGS_TO]->(c:Category)
+WHERE c.name CONTAINS "lich su" OR c.name CONTAINS "di san"
+MATCH (poi)-[:LOCATED_AT]->(r:Region {name: "Quan 1"})
+RETURN poi.name AS TenPOI, poi.avgRating AS DanhGiaTB, poi.numReviews AS SoLuongDanhGia
+ORDER BY poi.avgRating DESC, poi.numReviews DESC;
+\end{lstlisting}
+
+\subsection{Truy vấn các địa điểm lân cận trong bán kính đi bộ dưới 1,5 km}
+\begin{lstlisting}[language=SQL]
+MATCH (poi:Poi {name: "Buu dien trung tam Sai Gon"})-[rel:NEARBY]->(nearbyPoi:Poi)
+RETURN nearbyPoi.name AS DiemLanCan, rel.distance_km AS KhoangCach_km
+ORDER BY rel.distance_km ASC
+LIMIT 5;
+\end{lstlisting}
+
+\subsection{Truy vấn suy luận đơn vị hành chính sáp nhập phục vụ GraphRAG}
+\begin{lstlisting}[language=SQL]
+MATCH (target_w:Ward)-[:MERGED_TO*0..1]-(matched_w:Ward {name: "Phuong An Khanh"})
+MATCH (p:Poi)-[:LOCATED_IN]->(target_w)
+MATCH (target_w)-[:BELONGS_TO]->(d:District)
+RETURN p.name AS TenPOI, target_w.name AS PhuongThucTe, d.name AS QuanThanhPho;
+\end{lstlisting}
+
+\section{ĐẶC TẢ CHI TIẾT CÁC KỊCH BẢN SỬ DỤNG (USE CASES)}
+\label{sec:appendix_usecases}
+Hệ thống cung cấp 7 ca sử dụng chính được mô tả chi tiết tại Bảng~\ref{tab:usecases}.
+
+\begin{table}[H]
+\centering
+\caption{Đặc tả chi tiết các ca sử dụng của hệ thống gợi ý du lịch}
+\label{tab:usecases}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{cp{1.8cm}p{1.8cm}p{2.5cm}p{5.0cm}p{3.2cm}}
+\toprule
+\textbf{Mã UC} & \textbf{Tên kịch bản} & \textbf{Tác nhân} & \textbf{Điều kiện tiên quyết} & \textbf{Luồng sự kiện chính} & \textbf{Luồng ngoại lệ} \\
+\midrule
+UC-01 & Xem danh sách địa điểm & Khách vãng lai, Thành viên & CSDL Neo4j hoạt động & 1. Truy cập trang chủ (\code{/}). \newline 2. Hệ thống hiển thị POI theo quận và top 7 điểm đến phổ biến. & Mất kết nối CSDL: Báo lỗi và đề nghị thử lại. \\
+\midrule
+UC-02 & Xem chi tiết POI \& lân cận & Khách vãng lai, Thành viên & Chọn 1 POI trên giao diện & 1. Mở trang \code{/poi/<id>}. \newline 2. Hiển thị mô tả, rating, reviews và 5 POI lân cận $\le 1.5$ km. & Mã POI không tồn tại: Chuyển về trang chủ. \\
+\midrule
+UC-03 & Nhận gợi ý cá nhân hóa & Thành viên đăng nhập & Đăng nhập thành công & 1. Tải trang chủ/chi tiết. \newline 2. Kích hoạt hệ thống gợi ý lai theo lịch sử tương tác và quê quán. & Chưa có lịch sử: Chuyển sang gợi ý theo quê quán. \\
+\midrule
+UC-04 & Đăng ký \& Đăng nhập & Khách vãng lai & Chưa đăng nhập & 1. Nhập thông tin tài khoản và chọn quê quán. \newline 2. Xác thực dữ liệu trên Neo4j và lưu phiên làm việc (session). & Sai mật khẩu/trùng tên: Báo lỗi và yêu cầu nhập lại. \\
+\midrule
+UC-05 & Xem hồ sơ cá nhân & Thành viên đăng nhập & Đã đăng nhập & 1. Mở trang hồ sơ cá nhân (\code{/user\_profile}). \newline 2. Hiển thị thông tin cá nhân và lịch sử đánh giá. & Chưa đăng nhập: Chuyển hướng về trang chủ. \\
+\midrule
+UC-06 & Đăng xuất & Thành viên đăng nhập & Đang trong phiên làm việc & 1. Nhấn nút "Đăng xuất" (\code{/logout}). \newline 2. Xóa phiên làm việc (session) và chuyển về trạng thái khách vãng lai. & Không có. \\
+\midrule
+UC-07 & Tư vấn du lịch qua GraphRAG & Khách vãng lai, Thành viên & Khung chat sẵn sàng & 1. Nhập câu hỏi tiếng Việt. \newline 2. Trích xuất thực thể, truy vấn Neo4j (kèm suy luận sáp nhập). \newline 3. Qwen2.5 sinh câu trả lời dòng SSE. & Câu hỏi ngoài TP.HCM: Hệ thống từ chối lịch sự. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{BẢNG KẾT QUẢ KIỂM THỬ CHỨC NĂNG HỆ THỐNG}
+\label{sec:appendix_testcases}
+Toàn bộ 18 ca kiểm thử chức năng (TC-01 đến TC-18) được chia thành 3 cấp độ: kiểm thử đơn vị, kiểm thử tích hợp và kiểm thử luồng công việc người dùng, được tổng hợp tại Bảng~\ref{tab:testcases}.
+
+\begin{table}[H]
+\centering
+\caption{Bảng tổng hợp kết quả 18 ca kiểm thử chức năng hệ thống}
+\label{tab:testcases}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{cp{2.2cm}p{4.6cm}p{5.8cm}c}
+\toprule
+\textbf{Mã TC} & \textbf{Phân hệ} & \textbf{Kịch bản kiểm thử} & \textbf{Kết quả thực tế} & \textbf{Trạng thái} \\
+\midrule
+TC-01 & Mô-đun gợi ý & Chỉ có đầu vào mã địa điểm \code{poi\_id} & Lọc danh sách Top POI tương đồng cùng thể loại/khu vực (tối đa 10 kết quả) & ĐẠT \\
+TC-02 & Mô-đun gợi ý & Chỉ có đầu vào mã người dùng \code{user\_id} & Trả về danh sách Top POI phù hợp sở thích cá nhân (tối đa 10 kết quả) & ĐẠT \\
+TC-03 & Mô-đun gợi ý & Cung cấp đồng thời cả \code{poi\_id} và \code{user\_id} & Danh sách gợi ý tối ưu theo cả hai tiêu chí (tối đa 10 kết quả) & ĐẠT \\
+TC-04 & Mô-đun gợi ý & Không cung cấp dữ liệu đầu vào & Hiển thị danh sách Top POI phổ biến, không lỗi & ĐẠT \\
+TC-05 & Mô-đun nạp & Khởi tạo CSDL Neo4j khi ban đầu trống & Tự động tạo chỉ mục và nạp đầy đủ đồ thị & ĐẠT \\
+TC-06 & Mô-đun nạp & Chạy khi CSDL Neo4j đã có sẵn dữ liệu & Bỏ qua trùng lặp, bảo toàn tính toàn vẹn & ĐẠT \\
+TC-07 & Ứng dụng web & Điều hướng đến trang chủ (\code{/}) & Hiển thị đầy đủ danh sách POI và top 7 điểm đến phổ biến & ĐẠT \\
+TC-08 & Ứng dụng web & Đăng nhập tài khoản (\code{/login}) & Xác thực đúng mật khẩu, lưu phiên làm việc (session) thành công & ĐẠT \\
+TC-09 & Ứng dụng web & Xem trang hồ sơ cá nhân (\code{/user\_profile}) & Hiển thị đầy đủ tên, quê quán, bài đánh giá & ĐẠT \\
+TC-10 & Ứng dụng web & Đăng xuất hệ thống (\code{/logout}) & Xóa phiên làm việc (session), ẩn các mục dành riêng cho thành viên & ĐẠT \\
+TC-11 & Tích hợp & Máy chủ kết nối CSDL Neo4j rỗng & Bắt ngoại lệ an toàn, hiển thị hướng dẫn & ĐẠT \\
+TC-12 & Tích hợp & Máy chủ kết nối CSDL Neo4j đầy đủ & Thời gian kết nối $< 50$~ms, nạp dữ liệu tức thì & ĐẠT \\
+TC-13 & Tích hợp & Nhấp xem POI cụ thể trên giao diện & Hiển thị chi tiết và 5 điểm lân cận $< 1,5$ km & ĐẠT \\
+TC-14 & Luồng nghiệp vụ & Tài khoản tích cực (đã viết 34 đánh giá) & Hiển thị 5 POI có độ tương đồng cao với lịch sử đánh giá & ĐẠT \\
+TC-15 & Luồng nghiệp vụ & Tài khoản trung bình (đã viết 5 đánh giá) & Gợi ý cân bằng giữa sở thích và điểm phổ biến & ĐẠT \\
+TC-16 & Luồng nghiệp vụ & Tài khoản mới đăng ký (Cold-Start) & Kích hoạt gợi ý dựa trên quê quán xuất xứ & ĐẠT \\
+TC-17 & Luồng nghiệp vụ & Khách vãng lai chưa đăng nhập & Điều hướng danh sách phổ biến theo quận & ĐẠT \\
+TC-18 & Luồng nghiệp vụ & Tư vấn hỏi đáp với trợ lý GraphRAG & Nhận diện phường sáp nhập, sinh lời giải thích SSE & ĐẠT \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

@@ -1,0 +1,49 @@
+Nhóm 1: Đồ thị tri thức & Hệ khuyến nghị (KG & RecSys)
+Guo et al. (2020) – A Survey on Knowledge Graph-based Recommender Systems
+
+Nội dung: Khảo sát toàn diện về các phương pháp khuyến nghị dựa trên Đồ thị tri thức (Embedding-based, Path-based, Unified).
+
+Link PDF: https://arxiv.org/pdf/2003.00911
+
+Nguyen & Nguyen (2020) – PhoBERT: Pre-trained language models for Vietnamese
+
+Nội dung: Bài báo gốc giới thiệu PhoBERT – mô hình pre-trained SOTA cho xử lý ngôn ngữ tự nhiên tiếng Việt.
+
+Link PDF: https://arxiv.org/pdf/2003.00744 | GitHub VinAI
+
+Ji et al. (2021) – A Survey on Knowledge Graphs: Representation, Acquisition, and Applications
+
+Nội dung: Khảo sát toàn diện về kỹ thuật nhúng đồ thị (Graph Embedding), biểu diễn tri thức và các ứng dụng của KG.
+
+Link PDF: https://arxiv.org/pdf/2002.00388
+
+He et al. (2017) – Neural Collaborative Filtering (NCF)
+
+Nội dung: Bài báo kinh điển về việc thay thế ma trận nhân bản trong Lọc cộng tác bằng mạng nơ-ron học sâu để giải quyết bài toán ma trận tương tác thưa.
+
+Link PDF: https://arxiv.org/pdf/1708.05031
+
+Nhóm 2: LLM, GraphRAG & Explainable Recommendation
+Pan et al. (2024) – Unifying Large Language Models and Knowledge Graphs: A Roadmap
+
+Nội dung: Tổng quan và định hướng cho kiến trúc GraphRAG – kết hợp mô hình ngôn ngữ lớn (LLM) và Đồ thị tri thức (KG) để giảm ảo tưởng (hallucination) và tăng tính giải thích.
+
+Link PDF: https://arxiv.org/pdf/2306.08302
+
+Vaswani et al. (2017) – Attention Is All You Need
+
+Nội dung: Bài báo nền tảng phát minh ra kiến trúc Transformer (nền tảng của BERT, PhoBERT, GPT, Qwen).
+
+Link PDF: https://arxiv.org/pdf/1706.03762
+
+Zhang & Chen (2020) – Explainable Recommendation: A Survey and New Perspectives
+
+Nội dung: Tổng quan về các kỹ thuật tạo câu trả lời giải thích lý do khuyến nghị cho người dùng (Explainable AI trong RecSys).
+
+Link PDF: https://arxiv.org/pdf/1804.11192
+
+Vu et al. (2016) – A Vietnamese Language Processing Toolkit (PyVi)
+
+Nội dung: Bài báo về bộ công cụ phân đoạn từ tiếng Việt PyVi (dùng để tách từ ghép tiếng Việt trước khi đưa vào PhoBERT).
+
+Link PDF: https://aclanthology.org/N18-5012.pdf
